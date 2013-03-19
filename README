@@ -1,0 +1,2 @@
+Classical Producer-Consumer Application with producers and consumer are processes generated with fork().
+And semepahores are used to handle race conditions.

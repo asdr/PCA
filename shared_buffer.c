@@ -43,7 +43,7 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   int smfd;
   SHAREDBUFFER* shared_buffer;
 
-  smfd = shm_open( SHM_NAME, O_RDWR | O_CREAT, 0600 );
+  smfd = shm_open( SHM_NAME, O_RDWR | O_CREAT, 0666 );
   ftruncate( smfd, sizeof(SHAREDBUFFER) );
   shared_buffer = (SHAREDBUFFER*) mmap( NULL,
                                         sizeof(SHAREDBUFFER),
@@ -71,6 +71,39 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   log_event( "Shared buffer is created and initialized." );
 
   return shared_buffer;
+}
+
+SHAREDBUFFER* get_shared_buffer ( void )  {
+  int smfd;
+  SHAREDBUFFER* shared_buffer;
+
+  smfd = shm_open( SHM_NAME, O_RDWR, 0666 );
+  shared_buffer = (SHAREDBUFFER*) mmap( NULL,
+                                        sizeof(SHAREDBUFFER),
+                                        PROT_READ | PROT_WRITE,
+                                        MAP_SHARED,
+                                        smfd,
+                                        0 );
+
+  if ( !shared_buffer )
+    {
+      // cannot malloc shared buffer
+      log_event( "Unable to create shared buffer." );
+      return NULL;
+    }
+}
+
+void close_shared_buffer ( SHAREDBUFFER* shared_buffer ) {
+  if ( !shared_buffer )
+    {
+      log_event( "Unable to access shared_buffer." );
+      return NULL;
+    }
+
+  // Unmap the object
+  munmap(shared_buffer, sizeof(SHAREDBUFFER));
+  // Close the shared memory object handle
+  close(smfd);
 }
 
 void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {

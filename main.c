@@ -45,7 +45,7 @@ int main ( int argc, char** argv ) {
   CONFIG* config;
   int main_process_lifetime = 0;
   int producer_count = 0;
-  int producer_lifetime = 0;
+  char producer_lifetime[6];
   int consumer_count = 0;
   int child_exit_status = 0;
   int child_exit_pid;
@@ -91,21 +91,7 @@ int main ( int argc, char** argv ) {
       child_pid = fork();
       if ( child_pid == 0 ) // producer process
         {
-          struct timeval start_time;
-          struct timeval current_time;
-
-          log_event( "Producer process started." );
-          keep_track_of_child_process( shared_buffer );
-
-          gettimeofday( &start_time, NULL );
-          do
-            {
-              produce_transaction( shared_buffer );
-              gettimeofday( &current_time, NULL );
-            }
-          while ( (current_time.tv_sec - start_time.tv_sec) <= producer_lifetime  );
-
-          exit(0);
+          execl("producer", );
         }
     }
 

@@ -77,6 +77,15 @@ struct _shared_buffer {
 *****/
 SHAREDBUFFER* create_shared_buffer ( void );
 
+
+/** 0  **/
+SHAREDBUFFER* get_shared_buffer ( void );
+
+
+/** 1  **/
+void close_shared_buffer ( SHAREDBUFFER* shared_buffer );
+
+
 /****
  * create_transaction
  *
@@ -124,5 +133,6 @@ void keep_track_of_child_process ( SHAREDBUFFER* shared_buffer );
  *
 *****/
 void kill_all_child_processes( SHAREDBUFFER* shared_buffer );
+
 
 #endif

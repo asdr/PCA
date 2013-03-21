@@ -35,7 +35,7 @@
 
 #define TRANSACTION_SIZE 250
 #define MAX_TRANSACTION_COUNT 2000
-#define SHM_NAME "/tmp/pca_shm"
+#define SHM_NAME "/pca_shm"
 #define MAX_PROCESS_COUNT 100
 
 typedef struct _shared_buffer SHAREDBUFFER;

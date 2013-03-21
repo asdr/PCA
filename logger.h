@@ -54,7 +54,7 @@ void log_event ( char* message );
  *   into a global named: __pca_global_log_fd
  *
 *****/
-int log_open_file  ( );
+int log_open_file ( char* file_path );
 
 /****
  * log_close_file

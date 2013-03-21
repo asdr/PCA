@@ -31,6 +31,8 @@
 #ifndef __PCA_CONSUMER_H_
 #define __PCA_CONSUMER_H_
 
+#include "shared_buffer.h"
+
 /****
  * consume_transaction
  *

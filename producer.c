@@ -30,6 +30,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <sys/time.h>
 #include <semaphore.h>
@@ -39,6 +40,10 @@
 void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
   char message[100];
+  char type=0;
+
+  srand( time(NULL) );
+
   if ( !shared_buffer )
     {
       log_event( "Unable to produce transaction; shared buffer doesn't exist." );
@@ -46,7 +51,9 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
     }
 
   // create a transaction of type "A"
+  type = rand()%26+'A';
   transaction = create_transaction( "A" );
+  transaction->type = type;
 
   if ( !transaction )
     {
@@ -58,7 +65,6 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   sem_wait( &(shared_buffer->empty_sem) );
   sem_wait( &(shared_buffer->mutex) );
 
-  log_event( "Inside mutex." );
   strcpy(shared_buffer->transactions[shared_buffer->transaction_count].data, transaction->data);
   shared_buffer->transaction_count = shared_buffer->transaction_count + 1;
 
@@ -66,8 +72,9 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   sem_post( &(shared_buffer->full_sem) );
 
   sprintf( message,
-           "Outside mutex with transaction(type[%c]) count: %d.",
+           "Transaction(type[%c]) count: %d->%d.",
            transaction->type,
+           shared_buffer->transaction_count-1,
            shared_buffer->transaction_count );
   log_event( message );
 
@@ -78,7 +85,7 @@ int main ( int argc, char** argv ) {
   int producer_lifetime = 20; // 20 seconds default producer lifetime value
   struct timeval start_time;
   struct timeval current_time;
-  int logfd = log_open_file( );
+  int logfd = log_open_file( NULL );
   SHAREDBUFFER* shared_buffer;
 
   if ( logfd < 1 )
@@ -93,6 +100,14 @@ int main ( int argc, char** argv ) {
 
   // get shared memory area
   shared_buffer = get_shared_buffer();
+
+  if ( shared_buffer == NULL )
+    {
+      log_event( "Unable to acquire shared buffer." );
+      log_close_file();
+      return EXIT_FAILURE;
+    }
+
 
   log_event( "Producer process started." );
   keep_track_of_child_process( shared_buffer );

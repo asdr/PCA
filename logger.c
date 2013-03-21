@@ -40,7 +40,7 @@
 /* file descripter of log file */
 int __pca_global_log_fd = -1;
 
-int log_open_file ( ) {
+int log_open_file ( char* file_path ) {
   int fd;
 
   if ( file_path != NULL )

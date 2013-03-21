@@ -46,7 +46,7 @@
 void produce_transaction ( SHAREDBUFFER* shared_buffer );
 
 /* main program */
-int main( ing argc, char** argv );
+int main( int argc, char** argv );
 
 
 #endif

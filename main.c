@@ -30,6 +30,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <sys/time.h>
 #include <fcntl.h>
@@ -43,15 +44,23 @@
 int main ( int argc, char** argv ) {
   SHAREDBUFFER* shared_buffer;
   CONFIG* config;
-  int main_process_lifetime = 0;
+  char main_process_lifetime[15];
   int producer_count = 0;
-  char producer_lifetime[6];
+  char producer_lifetime[15];
   int consumer_count = 0;
   int child_exit_status = 0;
   int child_exit_pid;
   int child_pid;
   int i = 0;
+  int logfd;
   char message[150];
+
+  logfd = log_open_file( NULL );
+  if ( !logfd )
+    {
+      printf("Unable to open log file.\n");
+      return EXIT_FAILURE;
+    }
 
   srand( (unsigned) time( NULL ) );
 
@@ -70,8 +79,10 @@ int main ( int argc, char** argv ) {
   // read values from configuration
   producer_count = atoi(read_configuration(config, "producer_count", "5"));
   consumer_count = atoi(read_configuration(config, "consumer_count", "2"));
-  producer_lifetime = atoi(read_configuration(config, "producer_lifetime", "10"));
-  main_process_lifetime = atoi(read_configuration(config, "main_process_lifetime", "40"));
+  strcpy(producer_lifetime, read_configuration(config, "producer_lifetime", "10"));
+  strcpy(main_process_lifetime, read_configuration(config, "main_process_lifetime", "40"));
+
+  destroy_config( config );
 
   // initialize shared buffer
   shared_buffer = create_shared_buffer();
@@ -88,10 +99,10 @@ int main ( int argc, char** argv ) {
   // which is read from configuration
   for ( i=0; i<producer_count; ++i)
     {
-      child_pid = fork();
+      child_pid = vfork();
       if ( child_pid == 0 ) // producer process
         {
-          execl("producer", );
+          execl("producer", "producer", producer_lifetime, NULL);
         }
     }
 
@@ -101,19 +112,10 @@ int main ( int argc, char** argv ) {
   // when a consumer process should end.
   for ( i=0; i<consumer_count; ++i)
     {
-      child_pid = fork();
+      child_pid = vfork();
       if ( child_pid == 0 ) // consumer process
         {
-          log_event( "Consumer process started." );
-          keep_track_of_child_process( shared_buffer );
-
-          while(1)
-            {
-              consume_transaction( shared_buffer );
-            }
-
-          // there is no coming here
-          //exit(0);
+          execl("consumer", "consumer", NULL);
         }
     }
 
@@ -122,25 +124,10 @@ int main ( int argc, char** argv ) {
   // once in every 5 seconds
   // if total execution time is above a specified time (in seconds)
   // signals all child processes except itself, to force exit
-  child_pid = fork();
+  child_pid = vfork();
   if ( child_pid == 0 ) //controller process
     {
-      struct timeval start_time;
-      struct timeval current_time;
-
-      log_event( "Controller process started." );
-
-      gettimeofday( &start_time, NULL );
-      do
-        {
-          sleep( 5 ); // sleep 5 seconds
-          gettimeofday( &current_time, NULL );
-        }
-      while ( (current_time.tv_sec - start_time.tv_sec) <= main_process_lifetime  );
-
-      kill_all_child_processes( shared_buffer );
-
-      exit(0);
+      execl("controller", "controller", main_process_lifetime, NULL);
     }
 
   // in order to catch all child processes exits
@@ -155,9 +142,10 @@ int main ( int argc, char** argv ) {
 
   // relase allocated data structures to OS
   destroy_shared_buffer( shared_buffer );
-  destroy_config( config );
 
   log_event( "Main process is being closed." );
+
+  log_close_file(  );
 
   return EXIT_SUCCESS;
 }

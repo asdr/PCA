@@ -30,82 +30,52 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <semaphore.h>
-#include "consumer.h"
+#include <time.h>
+#include <sys/time.h>
+#include "shared_buffer.h"
 #include "logger.h"
 
-void consume_transaction( SHAREDBUFFER* shared_buffer ) {
-  TRANSACTION* transaction = NULL;
-  int delay = 0; //in seconds
-  char message[100];
-
-  srand( time(NULL) );
-
-  if ( !shared_buffer )
-    {
-      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
-      return;
-    }
-
-  // wait if shared buffer is empty
-  sem_wait( &(shared_buffer->full_sem) );
-  sem_wait( &(shared_buffer->mutex) );
-
-  // find the transaction to process
-  // choose the last transaction for now
-  transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
-  shared_buffer->transaction_count -= 1;
-
-  sem_post( &(shared_buffer->mutex) );
-  sem_post( &(shared_buffer->empty_sem) );
-  sprintf( message,
-           "Transaction(type[%c]) count: %d->%d.",
-           transaction->type,
-           shared_buffer->transaction_count+1,
-           shared_buffer->transaction_count );
-  log_event( message );
-
-  // process the transaction -- delay
-  delay = rand() % 4; // 3 seconds at most
-  sprintf( message,
-           "Consumer processes transaction(type[%c]) in %d second(s).",
-           transaction->type,
-           delay );
-  log_event( message );
-
-}
-
 int main ( int argc, char** argv ) {
-  int consumer_lifetime = 60;
-  SHAREDBUFFER* shared_buffer;
   int logfd = log_open_file( NULL );
+  int main_process_lifetime = 30; //in seconds
+  SHAREDBUFFER* shared_buffer;
+  struct timeval start_time;
+  struct timeval current_time;
 
   if ( logfd < 1 )
     {
-      printf("");
+      printf("Unable to open log file.");
+      return EXIT_FAILURE;
+    }
+
+  shared_buffer = get_shared_buffer();
+
+  if ( !shared_buffer )
+    {
+      log_event( "Unable to get shared buffer." );
+      log_close_file();
       return EXIT_FAILURE;
     }
 
   if ( argc > 1 )
     {
-      consumer_lifetime = atoi( argv[1] );
+      main_process_lifetime = atoi(argv[1]);
     }
 
-  shared_buffer = get_shared_buffer( );
+  log_event( "Controller process started." );
 
-  if ( !shared_buffer )
+  gettimeofday( &start_time, NULL );
+  do
     {
-      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
-      return;
+      sleep( 5 ); // sleep 5 seconds
+      gettimeofday( &current_time, NULL );
     }
+  while ( (current_time.tv_sec - start_time.tv_sec) <= main_process_lifetime  );
 
-  log_event( "Consumer process started." );
-  keep_track_of_child_process( shared_buffer );
+  kill_all_child_processes( shared_buffer );
 
-  while(1)
-    {
-      consume_transaction( shared_buffer );
-    }
+  close_shared_buffer( shared_buffer );
+  log_close_file( );
 
   return EXIT_SUCCESS;
 }

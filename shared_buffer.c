@@ -43,7 +43,7 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   int smfd;
   SHAREDBUFFER* shared_buffer;
 
-  smfd = shm_open( SHM_NAME, O_RDWR | O_CREAT, 0666 );
+  smfd = shm_open( SHM_NAME, O_RDWR | O_CREAT, 0777 );
   ftruncate( smfd, sizeof(SHAREDBUFFER) );
   shared_buffer = (SHAREDBUFFER*) mmap( NULL,
                                         sizeof(SHAREDBUFFER),
@@ -51,7 +51,6 @@ SHAREDBUFFER* create_shared_buffer( void ) {
                                         MAP_SHARED,
                                         smfd,
                                         0 );
-
   if ( !shared_buffer )
     {
       // cannot malloc shared buffer
@@ -77,7 +76,7 @@ SHAREDBUFFER* get_shared_buffer ( void )  {
   int smfd;
   SHAREDBUFFER* shared_buffer;
 
-  smfd = shm_open( SHM_NAME, O_RDWR, 0666 );
+  smfd = shm_open( SHM_NAME, O_RDWR, 0777 );
   shared_buffer = (SHAREDBUFFER*) mmap( NULL,
                                         sizeof(SHAREDBUFFER),
                                         PROT_READ | PROT_WRITE,
@@ -91,17 +90,23 @@ SHAREDBUFFER* get_shared_buffer ( void )  {
       log_event( "Unable to create shared buffer." );
       return NULL;
     }
+
+  return shared_buffer;
 }
 
 void close_shared_buffer ( SHAREDBUFFER* shared_buffer ) {
+  int smfd;
   if ( !shared_buffer )
     {
       log_event( "Unable to access shared_buffer." );
-      return NULL;
+      return;
     }
+
+  smfd = shared_buffer->smfd;
 
   // Unmap the object
   munmap(shared_buffer, sizeof(SHAREDBUFFER));
+
   // Close the shared memory object handle
   close(smfd);
 }
@@ -153,45 +158,6 @@ TRANSACTION* create_transaction( char* data ) {
   return transaction;
 }
 
-void consume_transaction( SHAREDBUFFER* shared_buffer ) {
-  TRANSACTION* transaction = NULL;
-  int delay = 0; //in seconds
-  char message[100];
-
-  if ( !shared_buffer )
-    {
-      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
-      return;
-    }
-
-  // wait if shared buffer is empty
-  sem_wait( &(shared_buffer->full_sem) );
-  sem_wait( &(shared_buffer->mutex) );
-
-  log_event( "Inside mutex." );
-  // find the transaction to process
-  // choose the last transaction for now
-  transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
-  shared_buffer->transaction_count -= 1;
-
-  sem_post( &(shared_buffer->mutex) );
-  sem_post( &(shared_buffer->empty_sem) );
-  sprintf( message,
-           "Outside mutex with transaction(type[%c]) count: %d.",
-           transaction->type,
-           shared_buffer->transaction_count );
-  log_event( message );
-
-  // process the transaction -- delay
-  delay = rand() % 4; // 3 seconds at most
-  sprintf( message,
-           "Consumer processes transaction(type[%c]) in %d second(s).",
-           transaction->type,
-           delay );
-  log_event( message );
-
-}
-
 void keep_track_of_child_process( SHAREDBUFFER* shared_buffer ) {
   if ( !shared_buffer )
     {
@@ -214,12 +180,10 @@ void kill_all_child_processes( SHAREDBUFFER* shared_buffer ) {
     }
 
   sem_wait( &(shared_buffer->mutex) );
-
   for ( k=0; k<shared_buffer->child_process_count; ++k)
     {
       kill(shared_buffer->child_processes[k], 9); // send signal 9 SIGKILL
     }
-
   sem_post( &(shared_buffer->mutex) );
 
 }

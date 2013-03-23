@@ -11,4 +11,5 @@ gcc -o ./build/controller controller.c logger.h logger.c random.h random.c trans
 echo "preparing conf anf log files..."
 cp pca.conf ./build/pca.conf
 cp pca.log ./build/pca.log
+cp ./available_process_count.sh ./build/available_process_count.sh
 echo 'done.'

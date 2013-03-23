@@ -41,6 +41,8 @@
 #include "logger.h"
 #include "shared_buffer.h"
 
+#define PROCESS_COUNT_SCRIPT "./available_process_count.sh"
+
 int last_index_of( char* str, char ch ) {
   int li = strlen(str);
   char cch;
@@ -57,6 +59,7 @@ int last_index_of( char* str, char ch ) {
 }
 
 int main ( int argc, char** argv ) {
+  FILE* pipe;
   SHAREDBUFFER* shared_buffer;
   CONFIG* config;
   char main_process_lifetime[15];
@@ -70,6 +73,7 @@ int main ( int argc, char** argv ) {
   int logfd;
   char message[150];
   char dir[255];
+  int available_process_count = 10000;
 
   strncpy(dir, argv[0], last_index_of(argv[0], '/'));
   chdir(dir);
@@ -100,6 +104,21 @@ int main ( int argc, char** argv ) {
   strcpy(main_process_lifetime, read_configuration(config, "main_process_lifetime", "40"));
 
   destroy_config( config );
+
+  log_event( "Fetching available process count of system." );
+  pipe = popen(PROCESS_COUNT_SCRIPT, "r");
+  if ( pipe )
+    {
+      fgets(message, 100, pipe);
+      pclose(pipe);
+      available_process_count = atoi(message);
+    }
+
+  if ( producer_count + consumer_count + 1 > available_process_count )
+    {
+      log_event( "Requested total process count is more than available process count of system." );
+      goto SAFE_EXIT;
+    }
 
   //initialize shared buffer
   shared_buffer = create_shared_buffer();
@@ -160,6 +179,7 @@ int main ( int argc, char** argv ) {
       log_event( message );
     }
 
+ SAFE_EXIT:
   log_event( "Main process is being closed." );
 
   // relase allocated data structures to OS

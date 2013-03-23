@@ -124,6 +124,11 @@ void close_shared_buffer ( SHAREDBUFFER* shared_buffer ) {
 
   smfd = shared_buffer->smfd;
 
+  __pca_global_empty_sem = NULL;
+  __pca_global_full_sem = NULL;
+  __pca_global_mutex = NULL;
+  __pca_global_mutex2 = NULL;
+
   // Unmap the object
   munmap(shared_buffer, sizeof(SHAREDBUFFER));
 
@@ -147,6 +152,11 @@ void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {
   sem_destroy( &(shared_buffer->full_sem) );
   sem_destroy( &(shared_buffer->mutex) );
   sem_destroy( &(shared_buffer->mutex2) );
+
+  __pca_global_empty_sem = NULL;
+  __pca_global_full_sem = NULL;
+  __pca_global_mutex = NULL;
+  __pca_global_mutex2 = NULL;
 
   // Unmap the object
   munmap(shared_buffer, sizeof(SHAREDBUFFER));

@@ -41,6 +41,21 @@
 #include "logger.h"
 #include "shared_buffer.h"
 
+int last_index_of( char* str, char ch ) {
+  int li = strlen(str);
+  char cch;
+  while ( cch = *(str+(--li)) )
+    {
+      printf("%c", cch);
+      if ( cch == ch )
+        {
+          return li;
+        }
+    }
+
+  return -1;
+}
+
 int main ( int argc, char** argv ) {
   SHAREDBUFFER* shared_buffer;
   CONFIG* config;
@@ -54,6 +69,10 @@ int main ( int argc, char** argv ) {
   int i = 0;
   int logfd;
   char message[150];
+  char dir[255];
+
+  strncpy(dir, argv[0], last_index_of(argv[0], '/'));
+  chdir(dir);
 
   logfd = log_open_file( NULL );
   if ( !logfd )
@@ -101,6 +120,7 @@ int main ( int argc, char** argv ) {
       if ( child_pid == 0 ) // producer process
         {
           execl("producer", "producer", producer_lifetime, NULL);
+          exit(0);
         }
     }
 
@@ -114,6 +134,7 @@ int main ( int argc, char** argv ) {
       if ( child_pid == 0 ) // consumer process
         {
           execl("consumer", "consumer", NULL);
+          exit(0);
         }
     }
 
@@ -126,6 +147,7 @@ int main ( int argc, char** argv ) {
   if ( child_pid == 0 ) //controller process
     {
       execl("controller", "controller", main_process_lifetime, NULL);
+      exit(0);
     }
 
   // in order to catch all child processes exits

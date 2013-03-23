@@ -36,23 +36,29 @@
 #include <semaphore.h>
 #include "logger.h"
 #include "producer.h"
+#include "random.h"
+
+extern sem_t* __pca_global_empty_sem;
+extern sem_t* __pca_global_full_sem;
+extern sem_t* __pca_global_mutex;
 
 void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
   char message[100];
   char type=0;
-
-  srand( time(NULL) );
+  long random_value;
 
   if ( !shared_buffer )
     {
-      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
+      //log_event( "Unable to produce transaction; shared buffer doesn't exist." );
       return;
     }
 
   // create a transaction of type "A"
-  type = rand()%26+'A';
-  transaction = create_transaction( "A" );
+  random_get_value( &random_value );
+  type = random_value % 26 + 'A';
+  sprintf(message, "%c", type);
+  transaction = create_transaction( message );
   transaction->type = type;
 
   if ( !transaction )
@@ -62,21 +68,22 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
     }
 
   // wait if shared buffer is full
-  sem_wait( &(shared_buffer->empty_sem) );
-  sem_wait( &(shared_buffer->mutex) );
+  sem_wait( __pca_global_empty_sem );
+  sem_wait( __pca_global_mutex );
 
   strcpy(shared_buffer->transactions[shared_buffer->transaction_count].data, transaction->data);
   shared_buffer->transaction_count = shared_buffer->transaction_count + 1;
 
-  sem_post( &(shared_buffer->mutex) );
-  sem_post( &(shared_buffer->full_sem) );
-
   sprintf( message,
-           "Transaction(type[%c]) count: %d->%d.",
+           "Producer: t[%c] %3d->%3d.",
            transaction->type,
            shared_buffer->transaction_count-1,
            shared_buffer->transaction_count );
+
   log_event( message );
+
+  sem_post( __pca_global_mutex );
+  sem_post( __pca_global_full_sem );
 
   free(transaction);
 }
@@ -85,8 +92,20 @@ int main ( int argc, char** argv ) {
   int producer_lifetime = 20; // 20 seconds default producer lifetime value
   struct timeval start_time;
   struct timeval current_time;
-  int logfd = log_open_file( NULL );
+  int logfd;
   SHAREDBUFFER* shared_buffer;
+
+  // get shared memory area
+  shared_buffer = get_shared_buffer();
+
+  if ( shared_buffer == NULL )
+    {
+      //log_event( "Unable to acquire shared buffer." );
+      //log_close_file();
+      return EXIT_FAILURE;
+    }
+
+  logfd = log_open_file( NULL );
 
   if ( logfd < 1 )
     {
@@ -98,6 +117,8 @@ int main ( int argc, char** argv ) {
       producer_lifetime = atoi( argv[1] );
     }
 
+  random_open();
+  /*
   // get shared memory area
   shared_buffer = get_shared_buffer();
 
@@ -107,7 +128,7 @@ int main ( int argc, char** argv ) {
       log_close_file();
       return EXIT_FAILURE;
     }
-
+  */
 
   log_event( "Producer process started." );
   keep_track_of_child_process( shared_buffer );
@@ -120,6 +141,7 @@ int main ( int argc, char** argv ) {
     }
   while ( (current_time.tv_sec - start_time.tv_sec) <= producer_lifetime  );
 
+  random_close();
   close_shared_buffer( shared_buffer );
   log_close_file( );
 

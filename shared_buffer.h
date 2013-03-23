@@ -51,6 +51,7 @@ struct _shared_buffer {
   sem_t empty_sem;
   sem_t full_sem;
   sem_t mutex;
+  sem_t mutex2;
 
   int transaction_count;
   TRANSACTION transactions[ MAX_TRANSACTION_COUNT ];

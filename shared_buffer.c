@@ -38,6 +38,13 @@
 #include <signal.h>
 #include "shared_buffer.h"
 #include "logger.h"
+#include "random.h"
+
+SHAREDBUFFER* __pca_global_shared_buffer;
+sem_t* __pca_global_empty_sem;
+sem_t* __pca_global_full_sem;
+sem_t* __pca_global_mutex;
+sem_t* __pca_global_mutex2;
 
 SHAREDBUFFER* create_shared_buffer( void ) {
   int smfd;
@@ -54,7 +61,7 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   if ( !shared_buffer )
     {
       // cannot malloc shared buffer
-      log_event( "Unable to create shared buffer." );
+      //log_event( "Unable to create shared buffer." );
       return NULL;
     }
 
@@ -64,10 +71,17 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   sem_init( &(shared_buffer->empty_sem), 1, MAX_TRANSACTION_COUNT );
   sem_init( &(shared_buffer->full_sem), 1, 0 );
   sem_init( &(shared_buffer->mutex), 1, 1 );
+  sem_init( &(shared_buffer->mutex2), 1, 1 );
 
   shared_buffer->child_process_count = 0;
 
-  log_event( "Shared buffer is created and initialized." );
+  //log_event( "Shared buffer is created and initialized." );
+
+  __pca_global_shared_buffer = shared_buffer;
+  __pca_global_empty_sem = &(shared_buffer->empty_sem);
+  __pca_global_full_sem = &(shared_buffer->full_sem);
+  __pca_global_mutex = &(shared_buffer->mutex);
+  __pca_global_mutex2 = &(shared_buffer->mutex2);
 
   return shared_buffer;
 }
@@ -90,6 +104,12 @@ SHAREDBUFFER* get_shared_buffer ( void )  {
       log_event( "Unable to create shared buffer." );
       return NULL;
     }
+
+  __pca_global_shared_buffer = shared_buffer;
+  __pca_global_empty_sem = &(shared_buffer->empty_sem);
+  __pca_global_full_sem = &(shared_buffer->full_sem);
+  __pca_global_mutex = &(shared_buffer->mutex);
+  __pca_global_mutex2 = &(shared_buffer->mutex2);
 
   return shared_buffer;
 }
@@ -115,15 +135,18 @@ void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {
   int smfd;
   if ( !shared_buffer )
     {
-      log_event( "Unable to destroy shared_buffer, which doesn't exist." );
+      //log_event( "Unable to destroy shared_buffer, which doesn't exist." );
       return;
     }
+
+  log_event( "Shared buffer is destroyed." );
 
   smfd = shared_buffer->smfd;
 
   sem_destroy( &(shared_buffer->empty_sem) );
   sem_destroy( &(shared_buffer->full_sem) );
   sem_destroy( &(shared_buffer->mutex) );
+  sem_destroy( &(shared_buffer->mutex2) );
 
   // Unmap the object
   munmap(shared_buffer, sizeof(SHAREDBUFFER));
@@ -131,14 +154,13 @@ void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {
   close(smfd);
   // Remove the shared memory object
   shm_unlink(SHM_NAME);
-
-  log_event( "Shared buffer is destroyed." );
 }
 
 TRANSACTION* create_transaction( char* data ) {
   TRANSACTION* transaction = (TRANSACTION*) malloc( sizeof(TRANSACTION) );
   int delay = 0; // in seconds
   char message[150];
+  long random_value;
 
   if ( !transaction )
     {
@@ -150,11 +172,12 @@ TRANSACTION* create_transaction( char* data ) {
   strcpy(transaction->data, data);
 
   // simulate random delay for creation time
-  delay = rand() % 4; // at most delay for 3 seconds
+  random_get_value( &random_value );
+  delay = random_value % 4; // at most delay for 3 seconds
   sleep( delay );
 
-  sprintf( message, "Transaction created in %d seconds.", delay );
-  log_event( message );
+  //sprintf( message, "Transaction created in %d seconds.", delay );
+  //log_event( message );
   return transaction;
 }
 
@@ -165,9 +188,9 @@ void keep_track_of_child_process( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-  sem_wait( &(shared_buffer->mutex) );
+  sem_wait( __pca_global_mutex );
   shared_buffer->child_processes[shared_buffer->child_process_count++] = getpid();
-  sem_post( &(shared_buffer->mutex) );
+  sem_post( __pca_global_mutex );
 }
 
 void kill_all_child_processes( SHAREDBUFFER* shared_buffer ) {
@@ -179,11 +202,10 @@ void kill_all_child_processes( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-  sem_wait( &(shared_buffer->mutex) );
+  sem_wait( __pca_global_mutex );
   for ( k=0; k<shared_buffer->child_process_count; ++k)
     {
       kill(shared_buffer->child_processes[k], 9); // send signal 9 SIGKILL
     }
-  sem_post( &(shared_buffer->mutex) );
-
+  sem_post( __pca_global_mutex );
 }

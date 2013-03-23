@@ -33,13 +33,17 @@
 #include <semaphore.h>
 #include "consumer.h"
 #include "logger.h"
+#include "random.h"
+
+extern sem_t* __pca_global_empty_sem;
+extern sem_t* __pca_global_full_sem;
+extern sem_t* __pca_global_mutex;
 
 void consume_transaction( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
   int delay = 0; //in seconds
   char message[100];
-
-  srand( time(NULL) );
+  long random_value;
 
   if ( !shared_buffer )
     {
@@ -48,41 +52,57 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
     }
 
   // wait if shared buffer is empty
-  sem_wait( &(shared_buffer->full_sem) );
-  sem_wait( &(shared_buffer->mutex) );
+  sem_wait( __pca_global_full_sem );
+  sem_wait( __pca_global_mutex );
+
 
   // find the transaction to process
   // choose the last transaction for now
   transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
   shared_buffer->transaction_count -= 1;
 
-  sem_post( &(shared_buffer->mutex) );
-  sem_post( &(shared_buffer->empty_sem) );
   sprintf( message,
-           "Transaction(type[%c]) count: %d->%d.",
+           "Consumer: t[%c] %3d->%3d.",
            transaction->type,
            shared_buffer->transaction_count+1,
            shared_buffer->transaction_count );
+
   log_event( message );
 
+  sem_post( __pca_global_mutex );
+  sem_post( __pca_global_empty_sem );
+
   // process the transaction -- delay
-  delay = rand() % 4; // 3 seconds at most
-  sprintf( message,
-           "Consumer processes transaction(type[%c]) in %d second(s).",
-           transaction->type,
-           delay );
-  log_event( message );
+  //random_get_value( &random_value );
+  //delay = random_value % 4; // 3 seconds at most
+  //sprintf( message,
+  //         "Consumer processes transaction(type[%c]) in %d second(s).",
+  //         transaction->type,
+  //         delay );
+  //log_event( message );
 
 }
 
 int main ( int argc, char** argv ) {
   int consumer_lifetime = 60;
   SHAREDBUFFER* shared_buffer;
-  int logfd = log_open_file( NULL );
+  int logfd;
+  random_open();
+
+
+  shared_buffer = get_shared_buffer( );
+
+  if ( !shared_buffer )
+    {
+      //      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
+      return;
+    }
+
+  logfd = log_open_file( NULL );
 
   if ( logfd < 1 )
     {
-      printf("");
+      printf("Unable to open log file.");
       return EXIT_FAILURE;
     }
 
@@ -90,7 +110,7 @@ int main ( int argc, char** argv ) {
     {
       consumer_lifetime = atoi( argv[1] );
     }
-
+  /*
   shared_buffer = get_shared_buffer( );
 
   if ( !shared_buffer )
@@ -98,7 +118,7 @@ int main ( int argc, char** argv ) {
       log_event( "Unable to produce transaction; shared buffer doesn't exist." );
       return;
     }
-
+  */
   log_event( "Consumer process started." );
   keep_track_of_child_process( shared_buffer );
 
@@ -106,6 +126,9 @@ int main ( int argc, char** argv ) {
     {
       consume_transaction( shared_buffer );
     }
+
+  random_close();
+  log_close_file();
 
   return EXIT_SUCCESS;
 }

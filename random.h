@@ -28,76 +28,8 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <sys/time.h>
-#include <fcntl.h>
-#include <unistd.h> //getpid
-#include "logger.h"
-#include <semaphore.h>
+#define PSEUDORANDOM_KEY_SOURCE "/dev/urandom"
 
-extern sem_t* __pca_global_mutex2;
-
-/* file descripter of log file */
-int __pca_global_log_fd = -1;
-
-int log_open_file ( char* file_path ) {
-  int fd;
-
-  if ( file_path != NULL )
-    {
-      fd = open( file_path, O_CREAT | O_WRONLY | O_APPEND );
-    }
-  else
-    {
-      fd = open( DEFAULT_LOG_FILE_PATH, O_CREAT | O_WRONLY | O_APPEND );
-    }
-
-  if (!fd)
-    {
-      // log file cannot be opened
-      printf("log file cannot be opened.\n");
-      return;
-    }
-
-  __pca_global_log_fd = fd;
-  return fd;
-}
-
-void log_close_file ( ) {
-
-  if ( __pca_global_log_fd > 0 )
-    {
-      close( __pca_global_log_fd );
-    }
-}
-
-void log_event ( char* message ) {
-
-  sem_wait( __pca_global_mutex2 );
-
-  char log_line[ MAX_LOG_LINE_LENGTH ];
-  struct tm * tm;
-  struct timeval tmv;
-  int bytes_written;
-
-  // get current time in nanoseconds
-  gettimeofday( &tmv, NULL );
-  tm = localtime( &(tmv.tv_sec) );
-
-  sprintf(log_line, "%d/%d/%d %d:%d:%d.%d [PID:%d] - %s \n",
-          (tm->tm_year+1900), (tm->tm_mon+1), tm->tm_mday,
-          tm->tm_hour, tm->tm_min, tm->tm_sec, (int)(tmv.tv_usec),
-          getpid(), message);
-
-  bytes_written = write( __pca_global_log_fd, log_line, strlen(log_line) );
-
-  if ( bytes_written > 0 )
-    {
-      printf("%s", log_line);
-    }
-
-  sem_post( __pca_global_mutex2 );
-}
+void random_open( void );
+void random_get_value( long* random_value );
+void random_close();

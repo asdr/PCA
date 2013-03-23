@@ -55,14 +55,22 @@ int main ( int argc, char** argv ) {
   int logfd;
   char message[150];
 
+  //initialize shared buffer
+  shared_buffer = create_shared_buffer();
+
+  if ( !shared_buffer )
+    {
+      //log_event( "Unable to initialize shared buffer." );
+      //destroy_config( config );
+      return EXIT_FAILURE;
+    }
+
   logfd = log_open_file( NULL );
   if ( !logfd )
     {
       printf("Unable to open log file.\n");
       return EXIT_FAILURE;
     }
-
-  srand( (unsigned) time( NULL ) );
 
   log_event( "--------------------------------" );
   log_event( "Main process started." );
@@ -83,8 +91,8 @@ int main ( int argc, char** argv ) {
   strcpy(main_process_lifetime, read_configuration(config, "main_process_lifetime", "40"));
 
   destroy_config( config );
-
-  // initialize shared buffer
+  /*
+  //initialize shared buffer
   shared_buffer = create_shared_buffer();
 
   if ( !shared_buffer )
@@ -93,7 +101,7 @@ int main ( int argc, char** argv ) {
       destroy_config( config );
       return EXIT_FAILURE;
     }
-
+  */
   // create and start producer processes
   // producer processes run for a specified lifetime ( in seconds )
   // which is read from configuration
@@ -140,10 +148,10 @@ int main ( int argc, char** argv ) {
       log_event( message );
     }
 
+  log_event( "Main process is being closed." );
+
   // relase allocated data structures to OS
   destroy_shared_buffer( shared_buffer );
-
-  log_event( "Main process is being closed." );
 
   log_close_file(  );
 

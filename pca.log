@@ -162,3 +162,185 @@
 2013/3/23 2:37:1.1278 [PID:9046] - Process [PID:9070] exitid with status: 9 
 2013/3/23 2:37:1.1295 [PID:9046] - Main process is being closed. 
 2013/3/23 2:37:1.1309 [PID:9046] - Shared buffer is destroyed. 
+2013/3/23 2:48:11.451170 [PID:9251] - -------------------------------- 
+2013/3/23 2:48:11.451373 [PID:9251] - Main process started. 
+2013/3/23 2:48:11.451423 [PID:9251] - k( producer_count ) = v( 4 ) 
+2013/3/23 2:48:11.451467 [PID:9251] - k( producer_lifetime ) = v( 20 ) 
+2013/3/23 2:48:11.451488 [PID:9251] - k( consumer_count ) = v( 20 ) 
+2013/3/23 2:48:11.451506 [PID:9251] - k( main_process_lifetime ) = v( 30 ) 
+2013/3/23 2:48:11.451532 [PID:9251] - Configuration data loaded. 
+2013/3/23 2:48:11.451563 [PID:9251] - Configuration data released. 
+2013/3/23 2:48:11.452446 [PID:9252] - Producer process started. 
+2013/3/23 2:48:11.452682 [PID:9253] - Producer process started. 
+2013/3/23 2:48:11.453202 [PID:9255] - Producer process started. 
+2013/3/23 2:48:11.453426 [PID:9255] - Producer: t[K]   0->  1. 
+2013/3/23 2:48:11.453486 [PID:9254] - Producer process started. 
+2013/3/23 2:48:11.453685 [PID:9256] - Consumer process started. 
+2013/3/23 2:48:11.453904 [PID:9256] - Consumer: t[K]   1->  0. 
+2013/3/23 2:48:11.454278 [PID:9257] - Consumer process started. 
+2013/3/23 2:48:11.454546 [PID:9258] - Consumer process started. 
+2013/3/23 2:48:11.455290 [PID:9261] - Consumer process started. 
+2013/3/23 2:48:11.455568 [PID:9260] - Consumer process started. 
+2013/3/23 2:48:11.455782 [PID:9262] - Consumer process started. 
+2013/3/23 2:48:11.456068 [PID:9259] - Consumer process started. 
+2013/3/23 2:48:11.456314 [PID:9263] - Consumer process started. 
+2013/3/23 2:48:11.456538 [PID:9264] - Consumer process started. 
+2013/3/23 2:48:11.456739 [PID:9265] - Consumer process started. 
+2013/3/23 2:48:11.456933 [PID:9267] - Consumer process started. 
+2013/3/23 2:48:11.457331 [PID:9270] - Consumer process started. 
+2013/3/23 2:48:11.457771 [PID:9269] - Consumer process started. 
+2013/3/23 2:48:11.457981 [PID:9271] - Consumer process started. 
+2013/3/23 2:48:11.458194 [PID:9266] - Consumer process started. 
+2013/3/23 2:48:11.458403 [PID:9272] - Consumer process started. 
+2013/3/23 2:48:11.458602 [PID:9268] - Consumer process started. 
+2013/3/23 2:48:11.458816 [PID:9275] - Consumer process started. 
+2013/3/23 2:48:11.459028 [PID:9276] - Controller process started. 
+2013/3/23 2:48:11.459231 [PID:9274] - Consumer process started. 
+2013/3/23 2:48:11.459476 [PID:9273] - Consumer process started. 
+2013/3/23 2:48:12.452759 [PID:9252] - Producer: t[A]   0->  1. 
+2013/3/23 2:48:12.452839 [PID:9256] - Consumer: t[A]   1->  0. 
+2013/3/23 2:48:12.453542 [PID:9255] - Producer: t[T]   0->  1. 
+2013/3/23 2:48:12.453620 [PID:9257] - Consumer: t[T]   1->  0. 
+2013/3/23 2:48:13.452891 [PID:9252] - Producer: t[L]   0->  1. 
+2013/3/23 2:48:13.452971 [PID:9258] - Consumer: t[L]   1->  0. 
+2013/3/23 2:48:13.453023 [PID:9253] - Producer: t[M]   0->  1. 
+2013/3/23 2:48:13.453105 [PID:9261] - Consumer: t[M]   1->  0. 
+2013/3/23 2:48:13.453754 [PID:9254] - Producer: t[G]   0->  1. 
+2013/3/23 2:48:13.453805 [PID:9260] - Consumer: t[G]   1->  0. 
+2013/3/23 2:48:13.453853 [PID:9254] - Producer: t[E]   0->  1. 
+2013/3/23 2:48:13.453910 [PID:9262] - Consumer: t[E]   1->  0. 
+2013/3/23 2:48:14.453007 [PID:9252] - Producer: t[R]   0->  1. 
+2013/3/23 2:48:14.453079 [PID:9259] - Consumer: t[R]   1->  0. 
+2013/3/23 2:48:14.453167 [PID:9253] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:14.453216 [PID:9253] - Producer: t[N]   1->  2. 
+2013/3/23 2:48:14.453275 [PID:9263] - Consumer: t[N]   2->  1. 
+2013/3/23 2:48:14.453332 [PID:9264] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:14.453670 [PID:9255] - Producer: t[I]   0->  1. 
+2013/3/23 2:48:14.453717 [PID:9255] - Producer: t[I]   1->  2. 
+2013/3/23 2:48:14.453767 [PID:9265] - Consumer: t[I]   2->  1. 
+2013/3/23 2:48:14.453820 [PID:9267] - Consumer: t[I]   1->  0. 
+2013/3/23 2:48:14.453970 [PID:9254] - Producer: t[U]   0->  1. 
+2013/3/23 2:48:14.454018 [PID:9270] - Consumer: t[U]   1->  0. 
+2013/3/23 2:48:15.453331 [PID:9253] - Producer: t[G]   0->  1. 
+2013/3/23 2:48:15.453390 [PID:9269] - Consumer: t[G]   1->  0. 
+2013/3/23 2:48:15.454067 [PID:9254] - Producer: t[E]   0->  1. 
+2013/3/23 2:48:15.454119 [PID:9271] - Consumer: t[E]   1->  0. 
+2013/3/23 2:48:16.453128 [PID:9252] - Producer: t[D]   0->  1. 
+2013/3/23 2:48:16.453196 [PID:9266] - Consumer: t[D]   1->  0. 
+2013/3/23 2:48:16.453443 [PID:9253] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:16.453489 [PID:9272] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:16.454169 [PID:9254] - Producer: t[C]   0->  1. 
+2013/3/23 2:48:16.454216 [PID:9268] - Consumer: t[C]   1->  0. 
+2013/3/23 2:48:16.454262 [PID:9254] - Producer: t[L]   0->  1. 
+2013/3/23 2:48:16.454318 [PID:9275] - Consumer: t[L]   1->  0. 
+2013/3/23 2:48:17.453216 [PID:9252] - Producer: t[X]   0->  1. 
+2013/3/23 2:48:17.453274 [PID:9274] - Consumer: t[X]   1->  0. 
+2013/3/23 2:48:17.453322 [PID:9252] - Producer: t[V]   0->  1. 
+2013/3/23 2:48:17.453356 [PID:9273] - Consumer: t[V]   1->  0. 
+2013/3/23 2:48:17.453547 [PID:9253] - Producer: t[X]   0->  1. 
+2013/3/23 2:48:17.453598 [PID:9256] - Consumer: t[X]   1->  0. 
+2013/3/23 2:48:17.453824 [PID:9255] - Producer: t[F]   0->  1. 
+2013/3/23 2:48:17.453873 [PID:9257] - Consumer: t[F]   1->  0. 
+2013/3/23 2:48:18.453419 [PID:9252] - Producer: t[O]   0->  1. 
+2013/3/23 2:48:18.453479 [PID:9258] - Consumer: t[O]   1->  0. 
+2013/3/23 2:48:19.453546 [PID:9252] - Producer: t[F]   0->  1. 
+2013/3/23 2:48:19.453604 [PID:9261] - Consumer: t[F]   1->  0. 
+2013/3/23 2:48:19.454366 [PID:9254] - Producer: t[J]   0->  1. 
+2013/3/23 2:48:19.454415 [PID:9260] - Consumer: t[J]   1->  0. 
+2013/3/23 2:48:19.454495 [PID:9254] - Producer: t[G]   0->  1. 
+2013/3/23 2:48:19.454551 [PID:9262] - Consumer: t[G]   1->  0. 
+2013/3/23 2:48:20.453652 [PID:9253] - Producer: t[K]   0->  1. 
+2013/3/23 2:48:20.453708 [PID:9259] - Consumer: t[K]   1->  0. 
+2013/3/23 2:48:20.453932 [PID:9255] - Producer: t[U]   0->  1. 
+2013/3/23 2:48:20.453986 [PID:9263] - Consumer: t[U]   1->  0. 
+2013/3/23 2:48:20.454611 [PID:9254] - Producer: t[L]   0->  1. 
+2013/3/23 2:48:20.454661 [PID:9264] - Consumer: t[L]   1->  0. 
+2013/3/23 2:48:21.454032 [PID:9255] - Producer: t[N]   0->  1. 
+2013/3/23 2:48:21.454089 [PID:9255] - Producer: t[K]   1->  2. 
+2013/3/23 2:48:21.454168 [PID:9267] - Consumer: t[K]   2->  1. 
+2013/3/23 2:48:21.454227 [PID:9265] - Consumer: t[N]   1->  0. 
+2013/3/23 2:48:22.453665 [PID:9252] - Producer: t[V]   0->  1. 
+2013/3/23 2:48:22.453730 [PID:9270] - Consumer: t[V]   1->  0. 
+2013/3/23 2:48:22.453817 [PID:9252] - Producer: t[U]   0->  1. 
+2013/3/23 2:48:22.453867 [PID:9269] - Consumer: t[U]   1->  0. 
+2013/3/23 2:48:23.453761 [PID:9253] - Producer: t[V]   0->  1. 
+2013/3/23 2:48:23.453820 [PID:9271] - Consumer: t[V]   1->  0. 
+2013/3/23 2:48:23.453891 [PID:9253] - Producer: t[F]   0->  1. 
+2013/3/23 2:48:23.453947 [PID:9266] - Consumer: t[F]   1->  0. 
+2013/3/23 2:48:23.454224 [PID:9255] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:23.454274 [PID:9272] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:23.454720 [PID:9254] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:23.454770 [PID:9268] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:25.453908 [PID:9252] - Producer: t[Q]   0->  1. 
+2013/3/23 2:48:25.453970 [PID:9275] - Consumer: t[Q]   1->  0. 
+2013/3/23 2:48:25.454019 [PID:9252] - Producer: t[M]   0->  1. 
+2013/3/23 2:48:25.454055 [PID:9274] - Consumer: t[M]   1->  0. 
+2013/3/23 2:48:25.454325 [PID:9255] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:25.454382 [PID:9273] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:25.454421 [PID:9255] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:25.454485 [PID:9256] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:25.454828 [PID:9254] - Producer: t[N]   0->  1. 
+2013/3/23 2:48:25.454875 [PID:9257] - Consumer: t[N]   1->  0. 
+2013/3/23 2:48:26.453999 [PID:9253] - Producer: t[P]   0->  1. 
+2013/3/23 2:48:26.454062 [PID:9258] - Consumer: t[P]   1->  0. 
+2013/3/23 2:48:27.454113 [PID:9253] - Producer: t[K]   0->  1. 
+2013/3/23 2:48:27.454177 [PID:9261] - Consumer: t[K]   1->  0. 
+2013/3/23 2:48:27.454259 [PID:9252] - Producer: t[J]   0->  1. 
+2013/3/23 2:48:27.454327 [PID:9260] - Consumer: t[J]   1->  0. 
+2013/3/23 2:48:28.454539 [PID:9255] - Producer: t[V]   0->  1. 
+2013/3/23 2:48:28.454603 [PID:9262] - Consumer: t[V]   1->  0. 
+2013/3/23 2:48:28.454671 [PID:9255] - Producer: t[O]   0->  1. 
+2013/3/23 2:48:28.454738 [PID:9259] - Consumer: t[O]   1->  0. 
+2013/3/23 2:48:28.454936 [PID:9254] - Producer: t[T]   0->  1. 
+2013/3/23 2:48:28.454983 [PID:9254] - Producer: t[G]   1->  2. 
+2013/3/23 2:48:28.455031 [PID:9263] - Consumer: t[G]   2->  1. 
+2013/3/23 2:48:28.455079 [PID:9254] - Producer: t[I]   1->  2. 
+2013/3/23 2:48:28.455124 [PID:9264] - Consumer: t[I]   2->  1. 
+2013/3/23 2:48:28.455171 [PID:9267] - Consumer: t[T]   1->  0. 
+2013/3/23 2:48:29.454387 [PID:9252] - Producer: t[O]   0->  1. 
+2013/3/23 2:48:29.454447 [PID:9265] - Consumer: t[O]   1->  0. 
+2013/3/23 2:48:30.454234 [PID:9253] - Producer: t[Y]   0->  1. 
+2013/3/23 2:48:30.454300 [PID:9270] - Consumer: t[Y]   1->  0. 
+2013/3/23 2:48:30.454797 [PID:9255] - Producer: t[X]   0->  1. 
+2013/3/23 2:48:30.454850 [PID:9269] - Consumer: t[X]   1->  0. 
+2013/3/23 2:48:30.455188 [PID:9254] - Producer: t[Y]   0->  1. 
+2013/3/23 2:48:30.455238 [PID:9271] - Consumer: t[Y]   1->  0. 
+2013/3/23 2:48:31.454355 [PID:9253] - Producer: t[S]   0->  1. 
+2013/3/23 2:48:31.454430 [PID:9266] - Consumer: t[S]   1->  0. 
+2013/3/23 2:48:31.454709 [PID:9252] - Producer: t[Y]   0->  1. 
+2013/3/23 2:48:31.454773 [PID:9272] - Consumer: t[Y]   1->  0. 
+2013/3/23 2:48:32.454833 [PID:9252] - Producer: t[Z]   0->  1. 
+2013/3/23 2:48:32.454893 [PID:9268] - Consumer: t[Z]   1->  0. 
+2013/3/23 2:48:32.455052 [PID:9251] - Process [PID:9252] exitid with status: 0 
+2013/3/23 2:48:32.455299 [PID:9254] - Producer: t[V]   0->  1. 
+2013/3/23 2:48:32.455350 [PID:9275] - Consumer: t[V]   1->  0. 
+2013/3/23 2:48:32.455494 [PID:9251] - Process [PID:9254] exitid with status: 0 
+2013/3/23 2:48:33.454476 [PID:9253] - Producer: t[J]   0->  1. 
+2013/3/23 2:48:33.454542 [PID:9274] - Consumer: t[J]   1->  0. 
+2013/3/23 2:48:33.454676 [PID:9251] - Process [PID:9253] exitid with status: 0 
+2013/3/23 2:48:33.454906 [PID:9255] - Producer: t[D]   0->  1. 
+2013/3/23 2:48:33.454957 [PID:9273] - Consumer: t[D]   1->  0. 
+2013/3/23 2:48:33.455068 [PID:9251] - Process [PID:9255] exitid with status: 0 
+2013/3/23 2:48:46.460081 [PID:9251] - Process [PID:9256] exitid with status: 9 
+2013/3/23 2:48:46.460141 [PID:9251] - Process [PID:9257] exitid with status: 9 
+2013/3/23 2:48:46.460164 [PID:9251] - Process [PID:9258] exitid with status: 9 
+2013/3/23 2:48:46.460190 [PID:9251] - Process [PID:9259] exitid with status: 9 
+2013/3/23 2:48:46.460214 [PID:9251] - Process [PID:9260] exitid with status: 9 
+2013/3/23 2:48:46.460235 [PID:9251] - Process [PID:9261] exitid with status: 9 
+2013/3/23 2:48:46.460258 [PID:9251] - Process [PID:9262] exitid with status: 9 
+2013/3/23 2:48:46.460284 [PID:9251] - Process [PID:9267] exitid with status: 9 
+2013/3/23 2:48:46.460519 [PID:9251] - Process [PID:9264] exitid with status: 9 
+2013/3/23 2:48:46.460603 [PID:9251] - Process [PID:9263] exitid with status: 9 
+2013/3/23 2:48:46.460641 [PID:9251] - Process [PID:9265] exitid with status: 9 
+2013/3/23 2:48:46.460674 [PID:9251] - Process [PID:9266] exitid with status: 9 
+2013/3/23 2:48:46.460711 [PID:9251] - Process [PID:9269] exitid with status: 9 
+2013/3/23 2:48:46.460744 [PID:9251] - Process [PID:9270] exitid with status: 9 
+2013/3/23 2:48:46.460781 [PID:9251] - Process [PID:9268] exitid with status: 9 
+2013/3/23 2:48:46.460813 [PID:9251] - Process [PID:9271] exitid with status: 9 
+2013/3/23 2:48:46.460847 [PID:9251] - Process [PID:9274] exitid with status: 9 
+2013/3/23 2:48:46.460883 [PID:9251] - Process [PID:9273] exitid with status: 9 
+2013/3/23 2:48:46.460930 [PID:9251] - Process [PID:9272] exitid with status: 9 
+2013/3/23 2:48:46.460975 [PID:9251] - Process [PID:9275] exitid with status: 9 
+2013/3/23 2:48:46.461020 [PID:9251] - Process [PID:9276] exitid with status: 0 
+2013/3/23 2:48:46.461050 [PID:9251] - Main process is being closed. 
+2013/3/23 2:48:46.461091 [PID:9251] - Shared buffer is destroyed. 

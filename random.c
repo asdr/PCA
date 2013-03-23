@@ -52,6 +52,9 @@ void random_get_value( long* random_value ) {
       read( __pca_global_random_file, random_value, sizeof(long) );
       if ( *random_value < 0 )
         *random_value *= -1;
+      //additional ( not much readable ) math.abs value
+      //*random_value = ((*random_value>>(((sizeof(long))<<3)-1)) ^ *random_value);
+      //*random_value -= (*random_value>>(((sizeof(long))<<3)-1));
     }
 }
 

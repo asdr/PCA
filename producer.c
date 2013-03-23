@@ -95,15 +95,7 @@ int main ( int argc, char** argv ) {
   int logfd;
   SHAREDBUFFER* shared_buffer;
 
-  // get shared memory area
-  shared_buffer = get_shared_buffer();
-
-  if ( shared_buffer == NULL )
-    {
-      //log_event( "Unable to acquire shared buffer." );
-      //log_close_file();
-      return EXIT_FAILURE;
-    }
+  random_open();
 
   logfd = log_open_file( NULL );
 
@@ -117,8 +109,6 @@ int main ( int argc, char** argv ) {
       producer_lifetime = atoi( argv[1] );
     }
 
-  random_open();
-  /*
   // get shared memory area
   shared_buffer = get_shared_buffer();
 
@@ -128,7 +118,7 @@ int main ( int argc, char** argv ) {
       log_close_file();
       return EXIT_FAILURE;
     }
-  */
+
 
   log_event( "Producer process started." );
   keep_track_of_child_process( shared_buffer );

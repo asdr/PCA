@@ -87,16 +87,8 @@ int main ( int argc, char** argv ) {
   int consumer_lifetime = 60;
   SHAREDBUFFER* shared_buffer;
   int logfd;
+
   random_open();
-
-
-  shared_buffer = get_shared_buffer( );
-
-  if ( !shared_buffer )
-    {
-      //      log_event( "Unable to produce transaction; shared buffer doesn't exist." );
-      return;
-    }
 
   logfd = log_open_file( NULL );
 
@@ -110,7 +102,7 @@ int main ( int argc, char** argv ) {
     {
       consumer_lifetime = atoi( argv[1] );
     }
-  /*
+
   shared_buffer = get_shared_buffer( );
 
   if ( !shared_buffer )
@@ -118,7 +110,7 @@ int main ( int argc, char** argv ) {
       log_event( "Unable to produce transaction; shared buffer doesn't exist." );
       return;
     }
-  */
+
   log_event( "Consumer process started." );
   keep_track_of_child_process( shared_buffer );
 

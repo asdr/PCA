@@ -28,78 +28,34 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
-#include <sys/time.h>
-#include <fcntl.h>
-#include <unistd.h> //getpid
+#include "transaction.h"
 #include "logger.h"
-#include <semaphore.h>
+#include "random.h"
 
-extern sem_t* __pca_global_mutex2;
+TRANSACTION* create_transaction( char* data ) {
+  TRANSACTION* transaction = (TRANSACTION*) malloc( sizeof(TRANSACTION) );
+  int delay = 0; // in seconds
+  char message[150];
+  long random_value;
 
-/* file descripter of log file */
-int __pca_global_log_fd = -1;
-
-int log_open_file ( char* file_path ) {
-  int fd;
-
-  if ( file_path != NULL )
+  if ( !transaction )
     {
-      fd = open( file_path, O_CREAT | O_WRONLY | O_APPEND );
-    }
-  else
-    {
-      fd = open( DEFAULT_LOG_FILE_PATH, O_CREAT | O_WRONLY | O_APPEND );
+      log_event( "Unable to create transaction." );
+      return NULL;
     }
 
-  if (!fd)
-    {
-      // log file cannot be opened
-      printf("log file cannot be opened.\n");
-      return;
-    }
+  // set data of transaction
+  strcpy(transaction->data, data);
 
-  __pca_global_log_fd = fd;
-  return fd;
-}
+  // simulate random delay for creation time
+  random_get_value( &random_value );
+  delay = random_value % 4; // at most delay for 3 seconds
+  sleep( delay );
 
-void log_close_file ( ) {
+  //sprintf( message, "Transaction created in %d seconds.", delay );
+  //log_event( message );
 
-  if ( __pca_global_log_fd > 0 )
-    {
-      close( __pca_global_log_fd );
-    }
-}
-
-void log_event ( char* message ) {
-
-  if ( __pca_global_mutex2 != NULL )
-    sem_wait( __pca_global_mutex2 );
-
-  char log_line[ MAX_LOG_LINE_LENGTH ];
-  struct tm * tm;
-  struct timeval tmv;
-  int bytes_written;
-
-  // get current time in nanoseconds
-  gettimeofday( &tmv, NULL );
-  tm = localtime( &(tmv.tv_sec) );
-
-  sprintf(log_line, "%d/%d/%d %d:%d:%d.%d [PID:%d] - %s \n",
-          (tm->tm_year+1900), (tm->tm_mon+1), tm->tm_mday,
-          tm->tm_hour, tm->tm_min, tm->tm_sec, (int)(tmv.tv_usec),
-          getpid(), message);
-
-  bytes_written = write( __pca_global_log_fd, log_line, strlen(log_line) );
-
-  if ( bytes_written > 0 )
-    {
-      printf("%s", log_line);
-    }
-
-  if ( __pca_global_mutex2 != NULL )
-    sem_post( __pca_global_mutex2 );
+  return transaction;
 }

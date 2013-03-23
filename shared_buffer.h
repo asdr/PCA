@@ -32,19 +32,13 @@
 #define __PCA_SHARED_BUFFER_H_
 
 #include <semaphore.h>
+#include "transaction.h"
 
-#define TRANSACTION_SIZE 250
-#define MAX_TRANSACTION_COUNT 2000
 #define SHM_NAME "/pca_shm"
+#define MAX_TRANSACTION_COUNT 2000
 #define MAX_PROCESS_COUNT 100
 
 typedef struct _shared_buffer SHAREDBUFFER;
-typedef union _transaction TRANSACTION;
-
-union _transaction {
-  char type;
-  char data[ TRANSACTION_SIZE ];
-};
 
 struct _shared_buffer {
   int smfd;
@@ -85,21 +79,6 @@ SHAREDBUFFER* get_shared_buffer ( void );
 
 /** 1  **/
 void close_shared_buffer ( SHAREDBUFFER* shared_buffer );
-
-
-/****
- * create_transaction
- *
- * Allocates a momory for TRANSACTION data structure and
- *   initializes it with given data. The creation time is
- *   simulated as random delay.
- *
- * @param data - the data of the transaction; the first byte of
- *   data is the type of it.
- *
- * @return address of newly created TRANSACTION data structure.
-*****/
-TRANSACTION* create_transaction ( char* data );
 
 /****
  * destroy_shared_buffer

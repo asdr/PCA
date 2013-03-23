@@ -61,7 +61,7 @@ SHAREDBUFFER* create_shared_buffer( void ) {
   if ( !shared_buffer )
     {
       // cannot malloc shared buffer
-      //log_event( "Unable to create shared buffer." );
+      log_event( "Unable to create shared buffer." );
       return NULL;
     }
 
@@ -75,7 +75,7 @@ SHAREDBUFFER* create_shared_buffer( void ) {
 
   shared_buffer->child_process_count = 0;
 
-  //log_event( "Shared buffer is created and initialized." );
+  log_event( "Shared buffer is created and initialized." );
 
   __pca_global_shared_buffer = shared_buffer;
   __pca_global_empty_sem = &(shared_buffer->empty_sem);
@@ -135,7 +135,7 @@ void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {
   int smfd;
   if ( !shared_buffer )
     {
-      //log_event( "Unable to destroy shared_buffer, which doesn't exist." );
+      log_event( "Unable to destroy shared_buffer, which doesn't exist." );
       return;
     }
 
@@ -154,31 +154,6 @@ void destroy_shared_buffer( SHAREDBUFFER* shared_buffer ) {
   close(smfd);
   // Remove the shared memory object
   shm_unlink(SHM_NAME);
-}
-
-TRANSACTION* create_transaction( char* data ) {
-  TRANSACTION* transaction = (TRANSACTION*) malloc( sizeof(TRANSACTION) );
-  int delay = 0; // in seconds
-  char message[150];
-  long random_value;
-
-  if ( !transaction )
-    {
-      log_event( "Unable to create transaction." );
-      return NULL;
-    }
-
-  // set data of transaction
-  strcpy(transaction->data, data);
-
-  // simulate random delay for creation time
-  random_get_value( &random_value );
-  delay = random_value % 4; // at most delay for 3 seconds
-  sleep( delay );
-
-  //sprintf( message, "Transaction created in %d seconds.", delay );
-  //log_event( message );
-  return transaction;
 }
 
 void keep_track_of_child_process( SHAREDBUFFER* shared_buffer ) {

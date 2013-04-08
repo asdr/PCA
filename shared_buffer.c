@@ -190,7 +190,7 @@ void kill_all_child_processes( SHAREDBUFFER* shared_buffer ) {
   sem_wait( __pca_global_mutex );
   for ( k=0; k<shared_buffer->child_process_count; ++k)
     {
-      kill(shared_buffer->child_processes[k], 9); // send signal 9 SIGKILL
+      kill(shared_buffer->child_processes[k], SIGUSR1); // send signal 9 SIGKILL
     }
   sem_post( __pca_global_mutex );
 }

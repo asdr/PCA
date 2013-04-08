@@ -28,48 +28,22 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef __PCA_TRANSACTION_H_
-#define __PCA_TRANSACTION_H_
-
-//64K
-#define MIN_TRANSACTION_LENGTH (1<<16)
-//128K
-#define MAX_TRANSACTION_LENGTH (1<<17)
-//64BITS
-#define KEY_SIZE (64)
-
-typedef struct _transaction TRANSACTION;
-
-struct _transaction {
-  char type;
-  int length;
-  char* plain_text;
-  char* cipher_text;
-};
+#ifndef __PCA_CIPHER_H_
+#define __PCA_CIPHER_H_
 
 
-/****
- * create_transaction
- *
- * Allocates a momory for TRANSACTION data structure and
- *   initializes it with given data. The creation time is
- *   simulated as random delay.
- *
- * @param data - the data of the transaction; the first byte of
- *   data is the type of it.
- *
- * @return address of newly created TRANSACTION data structure.
-*****/
-TRANSACTION* create_transaction ( );
+//1K
+#define ALG1_BLOCK_SIZE (1<<10)
+//2K
+#define ALG2_BLOCK_SIZE (1<<11)
+//4K
+#define ALG3_BLOCK_SIZE (1<<12)
 
-/****
- * create_transaction
- *
- * Allocated memory of given transaction is released.
- *
- * @param transaction - the transaction itself
- *
-*****/
-void destroy_transaction( TRANSACTION* transaction );
+char* encrypt_alg1 ( char* plain_text, char* key );
+char* encrypt_alg2 ( char* plain_text, char* key );
+char* encrypt_alg3 ( char* plain_text, char* key );
+char* decrypt_alg1 ( char* cipher_text, char* key );
+char* decrypt_alg2 ( char* cipher_text, char* key );
+char* decrypt_alg3 ( char* cipher_text, char* key );
 
 #endif

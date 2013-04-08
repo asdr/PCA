@@ -31,6 +31,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <semaphore.h>
+#include <signal.h>
 #include "consumer.h"
 #include "logger.h"
 #include "random.h"
@@ -38,6 +39,27 @@
 extern sem_t* __pca_global_empty_sem;
 extern sem_t* __pca_global_full_sem;
 extern sem_t* __pca_global_mutex;
+
+int __pca_global_got_signal = 0;
+int __pca_global_incs = 0;
+
+void signal_handler( int signo ) {
+  if ( signo == SIGUSR1 )
+    {
+      int value;
+      // we got the signal
+      __pca_global_got_signal = 1;
+      sem_getvalue( __pca_global_full_sem, &value );
+      if ( value == 0)
+        kill( getpid(), SIGTERM );
+    }
+  else if ( signo == SIGTERM )
+    {
+      random_close();
+      log_close_file();
+      kill(getpid(), SIGKILL);
+    }
+}
 
 void consume_transaction( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
@@ -51,26 +73,35 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-  // wait if shared buffer is empty
-  sem_wait( __pca_global_full_sem );
-  sem_wait( __pca_global_mutex );
 
+  if ( __pca_global_got_signal == 0 )
+    {
 
-  // find the transaction to process
-  // choose the last transaction for now
-  transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
-  shared_buffer->transaction_count -= 1;
+      // wait if shared buffer is empty
+      sem_wait( __pca_global_full_sem );
+      sem_wait( __pca_global_mutex );
 
-  sprintf( message,
-           "Consumer: t[%c] %3d->%3d.",
-           transaction->type,
-           shared_buffer->transaction_count+1,
-           shared_buffer->transaction_count );
+      ++__pca_global_incs;
 
-  log_event( message );
+      // find the transaction to process
+      // choose the last transaction for now
+      transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
+      shared_buffer->transaction_count -= 1;
 
-  sem_post( __pca_global_mutex );
-  sem_post( __pca_global_empty_sem );
+      sprintf( message,
+               "Consumer: t[%c] %3d->%3d.",
+               transaction->type,
+               shared_buffer->transaction_count+1,
+               shared_buffer->transaction_count );
+
+      log_event( message );
+
+      sem_post( __pca_global_mutex );
+      sem_post( __pca_global_empty_sem );
+
+      --__pca_global_incs;
+    }
+
 
   // process the transaction -- delay
   //random_get_value( &random_value );
@@ -114,11 +145,16 @@ int main ( int argc, char** argv ) {
   log_event( "Consumer process started." );
   keep_track_of_child_process( shared_buffer );
 
+  signal( SIGUSR1, signal_handler );
+
   while(1)
     {
       consume_transaction( shared_buffer );
+      if ( __pca_global_got_signal == 1)
+        break;
     }
 
+ SAFE_EXIT:
   random_close();
   log_close_file();
 

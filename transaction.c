@@ -33,10 +33,17 @@
 #include "transaction.h"
 #include "logger.h"
 #include "random.h"
+#include "cipher.h"
 
-TRANSACTION* create_transaction( char* data ) {
+TRANSACTION* create_transaction( ) {
   TRANSACTION* transaction = (TRANSACTION*) malloc( sizeof(TRANSACTION) );
-  int delay = 0; // in seconds
+  int type = 0; // 0 Alg1,
+                // 1 Alg2,
+                // 2 Alg3
+  int length = 0; // in seconds
+  char* plain_text;
+  char* cipher_text;
+  char* key;
   char message[150];
   long random_value;
 
@@ -46,16 +53,62 @@ TRANSACTION* create_transaction( char* data ) {
       return NULL;
     }
 
-  // set data of transaction
-  strcpy(transaction->data, data);
-
-  // simulate random delay for creation time
+  // random cipher algorithm
   random_get_value( &random_value );
-  delay = random_value % 4; // at most delay for 3 seconds
-  sleep( delay );
+  type = random_value % 3;
+
+  // length of random data at least 64K
+  // the length has to be an even number in order to divide it by 2
+  // first part of data is plain text
+  // second part of data is cipher text
+  random_get_value( &random_value );
+  length = MIN_TRANSACTION_LENGTH +
+    ( random_value % (MAX_TRANSACTION_LENGTH - MIN_TRANSACTION_LENGTH) );
+  if ( length % 2 > 0 )
+    {
+      if ( length < MAX_TRANSACTION_LENGTH )
+        ++length;
+      else
+        --length;
+    }
+
+  // generate a random key of KEY_SIZE bits long
+  key = random_generate_key( KEY_SIZE );
+
+  // half of the transaction data is plain_text
+  plain_text = random_generate_text( length/2 );
+
+  // half of the transaction data is cipher_text
+  switch ( type )
+    {
+    case 0:
+      cipher_text = encrypt_alg1( plain_text, key );
+      break;
+    case 1:
+      cipher_text = encrypt_alg2( plain_text, key );
+      break;
+    case 2:
+      cipher_text = encrypt_alg3( plain_text, key );
+      break;
+    }
+
+  transaction->type = type;
+  transaction->length = length;
+  transaction->plain_text = plain_text;
+  transaction->cipher_text = cipher_text;
 
   //sprintf( message, "Transaction created in %d seconds.", delay );
   //log_event( message );
 
   return transaction;
+}
+
+void destroy_transaction( TRANSACTION* transaction ) {
+
+  if ( transaction )
+    {
+      free( transaction->plain_text );
+      free( transaction->cipher_text );
+      free( transaction );
+    }
 }

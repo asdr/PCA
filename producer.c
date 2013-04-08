@@ -34,6 +34,7 @@
 #include <time.h>
 #include <sys/time.h>
 #include <semaphore.h>
+#include <signal.h>
 #include "logger.h"
 #include "producer.h"
 #include "random.h"
@@ -41,6 +42,17 @@
 extern sem_t* __pca_global_empty_sem;
 extern sem_t* __pca_global_full_sem;
 extern sem_t* __pca_global_mutex;
+
+int __pca_global_got_signal = 0;
+int __pca_global_incs = 0;
+
+void signal_handler( int signo ) {
+  if ( signo == SIGUSR1 )
+    {
+      // we got the signal
+      __pca_global_got_signal = 1;
+    }
+}
 
 void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
@@ -54,12 +66,8 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-  // create a transaction of type "A"
-  random_get_value( &random_value );
-  type = random_value % 26 + 'A';
-  sprintf(message, "%c", type);
-  transaction = create_transaction( message );
-  transaction->type = type;
+  // create a transaction
+  transaction = create_transaction( );
 
   if ( !transaction )
     {
@@ -67,23 +75,31 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-  // wait if shared buffer is full
-  sem_wait( __pca_global_empty_sem );
-  sem_wait( __pca_global_mutex );
+  if ( __pca_global_got_signal == 0 )
+    {
 
-  strcpy(shared_buffer->transactions[shared_buffer->transaction_count].data, transaction->data);
-  shared_buffer->transaction_count = shared_buffer->transaction_count + 1;
+      // wait if shared buffer is full
+      sem_wait( __pca_global_empty_sem );
+      sem_wait( __pca_global_mutex );
 
-  sprintf( message,
-           "Producer: t[%c] %3d->%3d.",
-           transaction->type,
-           shared_buffer->transaction_count-1,
-           shared_buffer->transaction_count );
+      ++__pca_global_incs;
 
-  log_event( message );
+      strcpy(shared_buffer->transactions[shared_buffer->transaction_count].data, transaction->data);
+      shared_buffer->transaction_count = shared_buffer->transaction_count + 1;
 
-  sem_post( __pca_global_mutex );
-  sem_post( __pca_global_full_sem );
+      sprintf( message,
+               "Producer: t[%c] %3d->%3d.",
+               transaction->type,
+               shared_buffer->transaction_count-1,
+               shared_buffer->transaction_count );
+
+      log_event( message );
+
+      sem_post( __pca_global_mutex );
+      sem_post( __pca_global_full_sem );
+
+      --__pca_global_incs;
+    }
 
   free(transaction);
 }
@@ -123,14 +139,19 @@ int main ( int argc, char** argv ) {
   log_event( "Producer process started." );
   keep_track_of_child_process( shared_buffer );
 
+  signal( SIGUSR1, signal_handler );
+
   gettimeofday( &start_time, NULL );
   do
     {
       produce_transaction( shared_buffer );
+      if ( __pca_global_got_signal == 1 )
+        break;
       gettimeofday( &current_time, NULL );
     }
   while ( (current_time.tv_sec - start_time.tv_sec) <= producer_lifetime  );
 
+ SAFE_EXIT:
   random_close();
   close_shared_buffer( shared_buffer );
   log_close_file( );

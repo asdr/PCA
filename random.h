@@ -30,6 +30,8 @@
 
 #define PSEUDORANDOM_KEY_SOURCE "/dev/urandom"
 
-void random_open( void );
-void random_get_value( long* random_value );
-void random_close();
+void  random_open( void );
+void  random_get_value( long* random_value );
+void  random_close();
+char* random_generate_text( int length );
+char* random_generate_key( int bit_length );

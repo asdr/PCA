@@ -58,6 +58,34 @@ void random_get_value( long* random_value ) {
     }
 }
 
+char* random_generate_text( int length ) {
+  int i=0, random_value, ch;
+  char* buffer = (char*) malloc(sizeof(char) * length);
+  if ( buffer == NULL )
+    return NULL;
+
+  for ( ; i<length; ++i )
+    {
+      random_get_value( &random_value );
+      ch = 'A' + random_value%26;
+      buffer[i] = ch;
+    }
+}
+
+char* random_generate_key( int bit_length ) {
+  int i=0, k=0, random_value, ch;
+  char* buffer = (char*) malloc(sizeof(char) * length);
+  if ( buffer == NULL )
+    return NULL;
+
+  for ( ; i<bit_length; ++i, k=i/8 )
+    {
+      random_get_value( &random_value );
+      ch = random_value%1;
+      buffer[k] &= (ch << i%8);
+    }
+}
+
 void random_close() {
   close( __pca_global_random_file );
   __pca_global_random_file = -1;

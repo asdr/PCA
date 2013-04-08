@@ -1,208 +1,2318 @@
-2013/3/23 19:47:15.784542 [PID:10164] - -------------------------------- 
-2013/3/23 19:47:15.784732 [PID:10164] - Main process started. 
-2013/3/23 19:47:15.784774 [PID:10164] - k( producer_count ) = v( 4 ) 
-2013/3/23 19:47:15.784795 [PID:10164] - k( producer_lifetime ) = v( 20 ) 
-2013/3/23 19:47:15.784814 [PID:10164] - k( consumer_count ) = v( 20 ) 
-2013/3/23 19:47:15.784830 [PID:10164] - k( main_process_lifetime ) = v( 30 ) 
-2013/3/23 19:47:15.784856 [PID:10164] - Configuration data loaded. 
-2013/3/23 19:47:15.784885 [PID:10164] - Configuration data released. 
-2013/3/23 19:47:15.784962 [PID:10164] - Shared buffer is created and initialized. 
-2013/3/23 19:47:15.785853 [PID:10164] - Process [PID:10165] exitid with status: 0 
-2013/3/23 19:47:15.785910 [PID:10164] - Process [PID:10166] exitid with status: 0 
-2013/3/23 19:47:15.785965 [PID:10164] - Process [PID:10167] exitid with status: 0 
-2013/3/23 19:47:15.786014 [PID:10164] - Process [PID:10168] exitid with status: 0 
-2013/3/23 19:47:15.786061 [PID:10164] - Process [PID:10169] exitid with status: 0 
-2013/3/23 19:47:15.786109 [PID:10164] - Process [PID:10170] exitid with status: 0 
-2013/3/23 19:47:15.786155 [PID:10164] - Process [PID:10171] exitid with status: 0 
-2013/3/23 19:47:15.786202 [PID:10164] - Process [PID:10172] exitid with status: 0 
-2013/3/23 19:47:15.786243 [PID:10164] - Process [PID:10173] exitid with status: 0 
-2013/3/23 19:47:15.786283 [PID:10164] - Process [PID:10174] exitid with status: 0 
-2013/3/23 19:47:15.786323 [PID:10164] - Process [PID:10175] exitid with status: 0 
-2013/3/23 19:47:15.786363 [PID:10164] - Process [PID:10176] exitid with status: 0 
-2013/3/23 19:47:15.786403 [PID:10164] - Process [PID:10177] exitid with status: 0 
-2013/3/23 19:47:15.786443 [PID:10164] - Process [PID:10178] exitid with status: 0 
-2013/3/23 19:47:15.786482 [PID:10164] - Process [PID:10179] exitid with status: 0 
-2013/3/23 19:47:15.786522 [PID:10164] - Process [PID:10180] exitid with status: 0 
-2013/3/23 19:47:15.786562 [PID:10164] - Process [PID:10181] exitid with status: 0 
-2013/3/23 19:47:15.786602 [PID:10164] - Process [PID:10182] exitid with status: 0 
-2013/3/23 19:47:15.786642 [PID:10164] - Process [PID:10183] exitid with status: 0 
-2013/3/23 19:47:15.786682 [PID:10164] - Process [PID:10184] exitid with status: 0 
-2013/3/23 19:47:15.786722 [PID:10164] - Process [PID:10185] exitid with status: 0 
-2013/3/23 19:47:15.786761 [PID:10164] - Process [PID:10186] exitid with status: 0 
-2013/3/23 19:47:15.786801 [PID:10164] - Process [PID:10187] exitid with status: 0 
-2013/3/23 19:47:15.786842 [PID:10164] - Process [PID:10188] exitid with status: 0 
-2013/3/23 19:47:15.786881 [PID:10164] - Process [PID:10189] exitid with status: 0 
-2013/3/23 19:47:15.786915 [PID:10164] - Main process is being closed. 
-2013/3/23 19:47:15.786950 [PID:10164] - Shared buffer is destroyed. 
-2013/3/23 20:56:14.301394 [PID:11766] - -------------------------------- 
-2013/3/23 20:56:14.301594 [PID:11766] - Main process started. 
-2013/3/23 20:56:14.301656 [PID:11766] - k( producer_count ) = v( 4 ) 
-2013/3/23 20:56:14.301690 [PID:11766] - k( producer_lifetime ) = v( 20 ) 
-2013/3/23 20:56:14.301749 [PID:11766] - k( consumer_count ) = v( 20 ) 
-2013/3/23 20:56:14.301793 [PID:11766] - k( main_process_lifetime ) = v( 30 ) 
-2013/3/23 20:56:14.301833 [PID:11766] - Configuration data loaded. 
-2013/3/23 20:56:14.301883 [PID:11766] - Configuration data released. 
-2013/3/23 20:56:14.301922 [PID:11766] - Fetching available process count of system. 
-2013/3/23 20:56:14.322761 [PID:11766] - Shared buffer is created and initialized. 
-2013/3/23 20:56:14.323550 [PID:11773] - Producer process started. 
-2013/3/23 20:56:14.323757 [PID:11774] - Producer process started. 
-2013/3/23 20:56:14.324508 [PID:11776] - Producer process started. 
-2013/3/23 20:56:14.324752 [PID:11777] - Consumer process started. 
-2013/3/23 20:56:14.324980 [PID:11775] - Producer process started. 
-2013/3/23 20:56:14.325559 [PID:11781] - Consumer process started. 
-2013/3/23 20:56:14.326451 [PID:11779] - Consumer process started. 
-2013/3/23 20:56:14.326658 [PID:11782] - Consumer process started. 
-2013/3/23 20:56:14.326909 [PID:11778] - Consumer process started. 
-2013/3/23 20:56:14.327107 [PID:11780] - Consumer process started. 
-2013/3/23 20:56:14.327336 [PID:11783] - Consumer process started. 
-2013/3/23 20:56:14.327553 [PID:11784] - Consumer process started. 
-2013/3/23 20:56:14.327763 [PID:11785] - Consumer process started. 
-2013/3/23 20:56:14.328523 [PID:11788] - Consumer process started. 
-2013/3/23 20:56:14.328721 [PID:11790] - Consumer process started. 
-2013/3/23 20:56:14.328936 [PID:11787] - Consumer process started. 
-2013/3/23 20:56:14.329139 [PID:11786] - Consumer process started. 
-2013/3/23 20:56:14.329467 [PID:11789] - Consumer process started. 
-2013/3/23 20:56:14.330322 [PID:11791] - Consumer process started. 
-2013/3/23 20:56:14.330524 [PID:11792] - Consumer process started. 
-2013/3/23 20:56:14.331164 [PID:11793] - Consumer process started. 
-2013/3/23 20:56:14.332242 [PID:11795] - Consumer process started. 
-2013/3/23 20:56:14.332481 [PID:11794] - Consumer process started. 
-2013/3/23 20:56:14.332678 [PID:11796] - Consumer process started. 
-2013/3/23 20:56:14.332911 [PID:11797] - Controller process started. 
-2013/3/23 20:56:16.323823 [PID:11773] - Producer: t[C]   0->  1. 
-2013/3/23 20:56:16.323908 [PID:11777] - Consumer: t[C]   1->  0. 
-2013/3/23 20:56:16.324829 [PID:11776] - Producer: t[M]   0->  1. 
-2013/3/23 20:56:16.324911 [PID:11779] - Consumer: t[M]   1->  0. 
-2013/3/23 20:56:17.323932 [PID:11773] - Producer: t[X]   0->  1. 
-2013/3/23 20:56:17.324021 [PID:11781] - Consumer: t[X]   1->  0. 
-2013/3/23 20:56:17.324115 [PID:11774] - Producer: t[P]   0->  1. 
-2013/3/23 20:56:17.324165 [PID:11782] - Consumer: t[P]   1->  0. 
-2013/3/23 20:56:17.325267 [PID:11775] - Producer: t[E]   0->  1. 
-2013/3/23 20:56:17.325320 [PID:11775] - Producer: t[W]   1->  2. 
-2013/3/23 20:56:17.325382 [PID:11780] - Consumer: t[W]   2->  1. 
-2013/3/23 20:56:17.325437 [PID:11778] - Consumer: t[E]   1->  0. 
-2013/3/23 20:56:18.324230 [PID:11774] - Producer: t[F]   0->  1. 
-2013/3/23 20:56:18.324290 [PID:11783] - Consumer: t[F]   1->  0. 
-2013/3/23 20:56:18.324362 [PID:11774] - Producer: t[P]   0->  1. 
-2013/3/23 20:56:18.324403 [PID:11784] - Consumer: t[P]   1->  0. 
-2013/3/23 20:56:19.324981 [PID:11776] - Producer: t[G]   0->  1. 
-2013/3/23 20:56:19.325058 [PID:11785] - Consumer: t[G]   1->  0. 
-2013/3/23 20:56:20.324058 [PID:11773] - Producer: t[D]   0->  1. 
-2013/3/23 20:56:20.324133 [PID:11773] - Producer: t[M]   1->  2. 
-2013/3/23 20:56:20.324198 [PID:11788] - Consumer: t[M]   2->  1. 
-2013/3/23 20:56:20.324241 [PID:11790] - Consumer: t[D]   1->  0. 
-2013/3/23 20:56:20.324456 [PID:11774] - Producer: t[N]   0->  1. 
-2013/3/23 20:56:20.324513 [PID:11787] - Consumer: t[N]   1->  0. 
-2013/3/23 20:56:20.325111 [PID:11776] - Producer: t[V]   0->  1. 
-2013/3/23 20:56:20.325167 [PID:11786] - Consumer: t[V]   1->  0. 
-2013/3/23 20:56:20.325435 [PID:11775] - Producer: t[I]   0->  1. 
-2013/3/23 20:56:20.325492 [PID:11789] - Consumer: t[I]   1->  0. 
-2013/3/23 20:56:21.325692 [PID:11775] - Producer: t[Z]   0->  1. 
-2013/3/23 20:56:21.325749 [PID:11775] - Producer: t[A]   1->  2. 
-2013/3/23 20:56:21.325809 [PID:11791] - Consumer: t[A]   2->  1. 
-2013/3/23 20:56:21.325850 [PID:11792] - Consumer: t[Z]   1->  0. 
-2013/3/23 20:56:22.324243 [PID:11773] - Producer: t[F]   0->  1. 
-2013/3/23 20:56:22.324305 [PID:11793] - Consumer: t[F]   1->  0. 
-2013/3/23 20:56:22.324573 [PID:11774] - Producer: t[F]   0->  1. 
-2013/3/23 20:56:22.324632 [PID:11795] - Consumer: t[F]   1->  0. 
-2013/3/23 20:56:23.325224 [PID:11776] - Producer: t[X]   0->  1. 
-2013/3/23 20:56:23.325296 [PID:11794] - Consumer: t[X]   1->  0. 
-2013/3/23 20:56:24.324344 [PID:11773] - Producer: t[I]   0->  1. 
-2013/3/23 20:56:24.324404 [PID:11796] - Consumer: t[I]   1->  0. 
-2013/3/23 20:56:24.324456 [PID:11773] - Producer: t[P]   0->  1. 
-2013/3/23 20:56:24.324505 [PID:11777] - Consumer: t[P]   1->  0. 
-2013/3/23 20:56:24.324689 [PID:11774] - Producer: t[Q]   0->  1. 
-2013/3/23 20:56:24.324730 [PID:11779] - Consumer: t[Q]   1->  0. 
-2013/3/23 20:56:24.325349 [PID:11776] - Producer: t[I]   0->  1. 
-2013/3/23 20:56:24.325410 [PID:11781] - Consumer: t[I]   1->  0. 
-2013/3/23 20:56:24.325875 [PID:11775] - Producer: t[P]   0->  1. 
-2013/3/23 20:56:24.325916 [PID:11782] - Consumer: t[P]   1->  0. 
-2013/3/23 20:56:25.324786 [PID:11774] - Producer: t[D]   0->  1. 
-2013/3/23 20:56:25.324835 [PID:11780] - Consumer: t[D]   1->  0. 
-2013/3/23 20:56:26.324886 [PID:11774] - Producer: t[V]   0->  1. 
-2013/3/23 20:56:26.324940 [PID:11778] - Consumer: t[V]   1->  0. 
-2013/3/23 20:56:27.324527 [PID:11773] - Producer: t[V]   0->  1. 
-2013/3/23 20:56:27.324596 [PID:11783] - Consumer: t[V]   1->  0. 
-2013/3/23 20:56:27.324989 [PID:11774] - Producer: t[D]   0->  1. 
-2013/3/23 20:56:27.325035 [PID:11784] - Consumer: t[D]   1->  0. 
-2013/3/23 20:56:27.325465 [PID:11776] - Producer: t[Z]   0->  1. 
-2013/3/23 20:56:27.325520 [PID:11785] - Consumer: t[Z]   1->  0. 
-2013/3/23 20:56:27.325979 [PID:11775] - Producer: t[M]   0->  1. 
-2013/3/23 20:56:27.326017 [PID:11788] - Consumer: t[M]   1->  0. 
-2013/3/23 20:56:28.325578 [PID:11776] - Producer: t[X]   0->  1. 
-2013/3/23 20:56:28.325652 [PID:11790] - Consumer: t[X]   1->  0. 
-2013/3/23 20:56:28.326066 [PID:11775] - Producer: t[N]   0->  1. 
-2013/3/23 20:56:28.326103 [PID:11787] - Consumer: t[N]   1->  0. 
-2013/3/23 20:56:30.324661 [PID:11773] - Producer: t[D]   0->  1. 
-2013/3/23 20:56:30.324717 [PID:11786] - Consumer: t[D]   1->  0. 
-2013/3/23 20:56:30.324759 [PID:11773] - Producer: t[P]   0->  1. 
-2013/3/23 20:56:30.324791 [PID:11773] - Producer: t[I]   1->  2. 
-2013/3/23 20:56:30.324842 [PID:11789] - Consumer: t[I]   2->  1. 
-2013/3/23 20:56:30.324878 [PID:11791] - Consumer: t[P]   1->  0. 
-2013/3/23 20:56:30.325096 [PID:11774] - Producer: t[J]   0->  1. 
-2013/3/23 20:56:30.325165 [PID:11792] - Consumer: t[J]   1->  0. 
-2013/3/23 20:56:30.325709 [PID:11776] - Producer: t[H]   0->  1. 
-2013/3/23 20:56:30.325756 [PID:11793] - Consumer: t[H]   1->  0. 
-2013/3/23 20:56:30.326162 [PID:11775] - Producer: t[B]   0->  1. 
-2013/3/23 20:56:30.326197 [PID:11795] - Consumer: t[B]   1->  0. 
-2013/3/23 20:56:31.326258 [PID:11775] - Producer: t[X]   0->  1. 
-2013/3/23 20:56:31.326303 [PID:11794] - Consumer: t[X]   1->  0. 
-2013/3/23 20:56:31.326346 [PID:11775] - Producer: t[L]   0->  1. 
-2013/3/23 20:56:31.326377 [PID:11775] - Producer: t[O]   1->  2. 
-2013/3/23 20:56:31.326419 [PID:11796] - Consumer: t[O]   2->  1. 
-2013/3/23 20:56:31.326487 [PID:11775] - Producer: t[Y]   1->  2. 
-2013/3/23 20:56:31.326526 [PID:11777] - Consumer: t[Y]   2->  1. 
-2013/3/23 20:56:31.326569 [PID:11779] - Consumer: t[L]   1->  0. 
-2013/3/23 20:56:32.324906 [PID:11773] - Producer: t[C]   0->  1. 
-2013/3/23 20:56:32.324956 [PID:11781] - Consumer: t[C]   1->  0. 
-2013/3/23 20:56:32.325225 [PID:11774] - Producer: t[E]   0->  1. 
-2013/3/23 20:56:32.325267 [PID:11782] - Consumer: t[E]   1->  0. 
-2013/3/23 20:56:32.325812 [PID:11776] - Producer: t[H]   0->  1. 
-2013/3/23 20:56:32.325858 [PID:11780] - Consumer: t[H]   1->  0. 
-2013/3/23 20:56:32.326585 [PID:11775] - Producer: t[N]   0->  1. 
-2013/3/23 20:56:32.326619 [PID:11778] - Consumer: t[N]   1->  0. 
-2013/3/23 20:56:32.326654 [PID:11775] - Producer: t[G]   0->  1. 
-2013/3/23 20:56:32.326689 [PID:11783] - Consumer: t[G]   1->  0. 
-2013/3/23 20:56:33.325011 [PID:11773] - Producer: t[F]   0->  1. 
-2013/3/23 20:56:33.325055 [PID:11784] - Consumer: t[F]   1->  0. 
-2013/3/23 20:56:33.326743 [PID:11775] - Producer: t[X]   0->  1. 
-2013/3/23 20:56:33.326778 [PID:11785] - Consumer: t[X]   1->  0. 
-2013/3/23 20:56:34.325114 [PID:11773] - Producer: t[W]   0->  1. 
-2013/3/23 20:56:34.325161 [PID:11788] - Consumer: t[W]   1->  0. 
-2013/3/23 20:56:34.325918 [PID:11776] - Producer: t[R]   0->  1. 
-2013/3/23 20:56:34.325978 [PID:11790] - Consumer: t[R]   1->  0. 
-2013/3/23 20:56:35.325333 [PID:11774] - Producer: t[G]   0->  1. 
-2013/3/23 20:56:35.325401 [PID:11787] - Consumer: t[G]   1->  0. 
-2013/3/23 20:56:35.325576 [PID:11766] - Process [PID:11774] exitid with status: 0 
-2013/3/23 20:56:35.326836 [PID:11775] - Producer: t[I]   0->  1. 
-2013/3/23 20:56:35.326885 [PID:11786] - Consumer: t[I]   1->  0. 
-2013/3/23 20:56:35.327047 [PID:11766] - Process [PID:11775] exitid with status: 0 
-2013/3/23 20:56:36.326042 [PID:11776] - Producer: t[K]   0->  1. 
-2013/3/23 20:56:36.326117 [PID:11789] - Consumer: t[K]   1->  0. 
-2013/3/23 20:56:36.326375 [PID:11766] - Process [PID:11776] exitid with status: 0 
-2013/3/23 20:56:37.325224 [PID:11773] - Producer: t[L]   0->  1. 
-2013/3/23 20:56:37.325269 [PID:11791] - Consumer: t[L]   1->  0. 
-2013/3/23 20:56:37.325408 [PID:11766] - Process [PID:11773] exitid with status: 0 
-2013/3/23 20:56:49.333791 [PID:11766] - Process [PID:11777] exitid with status: 9 
-2013/3/23 20:56:49.333867 [PID:11766] - Process [PID:11783] exitid with status: 9 
-2013/3/23 20:56:49.334030 [PID:11766] - Process [PID:11779] exitid with status: 9 
-2013/3/23 20:56:49.334344 [PID:11766] - Process [PID:11780] exitid with status: 9 
-2013/3/23 20:56:49.334384 [PID:11766] - Process [PID:11781] exitid with status: 9 
-2013/3/23 20:56:49.334407 [PID:11766] - Process [PID:11782] exitid with status: 9 
-2013/3/23 20:56:49.334435 [PID:11766] - Process [PID:11788] exitid with status: 9 
-2013/3/23 20:56:49.334458 [PID:11766] - Process [PID:11784] exitid with status: 9 
-2013/3/23 20:56:49.334653 [PID:11766] - Process [PID:11778] exitid with status: 9 
-2013/3/23 20:56:49.334684 [PID:11766] - Process [PID:11785] exitid with status: 9 
-2013/3/23 20:56:49.334708 [PID:11766] - Process [PID:11787] exitid with status: 9 
-2013/3/23 20:56:49.334765 [PID:11766] - Process [PID:11790] exitid with status: 9 
-2013/3/23 20:56:49.334805 [PID:11766] - Process [PID:11786] exitid with status: 9 
-2013/3/23 20:56:49.334830 [PID:11766] - Process [PID:11789] exitid with status: 9 
-2013/3/23 20:56:49.334926 [PID:11766] - Process [PID:11792] exitid with status: 9 
-2013/3/23 20:56:49.334995 [PID:11766] - Process [PID:11791] exitid with status: 9 
-2013/3/23 20:56:49.335044 [PID:11766] - Process [PID:11793] exitid with status: 9 
-2013/3/23 20:56:49.335110 [PID:11766] - Process [PID:11795] exitid with status: 9 
-2013/3/23 20:56:49.335157 [PID:11766] - Process [PID:11794] exitid with status: 9 
-2013/3/23 20:56:49.335196 [PID:11766] - Process [PID:11796] exitid with status: 9 
-2013/3/23 20:56:49.335232 [PID:11766] - Process [PID:11797] exitid with status: 0 
-2013/3/23 20:56:49.335266 [PID:11766] - Main process is being closed. 
-2013/3/23 20:56:49.335299 [PID:11766] - Shared buffer is destroyed. 
+2013/4/5 21:36:2.320283 [PID:3007] - -------------------------------- 
+2013/4/5 21:36:2.320469 [PID:3007] - Main process started. 
+2013/4/5 21:36:2.320516 [PID:3007] - k( producer_count ) = v( 100 ) 
+2013/4/5 21:36:2.320533 [PID:3007] - k( producer_lifetime ) = v( 60 ) 
+2013/4/5 21:36:2.320552 [PID:3007] - k( consumer_count ) = v( 3 ) 
+2013/4/5 21:36:2.320567 [PID:3007] - k( main_process_lifetime ) = v( 10 ) 
+2013/4/5 21:36:2.320592 [PID:3007] - Configuration data loaded. 
+2013/4/5 21:36:2.320620 [PID:3007] - Configuration data released. 
+2013/4/5 21:36:2.320635 [PID:3007] - Fetching available process count of system. 
+2013/4/5 21:36:2.341252 [PID:3007] - Shared buffer is created and initialized. 
+2013/4/5 21:36:2.342028 [PID:3014] - Producer process started. 
+2013/4/5 21:36:2.342964 [PID:3017] - Producer process started. 
+2013/4/5 21:36:2.343159 [PID:3018] - Producer process started. 
+2013/4/5 21:36:2.343390 [PID:3015] - Producer process started. 
+2013/4/5 21:36:2.343590 [PID:3016] - Producer process started. 
+2013/4/5 21:36:2.343775 [PID:3018] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:2.344422 [PID:3020] - Producer process started. 
+2013/4/5 21:36:2.344621 [PID:3021] - Producer process started. 
+2013/4/5 21:36:2.345387 [PID:3023] - Producer process started. 
+2013/4/5 21:36:2.345626 [PID:3022] - Producer process started. 
+2013/4/5 21:36:2.345815 [PID:3019] - Producer process started. 
+2013/4/5 21:36:2.345956 [PID:3023] - Producer: t[V]   1->  2. 
+2013/4/5 21:36:2.346226 [PID:3024] - Producer process started. 
+2013/4/5 21:36:2.347123 [PID:3025] - Producer process started. 
+2013/4/5 21:36:2.347323 [PID:3026] - Producer process started. 
+2013/4/5 21:36:2.347510 [PID:3028] - Producer process started. 
+2013/4/5 21:36:2.347665 [PID:3029] - Producer process started. 
+2013/4/5 21:36:2.347795 [PID:3026] - Producer: t[B]   2->  3. 
+2013/4/5 21:36:2.347841 [PID:3027] - Producer process started. 
+2013/4/5 21:36:2.348035 [PID:3030] - Producer process started. 
+2013/4/5 21:36:2.348197 [PID:3029] - Producer: t[L]   3->  4. 
+2013/4/5 21:36:2.348424 [PID:3032] - Producer process started. 
+2013/4/5 21:36:2.349337 [PID:3033] - Producer process started. 
+2013/4/5 21:36:2.349581 [PID:3031] - Producer process started. 
+2013/4/5 21:36:2.349764 [PID:3034] - Producer process started. 
+2013/4/5 21:36:2.349913 [PID:3036] - Producer process started. 
+2013/4/5 21:36:2.350052 [PID:3036] - Producer: t[N]   4->  5. 
+2013/4/5 21:36:2.350082 [PID:3035] - Producer process started. 
+2013/4/5 21:36:2.350308 [PID:3039] - Producer process started. 
+2013/4/5 21:36:2.350550 [PID:3039] - Producer: t[I]   5->  6. 
+2013/4/5 21:36:2.350589 [PID:3040] - Producer process started. 
+2013/4/5 21:36:2.350795 [PID:3037] - Producer process started. 
+2013/4/5 21:36:2.350932 [PID:3039] - Producer: t[O]   6->  7. 
+2013/4/5 21:36:2.350956 [PID:3041] - Producer process started. 
+2013/4/5 21:36:2.351084 [PID:3040] - Producer: t[O]   7->  8. 
+2013/4/5 21:36:2.351540 [PID:3042] - Producer process started. 
+2013/4/5 21:36:2.351670 [PID:3043] - Producer process started. 
+2013/4/5 21:36:2.351826 [PID:3043] - Producer: t[B]   8->  9. 
+2013/4/5 21:36:2.352139 [PID:3044] - Producer process started. 
+2013/4/5 21:36:2.352286 [PID:3038] - Producer process started. 
+2013/4/5 21:36:2.352513 [PID:3038] - Producer: t[J]   9-> 10. 
+2013/4/5 21:36:2.352735 [PID:3045] - Producer process started. 
+2013/4/5 21:36:2.353333 [PID:3046] - Producer process started. 
+2013/4/5 21:36:2.353490 [PID:3047] - Producer process started. 
+2013/4/5 21:36:2.353962 [PID:3049] - Producer process started. 
+2013/4/5 21:36:2.354101 [PID:3048] - Producer process started. 
+2013/4/5 21:36:2.354693 [PID:3050] - Producer process started. 
+2013/4/5 21:36:2.354827 [PID:3051] - Producer process started. 
+2013/4/5 21:36:2.355302 [PID:3053] - Producer process started. 
+2013/4/5 21:36:2.355447 [PID:3052] - Producer process started. 
+2013/4/5 21:36:2.356085 [PID:3056] - Producer process started. 
+2013/4/5 21:36:2.356725 [PID:3055] - Producer process started. 
+2013/4/5 21:36:2.356888 [PID:3054] - Producer process started. 
+2013/4/5 21:36:2.357107 [PID:3057] - Producer process started. 
+2013/4/5 21:36:2.357446 [PID:3060] - Producer process started. 
+2013/4/5 21:36:2.357635 [PID:3059] - Producer process started. 
+2013/4/5 21:36:2.357776 [PID:3059] - Producer: t[N]  10-> 11. 
+2013/4/5 21:36:2.357885 [PID:3061] - Producer process started. 
+2013/4/5 21:36:2.358101 [PID:3058] - Producer process started. 
+2013/4/5 21:36:2.358303 [PID:3062] - Producer process started. 
+2013/4/5 21:36:2.358435 [PID:3062] - Producer: t[U]  11-> 12. 
+2013/4/5 21:36:2.358489 [PID:3063] - Producer process started. 
+2013/4/5 21:36:2.358972 [PID:3064] - Producer process started. 
+2013/4/5 21:36:2.359111 [PID:3065] - Producer process started. 
+2013/4/5 21:36:2.359254 [PID:3064] - Producer: t[I]  12-> 13. 
+2013/4/5 21:36:2.359819 [PID:3067] - Producer process started. 
+2013/4/5 21:36:2.359984 [PID:3068] - Producer process started. 
+2013/4/5 21:36:2.360121 [PID:3066] - Producer process started. 
+2013/4/5 21:36:2.360330 [PID:3067] - Producer: t[X]  13-> 14. 
+2013/4/5 21:36:2.360468 [PID:3069] - Producer process started. 
+2013/4/5 21:36:2.360684 [PID:3070] - Producer process started. 
+2013/4/5 21:36:2.361576 [PID:3073] - Producer process started. 
+2013/4/5 21:36:2.361732 [PID:3071] - Producer process started. 
+2013/4/5 21:36:2.361895 [PID:3074] - Producer process started. 
+2013/4/5 21:36:2.362026 [PID:3072] - Producer process started. 
+2013/4/5 21:36:2.362388 [PID:3076] - Producer process started. 
+2013/4/5 21:36:2.362953 [PID:3077] - Producer process started. 
+2013/4/5 21:36:2.363127 [PID:3075] - Producer process started. 
+2013/4/5 21:36:2.363490 [PID:3079] - Producer process started. 
+2013/4/5 21:36:2.363653 [PID:3078] - Producer process started. 
+2013/4/5 21:36:2.363792 [PID:3078] - Producer: t[P]  14-> 15. 
+2013/4/5 21:36:2.363875 [PID:3080] - Producer process started. 
+2013/4/5 21:36:2.364133 [PID:3081] - Producer process started. 
+2013/4/5 21:36:2.365008 [PID:3082] - Producer process started. 
+2013/4/5 21:36:2.365257 [PID:3083] - Producer process started. 
+2013/4/5 21:36:2.365431 [PID:3086] - Producer process started. 
+2013/4/5 21:36:2.365705 [PID:3085] - Producer process started. 
+2013/4/5 21:36:2.365924 [PID:3084] - Producer process started. 
+2013/4/5 21:36:2.366139 [PID:3087] - Producer process started. 
+2013/4/5 21:36:2.366476 [PID:3089] - Producer process started. 
+2013/4/5 21:36:2.366610 [PID:3088] - Producer process started. 
+2013/4/5 21:36:2.366818 [PID:3086] - Producer: t[L]  15-> 16. 
+2013/4/5 21:36:2.366854 [PID:3090] - Producer process started. 
+2013/4/5 21:36:2.367172 [PID:3088] - Producer: t[U]  16-> 17. 
+2013/4/5 21:36:2.367294 [PID:3092] - Producer process started. 
+2013/4/5 21:36:2.367476 [PID:3085] - Producer: t[T]  17-> 18. 
+2013/4/5 21:36:2.367768 [PID:3093] - Producer process started. 
+2013/4/5 21:36:2.368505 [PID:3095] - Producer process started. 
+2013/4/5 21:36:2.368690 [PID:3096] - Producer process started. 
+2013/4/5 21:36:2.368868 [PID:3094] - Producer process started. 
+2013/4/5 21:36:2.369571 [PID:3097] - Producer process started. 
+2013/4/5 21:36:2.369694 [PID:3098] - Producer process started. 
+2013/4/5 21:36:2.369895 [PID:3091] - Producer process started. 
+2013/4/5 21:36:2.370261 [PID:3099] - Producer process started. 
+2013/4/5 21:36:2.370738 [PID:3101] - Producer process started. 
+2013/4/5 21:36:2.370862 [PID:3100] - Producer process started. 
+2013/4/5 21:36:2.370985 [PID:3097] - Producer: t[Z]  18-> 19. 
+2013/4/5 21:36:2.371015 [PID:3097] - Producer: t[T]  19-> 20. 
+2013/4/5 21:36:2.371058 [PID:3099] - Producer: t[G]  20-> 21. 
+2013/4/5 21:36:2.371085 [PID:3102] - Producer process started. 
+2013/4/5 21:36:2.371214 [PID:3102] - Producer: t[X]  21-> 22. 
+2013/4/5 21:36:2.371526 [PID:3104] - Producer process started. 
+2013/4/5 21:36:2.371650 [PID:3103] - Producer process started. 
+2013/4/5 21:36:2.372160 [PID:3106] - Producer process started. 
+2013/4/5 21:36:2.372311 [PID:3105] - Producer process started. 
+2013/4/5 21:36:2.372818 [PID:3108] - Producer process started. 
+2013/4/5 21:36:2.372977 [PID:3107] - Producer process started. 
+2013/4/5 21:36:2.373525 [PID:3109] - Producer process started. 
+2013/4/5 21:36:2.373672 [PID:3110] - Producer process started. 
+2013/4/5 21:36:2.373822 [PID:3110] - Producer: t[X]  22-> 23. 
+2013/4/5 21:36:2.374150 [PID:3112] - Producer process started. 
+2013/4/5 21:36:2.374324 [PID:3112] - Producer: t[B]  23-> 24. 
+2013/4/5 21:36:2.374347 [PID:3111] - Producer process started. 
+2013/4/5 21:36:2.374948 [PID:3113] - Producer process started. 
+2013/4/5 21:36:2.375112 [PID:3114] - Consumer process started. 
+2013/4/5 21:36:2.375282 [PID:3116] - Consumer process started. 
+2013/4/5 21:36:2.375447 [PID:3115] - Consumer process started. 
+2013/4/5 21:36:2.375582 [PID:3114] - Consumer: t[B]  24-> 23. 
+2013/4/5 21:36:2.375603 [PID:3114] - Consumer: t[X]  23-> 22. 
+2013/4/5 21:36:2.375621 [PID:3114] - Consumer: t[X]  22-> 21. 
+2013/4/5 21:36:2.375638 [PID:3114] - Consumer: t[G]  21-> 20. 
+2013/4/5 21:36:2.375655 [PID:3114] - Consumer: t[T]  20-> 19. 
+2013/4/5 21:36:2.375672 [PID:3114] - Consumer: t[Z]  19-> 18. 
+2013/4/5 21:36:2.375689 [PID:3117] - Controller process started. 
+2013/4/5 21:36:2.375844 [PID:3114] - Consumer: t[T]  18-> 17. 
+2013/4/5 21:36:2.375875 [PID:3114] - Consumer: t[U]  17-> 16. 
+2013/4/5 21:36:2.375892 [PID:3114] - Consumer: t[L]  16-> 15. 
+2013/4/5 21:36:2.375909 [PID:3114] - Consumer: t[P]  15-> 14. 
+2013/4/5 21:36:2.375927 [PID:3114] - Consumer: t[X]  14-> 13. 
+2013/4/5 21:36:2.375947 [PID:3114] - Consumer: t[I]  13-> 12. 
+2013/4/5 21:36:2.375967 [PID:3114] - Consumer: t[U]  12-> 11. 
+2013/4/5 21:36:2.375988 [PID:3114] - Consumer: t[N]  11-> 10. 
+2013/4/5 21:36:2.376009 [PID:3114] - Consumer: t[J]  10->  9. 
+2013/4/5 21:36:2.376029 [PID:3114] - Consumer: t[B]   9->  8. 
+2013/4/5 21:36:2.376049 [PID:3114] - Consumer: t[O]   8->  7. 
+2013/4/5 21:36:2.376070 [PID:3114] - Consumer: t[O]   7->  6. 
+2013/4/5 21:36:2.376087 [PID:3114] - Consumer: t[I]   6->  5. 
+2013/4/5 21:36:2.376110 [PID:3114] - Consumer: t[N]   5->  4. 
+2013/4/5 21:36:2.376127 [PID:3114] - Consumer: t[L]   4->  3. 
+2013/4/5 21:36:2.376145 [PID:3114] - Consumer: t[B]   3->  2. 
+2013/4/5 21:36:2.376161 [PID:3114] - Consumer: t[V]   2->  1. 
+2013/4/5 21:36:2.376217 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:3.344700 [PID:3020] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:3.344773 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:3.346092 [PID:3019] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:3.346168 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:3.347398 [PID:3025] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:3.347441 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:3.348287 [PID:3029] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:3.348326 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:3.350386 [PID:3035] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:3.350422 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:3.351192 [PID:3040] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:3.351234 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:3.351746 [PID:3042] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:3.351788 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:3.351821 [PID:3042] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:3.351859 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:3.352942 [PID:3045] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:3.352986 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:3.354174 [PID:3049] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:3.354212 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:3.354246 [PID:3049] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:3.354277 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:3.355506 [PID:3053] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:3.355548 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:3.355647 [PID:3052] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:3.355686 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:3.358309 [PID:3058] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:3.358346 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:3.358382 [PID:3058] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:3.358412 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:3.358520 [PID:3062] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:3.358569 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:3.358600 [PID:3062] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:3.358631 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:3.358666 [PID:3062] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:3.358695 [PID:3063] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:3.358734 [PID:3114] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:3.358766 [PID:3063] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:3.358801 [PID:3116] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:3.358831 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:3.360450 [PID:3068] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:3.360491 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:3.361186 [PID:3070] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:3.361221 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:3.361803 [PID:3073] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:3.361842 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:3.362096 [PID:3074] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:3.362131 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:3.363878 [PID:3078] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:3.363918 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:3.363946 [PID:3078] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:3.363980 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:3.365294 [PID:3082] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:3.365332 [PID:3081] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:3.365387 [PID:3114] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:3.365439 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:3.367115 [PID:3090] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:3.367152 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:3.367265 [PID:3088] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:3.367304 [PID:3089] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:3.367339 [PID:3114] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:3.367368 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:3.371164 [PID:3091] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:3.371211 [PID:3100] - Producer: t[Q]   1->  2. 
+2013/4/5 21:36:3.371266 [PID:3115] - Consumer: t[Q]   2->  1. 
+2013/4/5 21:36:3.371309 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:3.372381 [PID:3106] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:3.372421 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:3.373044 [PID:3108] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:3.373084 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:3.374555 [PID:3111] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:3.374595 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:4.342923 [PID:3014] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:4.342985 [PID:3116] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:4.343241 [PID:3017] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:4.343286 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:4.343910 [PID:3015] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:4.343949 [PID:3016] - Producer: t[W]   1->  2. 
+2013/4/5 21:36:4.343986 [PID:3114] - Consumer: t[W]   2->  1. 
+2013/4/5 21:36:4.344022 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:4.344056 [PID:3016] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:4.344087 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:4.344913 [PID:3021] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:4.344948 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:4.346065 [PID:3023] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:4.346120 [PID:3022] - Producer: t[U]   1->  2. 
+2013/4/5 21:36:4.346157 [PID:3022] - Producer: t[G]   2->  3. 
+2013/4/5 21:36:4.346183 [PID:3114] - Consumer: t[G]   3->  2. 
+2013/4/5 21:36:4.346218 [PID:3022] - Producer: t[D]   2->  3. 
+2013/4/5 21:36:4.346252 [PID:3114] - Consumer: t[D]   3->  2. 
+2013/4/5 21:36:4.346284 [PID:3019] - Producer: t[L]   2->  3. 
+2013/4/5 21:36:4.346323 [PID:3114] - Consumer: t[L]   3->  2. 
+2013/4/5 21:36:4.346355 [PID:3115] - Consumer: t[U]   2->  1. 
+2013/4/5 21:36:4.346385 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:4.347200 [PID:3024] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:4.347244 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:4.348111 [PID:3026] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:4.348144 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:4.348306 [PID:3030] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:4.348350 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:4.348393 [PID:3029] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:4.348427 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:4.348459 [PID:3029] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:4.348496 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:4.349415 [PID:3032] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:4.349452 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:4.349502 [PID:3032] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:4.349535 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:4.349660 [PID:3033] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:4.349705 [PID:3033] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:4.349739 [PID:3115] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:4.349757 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:4.350142 [PID:3036] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:4.350178 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:4.350214 [PID:3034] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:4.350274 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:4.351025 [PID:3039] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:4.351068 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:4.351201 [PID:3041] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.351235 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.351267 [PID:3041] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.351296 [PID:3040] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:4.351334 [PID:3115] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:4.351358 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.352610 [PID:3038] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:4.352646 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:4.352674 [PID:3038] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:4.352702 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:4.353053 [PID:3045] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:4.353093 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:4.354294 [PID:3048] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:4.354331 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:4.354363 [PID:3049] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.354406 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.354901 [PID:3050] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.354944 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.355047 [PID:3051] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:4.355080 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:4.355109 [PID:3051] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:4.355145 [PID:3051] - Producer: t[S]   1->  2. 
+2013/4/5 21:36:4.355182 [PID:3115] - Consumer: t[S]   2->  1. 
+2013/4/5 21:36:4.355205 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:4.357409 [PID:3057] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:4.357443 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:4.357472 [PID:3057] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:4.357502 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:4.358088 [PID:3061] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:4.358135 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:4.358761 [PID:3062] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:4.358801 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:4.358871 [PID:3063] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:4.358913 [PID:3063] - Producer: t[Q]   1->  2. 
+2013/4/5 21:36:4.358951 [PID:3115] - Consumer: t[Q]   2->  1. 
+2013/4/5 21:36:4.358975 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:4.360445 [PID:3067] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:4.360484 [PID:3066] - Producer: t[S]   1->  2. 
+2013/4/5 21:36:4.360522 [PID:3114] - Consumer: t[S]   2->  1. 
+2013/4/5 21:36:4.360553 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:4.362229 [PID:3072] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:4.362270 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:4.362305 [PID:3072] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:4.362351 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:4.363185 [PID:3077] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:4.363238 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:4.364045 [PID:3078] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:4.364085 [PID:3078] - Producer: t[W]   1->  2. 
+2013/4/5 21:36:4.364117 [PID:3114] - Consumer: t[W]   2->  1. 
+2013/4/5 21:36:4.364160 [PID:3080] - Producer: t[M]   1->  2. 
+2013/4/5 21:36:4.364212 [PID:3115] - Consumer: t[M]   2->  1. 
+2013/4/5 21:36:4.364241 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:4.367150 [PID:3084] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:4.367189 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:4.367220 [PID:3090] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:4.367256 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:4.368060 [PID:3093] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:4.368097 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:4.368133 [PID:3093] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:4.368163 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:4.368192 [PID:3093] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:4.368220 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:4.368764 [PID:3095] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:4.368800 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:4.369119 [PID:3094] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:4.369154 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:4.369183 [PID:3094] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:4.369212 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:4.371127 [PID:3101] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:4.371167 [PID:3099] - Producer: t[I]   1->  2. 
+2013/4/5 21:36:4.371203 [PID:3116] - Consumer: t[I]   2->  1. 
+2013/4/5 21:36:4.371247 [PID:3101] - Producer: t[I]   1->  2. 
+2013/4/5 21:36:4.371280 [PID:3114] - Consumer: t[I]   2->  1. 
+2013/4/5 21:36:4.371345 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:4.371386 [PID:3101] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:4.371419 [PID:3102] - Producer: t[A]   1->  2. 
+2013/4/5 21:36:4.371455 [PID:3116] - Consumer: t[A]   2->  1. 
+2013/4/5 21:36:4.371496 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:4.371848 [PID:3103] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.371886 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.373744 [PID:3109] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:4.373784 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:4.374417 [PID:3112] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:4.374454 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:4.375189 [PID:3113] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:4.375228 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:5.343990 [PID:3015] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:5.344054 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:5.344114 [PID:3018] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:5.344174 [PID:3016] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:5.344221 [PID:3114] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:5.344277 [PID:3016] - Producer: t[A]   1->  2. 
+2013/4/5 21:36:5.344314 [PID:3115] - Consumer: t[A]   2->  1. 
+2013/4/5 21:36:5.344350 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:5.346184 [PID:3023] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:5.346232 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:5.346315 [PID:3022] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:5.346352 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:5.348313 [PID:3027] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:5.348350 [PID:3028] - Producer: t[N]   1->  2. 
+2013/4/5 21:36:5.348388 [PID:3116] - Consumer: t[N]   2->  1. 
+2013/4/5 21:36:5.348447 [PID:3030] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:5.348487 [PID:3115] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:5.348519 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:5.349795 [PID:3033] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:5.349843 [PID:3033] - Producer: t[K]   1->  2. 
+2013/4/5 21:36:5.349881 [PID:3033] - Producer: t[Z]   2->  3. 
+2013/4/5 21:36:5.349924 [PID:3115] - Consumer: t[Z]   3->  2. 
+2013/4/5 21:36:5.349979 [PID:3116] - Consumer: t[K]   2->  1. 
+2013/4/5 21:36:5.350017 [PID:3031] - Producer: t[L]   1->  2. 
+2013/4/5 21:36:5.350073 [PID:3115] - Consumer: t[L]   2->  1. 
+2013/4/5 21:36:5.350111 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:5.350146 [PID:3031] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:5.350181 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:5.350213 [PID:3033] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:5.350267 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:5.350307 [PID:3036] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:5.350358 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:5.351052 [PID:3037] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:5.351093 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:5.351913 [PID:3043] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:5.351955 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:5.352356 [PID:3044] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:5.352397 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:5.352427 [PID:3044] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:5.352460 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:5.352490 [PID:3044] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:5.352525 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:5.352766 [PID:3038] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:5.352799 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:5.353150 [PID:3045] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:5.353189 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:5.353540 [PID:3046] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:5.353582 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:5.353730 [PID:3047] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:5.353766 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:5.354401 [PID:3048] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:5.354437 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:5.356795 [PID:3056] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:5.356830 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:5.356958 [PID:3055] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:5.356998 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:5.357431 [PID:3054] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:5.357494 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:5.357565 [PID:3057] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:5.357598 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:5.357704 [PID:3060] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:5.357743 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:5.357863 [PID:3059] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:5.357896 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:5.357931 [PID:3059] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:5.357962 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:5.358192 [PID:3061] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:5.358232 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:5.358866 [PID:3062] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:5.358903 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:5.359008 [PID:3063] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:5.359046 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:5.359346 [PID:3064] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:5.359388 [PID:3065] - Producer: t[H]   1->  2. 
+2013/4/5 21:36:5.359425 [PID:3064] - Producer: t[C]   2->  3. 
+2013/4/5 21:36:5.359465 [PID:3115] - Consumer: t[C]   3->  2. 
+2013/4/5 21:36:5.359502 [PID:3116] - Consumer: t[H]   2->  1. 
+2013/4/5 21:36:5.359532 [PID:3065] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:5.359565 [PID:3114] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:5.359599 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:5.360558 [PID:3068] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:5.360592 [PID:3066] - Producer: t[P]   1->  2. 
+2013/4/5 21:36:5.360630 [PID:3116] - Consumer: t[P]   2->  1. 
+2013/4/5 21:36:5.360658 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:5.360695 [PID:3069] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:5.360731 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:5.361289 [PID:3070] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:5.361344 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:5.361955 [PID:3071] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:5.361997 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:5.362592 [PID:3076] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:5.362626 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:5.363333 [PID:3075] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:5.363373 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:5.363403 [PID:3075] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:5.363437 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:5.363711 [PID:3079] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:5.363743 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:5.365518 [PID:3083] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:5.365556 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:5.365582 [PID:3083] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:5.365617 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:5.366921 [PID:3086] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:5.366956 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:5.367193 [PID:3087] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:5.367226 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:5.367518 [PID:3092] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:5.367555 [PID:3085] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:5.367600 [PID:3092] - Producer: t[K]   2->  3. 
+2013/4/5 21:36:5.367629 [PID:3114] - Consumer: t[K]   3->  2. 
+2013/4/5 21:36:5.367664 [PID:3115] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:5.367699 [PID:3085] - Producer: t[L]   1->  2. 
+2013/4/5 21:36:5.367734 [PID:3116] - Consumer: t[L]   2->  1. 
+2013/4/5 21:36:5.367770 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:5.368946 [PID:3096] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:5.369001 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:5.371096 [PID:3098] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:5.371147 [PID:3097] - Producer: t[P]   1->  2. 
+2013/4/5 21:36:5.371196 [PID:3098] - Producer: t[F]   2->  3. 
+2013/4/5 21:36:5.371229 [PID:3098] - Producer: t[H]   3->  4. 
+2013/4/5 21:36:5.371254 [PID:3114] - Consumer: t[H]   4->  3. 
+2013/4/5 21:36:5.371283 [PID:3114] - Consumer: t[F]   3->  2. 
+2013/4/5 21:36:5.371311 [PID:3098] - Producer: t[H]   2->  3. 
+2013/4/5 21:36:5.371345 [PID:3114] - Consumer: t[H]   3->  2. 
+2013/4/5 21:36:5.371418 [PID:3115] - Consumer: t[P]   2->  1. 
+2013/4/5 21:36:5.371453 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:5.371743 [PID:3104] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:5.371778 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:5.371811 [PID:3104] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:5.371861 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:5.372487 [PID:3106] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:5.372526 [PID:3105] - Producer: t[J]   1->  2. 
+2013/4/5 21:36:5.372565 [PID:3114] - Consumer: t[J]   2->  1. 
+2013/4/5 21:36:5.372595 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:5.373152 [PID:3108] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:5.373189 [PID:3107] - Producer: t[J]   1->  2. 
+2013/4/5 21:36:5.373228 [PID:3114] - Consumer: t[J]   2->  1. 
+2013/4/5 21:36:5.373259 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:5.373850 [PID:3109] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:5.373888 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:5.373920 [PID:3110] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:5.373959 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:5.374516 [PID:3112] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:5.374554 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:5.374581 [PID:3112] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:5.374613 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:5.374661 [PID:3111] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:5.374694 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:6.343050 [PID:3014] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:6.343110 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:6.343354 [PID:3017] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:6.343391 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:6.344114 [PID:3015] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:6.344150 [PID:3015] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:6.344182 [PID:3114] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:6.344241 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:6.344274 [PID:3018] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:6.344309 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:6.344377 [PID:3016] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:6.344408 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:6.344844 [PID:3020] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:6.344879 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:6.344908 [PID:3020] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:6.344937 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:6.345015 [PID:3021] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:6.345046 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:6.347506 [PID:3025] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:6.347541 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:6.348209 [PID:3026] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:6.348242 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:6.348270 [PID:3026] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:6.348299 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:6.348336 [PID:3026] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:6.348366 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:6.348602 [PID:3029] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:6.348645 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:6.349600 [PID:3032] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:6.349639 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:6.349684 [PID:3032] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:6.349725 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:6.350490 [PID:3035] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:6.350523 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:6.351163 [PID:3037] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:6.351205 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:6.351361 [PID:3041] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:6.351400 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:6.351923 [PID:3042] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:6.351959 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:6.352021 [PID:3043] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:6.352056 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:6.352863 [PID:3038] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:6.352896 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:6.353835 [PID:3047] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:6.353874 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:6.354464 [PID:3049] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:6.354504 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:6.354533 [PID:3049] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:6.354566 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:6.354596 [PID:3049] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:6.354631 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:6.355239 [PID:3051] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:6.355278 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:6.355614 [PID:3053] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:6.355646 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:6.355754 [PID:3052] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:6.355789 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:6.357812 [PID:3060] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:6.357854 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:6.358475 [PID:3058] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:6.358513 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:6.360549 [PID:3067] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:6.360584 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:6.360658 [PID:3068] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:6.360694 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:6.360732 [PID:3066] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:6.360768 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:6.361911 [PID:3073] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:6.361964 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:6.362200 [PID:3074] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:6.362239 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:6.363501 [PID:3075] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:6.363538 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:6.364270 [PID:3080] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:6.364311 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:6.364342 [PID:3080] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:6.364376 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:6.365401 [PID:3082] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:6.365435 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:6.365460 [PID:3081] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:6.365505 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:6.367019 [PID:3086] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:6.367051 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:6.367293 [PID:3087] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:6.367327 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:6.367367 [PID:3088] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:6.367410 [PID:3089] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:6.367443 [PID:3114] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:6.367474 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:6.368283 [PID:3093] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:6.368314 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:6.368343 [PID:3093] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:6.368371 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:6.368868 [PID:3095] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:6.368902 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:6.368930 [PID:3095] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:6.368957 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:6.371265 [PID:3097] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:6.371304 [PID:3091] - Producer: t[K]   1->  2. 
+2013/4/5 21:36:6.371337 [PID:3100] - Producer: t[R]   2->  3. 
+2013/4/5 21:36:6.371375 [PID:3115] - Consumer: t[R]   3->  2. 
+2013/4/5 21:36:6.371404 [PID:3114] - Consumer: t[K]   2->  1. 
+2013/4/5 21:36:6.371433 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:6.371462 [PID:3097] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:6.371502 [PID:3101] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:6.371535 [PID:3114] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:6.371563 [PID:3101] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:6.371593 [PID:3115] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:6.371613 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:6.372633 [PID:3105] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:6.372664 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:6.373296 [PID:3107] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:6.373327 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:6.375295 [PID:3113] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:6.375339 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:7.343174 [PID:3014] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:7.343232 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:7.344242 [PID:3015] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.344279 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.344404 [PID:3018] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:7.344464 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:7.345111 [PID:3021] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:7.345142 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:7.345171 [PID:3021] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:7.345199 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:7.345226 [PID:3021] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.345254 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.345282 [PID:3021] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:7.345309 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:7.346301 [PID:3023] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.346345 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.346380 [PID:3023] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:7.346425 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:7.346469 [PID:3019] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:7.346511 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:7.347313 [PID:3024] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.347347 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.347374 [PID:3024] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:7.347402 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:7.348421 [PID:3027] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:7.348453 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:7.348552 [PID:3030] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.348596 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.348711 [PID:3029] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:7.348752 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:7.350355 [PID:3034] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:7.350403 [PID:3033] - Producer: t[M]   1->  2. 
+2013/4/5 21:36:7.350439 [PID:3036] - Producer: t[E]   2->  3. 
+2013/4/5 21:36:7.350478 [PID:3115] - Consumer: t[E]   3->  2. 
+2013/4/5 21:36:7.350515 [PID:3114] - Consumer: t[M]   2->  1. 
+2013/4/5 21:36:7.350541 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:7.351144 [PID:3039] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:7.351185 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:7.351400 [PID:3040] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.351432 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.352961 [PID:3038] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:7.352992 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:7.353672 [PID:3046] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:7.353716 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:7.353999 [PID:3047] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.354035 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.354522 [PID:3048] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:7.354562 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:7.355021 [PID:3050] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:7.355061 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:7.355096 [PID:3050] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:7.355132 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:7.355752 [PID:3053] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:7.355786 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:7.355854 [PID:3052] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:7.355888 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:7.355924 [PID:3052] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:7.355954 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:7.357105 [PID:3055] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.357145 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.357175 [PID:3055] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:7.357211 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:7.357664 [PID:3057] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:7.357702 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:7.357730 [PID:3057] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:7.357763 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:7.359131 [PID:3063] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:7.359173 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:7.359550 [PID:3064] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.359590 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.359621 [PID:3064] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.359656 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.359703 [PID:3065] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:7.359739 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:7.360778 [PID:3068] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:7.360814 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:7.360848 [PID:3068] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:7.360881 [PID:3066] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:7.360925 [PID:3115] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:7.360951 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:7.361450 [PID:3070] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:7.361518 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:7.362085 [PID:3071] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:7.362141 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:7.362173 [PID:3071] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.362208 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.362311 [PID:3074] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:7.362340 [PID:3074] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:7.362366 [PID:3115] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:7.362403 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:7.362476 [PID:3072] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.362512 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.363305 [PID:3077] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:7.363345 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:7.363376 [PID:3077] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:7.363410 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:7.363623 [PID:3075] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:7.363662 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:7.363693 [PID:3075] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:7.363727 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:7.364181 [PID:3078] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:7.364221 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:7.365680 [PID:3083] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:7.365714 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:7.365747 [PID:3083] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.365775 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.365806 [PID:3083] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:7.365833 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:7.367257 [PID:3084] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:7.367292 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:7.367318 [PID:3090] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:7.367355 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:7.367396 [PID:3090] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.367430 [PID:3087] - Producer: t[O]   1->  2. 
+2013/4/5 21:36:7.367464 [PID:3116] - Consumer: t[O]   2->  1. 
+2013/4/5 21:36:7.367508 [PID:3089] - Producer: t[I]   1->  2. 
+2013/4/5 21:36:7.367541 [PID:3115] - Consumer: t[I]   2->  1. 
+2013/4/5 21:36:7.367574 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.367738 [PID:3092] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:7.367774 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:7.367821 [PID:3085] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:7.367861 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:7.368436 [PID:3093] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.368468 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.369057 [PID:3096] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:7.369089 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:7.369122 [PID:3096] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:7.369150 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:7.369181 [PID:3096] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:7.369208 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:7.369275 [PID:3094] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:7.369310 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:7.369358 [PID:3094] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:7.369389 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:7.371270 [PID:3099] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:7.371308 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:7.371409 [PID:3098] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:7.371445 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:7.371481 [PID:3091] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:7.371518 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:7.371554 [PID:3102] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:7.371591 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:7.371953 [PID:3103] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.371988 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.372728 [PID:3105] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:7.372764 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:7.373390 [PID:3107] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:7.373426 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:7.373951 [PID:3109] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:7.373988 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:7.374025 [PID:3110] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:7.374062 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:7.374094 [PID:3109] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:7.374126 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:7.374677 [PID:3112] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:7.374714 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:8.343432 [PID:3017] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:8.343497 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:8.344466 [PID:3016] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:8.344504 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:8.345000 [PID:3020] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:8.345037 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:8.345373 [PID:3021] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:8.345407 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:8.346420 [PID:3022] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.346487 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.347465 [PID:3024] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:8.347497 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:8.347605 [PID:3025] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:8.347637 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:8.347666 [PID:3025] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:8.347693 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:8.348430 [PID:3026] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:8.348457 [PID:3028] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:8.348492 [PID:3026] - Producer: t[Q]   2->  3. 
+2013/4/5 21:36:8.348538 [PID:3027] - Producer: t[S]   3->  4. 
+2013/4/5 21:36:8.348585 [PID:3115] - Consumer: t[S]   4->  3. 
+2013/4/5 21:36:8.348605 [PID:3115] - Consumer: t[Q]   3->  2. 
+2013/4/5 21:36:8.348629 [PID:3116] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:8.348661 [PID:3030] - Producer: t[U]   1->  2. 
+2013/4/5 21:36:8.348705 [PID:3026] - Producer: t[D]   2->  3. 
+2013/4/5 21:36:8.348738 [PID:3114] - Consumer: t[D]   3->  2. 
+2013/4/5 21:36:8.348761 [PID:3114] - Consumer: t[U]   2->  1. 
+2013/4/5 21:36:8.348784 [PID:3026] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:8.348814 [PID:3115] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:8.348839 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:8.348866 [PID:3029] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:8.348908 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:8.350246 [PID:3031] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:8.350290 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:8.350477 [PID:3034] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:8.350521 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:8.350589 [PID:3035] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:8.350622 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:8.351251 [PID:3039] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:8.351303 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:8.351466 [PID:3041] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:8.351517 [PID:3040] - Producer: t[M]   1->  2. 
+2013/4/5 21:36:8.351556 [PID:3041] - Producer: t[W]   2->  3. 
+2013/4/5 21:36:8.351595 [PID:3114] - Consumer: t[W]   3->  2. 
+2013/4/5 21:36:8.351634 [PID:3116] - Consumer: t[M]   2->  1. 
+2013/4/5 21:36:8.351666 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:8.351696 [PID:3041] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:8.351729 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:8.352025 [PID:3042] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:8.352057 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:8.352088 [PID:3042] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:8.352122 [PID:3043] - Producer: t[M]   1->  2. 
+2013/4/5 21:36:8.352160 [PID:3115] - Consumer: t[M]   2->  1. 
+2013/4/5 21:36:8.352190 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:8.352589 [PID:3044] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:8.352626 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:8.353056 [PID:3038] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:8.353098 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:8.353254 [PID:3045] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:8.353292 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:8.353780 [PID:3046] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:8.353822 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:8.354100 [PID:3047] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:8.354135 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:8.354627 [PID:3048] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.354666 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.354695 [PID:3049] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:8.354733 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:8.354763 [PID:3049] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:8.354796 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:8.355195 [PID:3050] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:8.355232 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:8.355259 [PID:3050] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:8.355290 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:8.356027 [PID:3052] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:8.356060 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:8.356899 [PID:3056] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:8.356935 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:8.357544 [PID:3054] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:8.357581 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:8.357919 [PID:3060] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:8.357958 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:8.358027 [PID:3059] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:8.358061 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:8.358297 [PID:3061] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:8.358334 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:8.358968 [PID:3062] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:8.359008 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:8.359804 [PID:3065] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:8.359839 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:8.360650 [PID:3067] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:8.360685 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:8.360798 [PID:3069] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:8.360834 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:8.361582 [PID:3070] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:8.361624 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:8.361653 [PID:3070] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:8.361687 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:8.361717 [PID:3070] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.361752 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.361782 [PID:3070] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:8.361815 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:8.362027 [PID:3073] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:8.362060 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:8.362091 [PID:3073] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:8.362123 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:8.362692 [PID:3076] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:8.362726 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:8.363473 [PID:3077] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:8.363509 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:8.363540 [PID:3077] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:8.363575 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:8.363812 [PID:3079] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:8.363846 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:8.363878 [PID:3079] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:8.363907 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:8.363937 [PID:3079] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:8.363967 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:8.364285 [PID:3078] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:8.364323 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:8.364352 [PID:3078] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:8.364384 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:8.364424 [PID:3078] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:8.364459 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:8.365571 [PID:3081] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:8.365607 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:8.367116 [PID:3086] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:8.367153 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:8.367357 [PID:3084] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.367390 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.367417 [PID:3084] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:8.367446 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:8.367487 [PID:3088] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:8.367521 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:8.367605 [PID:3089] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.367641 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.367669 [PID:3089] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:8.367701 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:8.367838 [PID:3092] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:8.367870 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:8.371509 [PID:3098] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:8.371544 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:8.371584 [PID:3098] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:8.371614 [PID:3097] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:8.371652 [PID:3114] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:8.371686 [PID:3101] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:8.371723 [PID:3115] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:8.371754 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:8.371784 [PID:3101] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:8.371812 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:8.371918 [PID:3104] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:8.371956 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:8.372590 [PID:3106] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:8.372621 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:8.373252 [PID:3108] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:8.373285 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:8.374127 [PID:3110] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:8.374168 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:8.374758 [PID:3111] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:8.374797 [PID:3112] - Producer: t[B]   1->  2. 
+2013/4/5 21:36:8.374834 [PID:3111] - Producer: t[G]   2->  3. 
+2013/4/5 21:36:8.374865 [PID:3115] - Consumer: t[G]   3->  2. 
+2013/4/5 21:36:8.374897 [PID:3116] - Consumer: t[B]   2->  1. 
+2013/4/5 21:36:8.374929 [PID:3111] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:8.374956 [PID:3114] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:8.374988 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:8.375402 [PID:3113] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:8.375445 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:9.343290 [PID:3014] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:9.343357 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:9.344567 [PID:3016] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:9.344608 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:9.345099 [PID:3020] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:9.345133 [PID:3020] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:9.345159 [PID:3116] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:9.345194 [PID:3020] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:9.345223 [PID:3114] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:9.345259 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:9.346578 [PID:3019] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:9.346619 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:9.348879 [PID:3026] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:9.348914 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:9.349794 [PID:3032] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:9.349830 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:9.350519 [PID:3033] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:9.350562 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:9.350611 [PID:3034] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:9.350661 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:9.350697 [PID:3034] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:9.350730 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:9.351272 [PID:3037] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:9.351310 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:9.351345 [PID:3037] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:9.351377 [PID:3037] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:9.351403 [PID:3037] - Producer: t[Q]   2->  3. 
+2013/4/5 21:36:9.351435 [PID:3115] - Consumer: t[Q]   3->  2. 
+2013/4/5 21:36:9.351464 [PID:3115] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:9.351491 [PID:3037] - Producer: t[H]   1->  2. 
+2013/4/5 21:36:9.351528 [PID:3115] - Consumer: t[H]   2->  1. 
+2013/4/5 21:36:9.351560 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:9.352693 [PID:3044] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:9.352726 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:9.354208 [PID:3047] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:9.354241 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:9.355354 [PID:3051] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:9.355380 [PID:3051] - Producer: t[O]   1->  2. 
+2013/4/5 21:36:9.355397 [PID:3051] - Producer: t[R]   2->  3. 
+2013/4/5 21:36:9.355420 [PID:3114] - Consumer: t[R]   3->  2. 
+2013/4/5 21:36:9.355455 [PID:3115] - Consumer: t[O]   2->  1. 
+2013/4/5 21:36:9.355486 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:9.357274 [PID:3055] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:9.357304 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:9.357646 [PID:3054] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:9.357682 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:9.357710 [PID:3054] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:9.357739 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:9.358398 [PID:3061] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:9.358430 [PID:3061] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:9.358454 [PID:3115] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:9.358485 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:9.358589 [PID:3058] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:9.358631 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:9.358662 [PID:3058] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:9.358695 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:9.358726 [PID:3058] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:9.358757 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:9.359935 [PID:3065] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:9.359971 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:9.361923 [PID:3070] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:9.361962 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:9.363669 [PID:3077] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:9.363702 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:9.363790 [PID:3075] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:9.363819 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:9.364441 [PID:3080] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:9.364473 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:9.364521 [PID:3078] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:9.364551 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:9.365501 [PID:3082] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:9.365536 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:9.367493 [PID:3090] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:9.367527 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:9.367556 [PID:3090] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:9.367584 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:9.367765 [PID:3089] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:9.367796 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:9.368534 [PID:3093] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:9.368566 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:9.369021 [PID:3095] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:9.369054 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:9.369082 [PID:3095] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:9.369109 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:9.369454 [PID:3094] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:9.369520 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:9.371440 [PID:3100] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:9.371473 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:9.371656 [PID:3102] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:9.371689 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:9.371719 [PID:3097] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:9.371752 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:9.371876 [PID:3101] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:9.371908 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:9.372021 [PID:3104] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:9.372051 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:9.372684 [PID:3106] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:9.372715 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:9.372828 [PID:3105] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:9.372860 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:9.373349 [PID:3108] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:9.373396 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:9.373425 [PID:3108] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:9.373453 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:9.373490 [PID:3108] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:9.373519 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:9.374190 [PID:3109] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:9.374221 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:9.374249 [PID:3109] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:9.374277 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:9.374304 [PID:3109] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:9.374332 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:9.374901 [PID:3112] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:9.374933 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:9.374960 [PID:3112] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:9.374988 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:9.375551 [PID:3113] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:9.375597 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:10.344331 [PID:3015] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.344393 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.344527 [PID:3018] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:10.344591 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:10.344659 [PID:3016] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.344694 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.345288 [PID:3020] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:10.345321 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:10.345351 [PID:3020] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:10.345379 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:10.345481 [PID:3021] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.345513 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.345543 [PID:3021] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:10.345571 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:10.346493 [PID:3023] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:10.346535 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:10.346569 [PID:3023] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.346614 [PID:3022] - Producer: t[A]   1->  2. 
+2013/4/5 21:36:10.346652 [PID:3114] - Consumer: t[A]   2->  1. 
+2013/4/5 21:36:10.346691 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.347561 [PID:3024] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:10.347592 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:10.348557 [PID:3028] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:10.348589 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:10.348642 [PID:3027] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:10.348674 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:10.348775 [PID:3030] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:10.348812 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:10.348975 [PID:3029] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:10.349013 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:10.349903 [PID:3032] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:10.349932 [PID:3032] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:10.349956 [PID:3115] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:10.349989 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:10.350362 [PID:3031] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:10.350397 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:10.350545 [PID:3036] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:10.350578 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:10.350792 [PID:3034] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.350826 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.351372 [PID:3039] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:10.351414 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:10.351446 [PID:3039] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:10.351474 [PID:3039] - Producer: t[U]   1->  2. 
+2013/4/5 21:36:10.351501 [PID:3115] - Consumer: t[U]   2->  1. 
+2013/4/5 21:36:10.351534 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:10.351793 [PID:3041] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:10.351825 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:10.352197 [PID:3042] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:10.352239 [PID:3043] - Producer: t[J]   1->  2. 
+2013/4/5 21:36:10.352276 [PID:3115] - Consumer: t[J]   2->  1. 
+2013/4/5 21:36:10.352306 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:10.354753 [PID:3048] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:10.354792 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:10.354823 [PID:3048] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:10.354854 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:10.354884 [PID:3048] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:10.354915 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:10.355530 [PID:3051] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:10.355570 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:10.355601 [PID:3051] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:10.355636 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:10.355872 [PID:3053] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:10.355912 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:10.356125 [PID:3052] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:10.356165 [PID:3114] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:10.356196 [PID:3052] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.356231 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.357019 [PID:3056] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:10.357058 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:10.357829 [PID:3057] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.357863 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.358104 [PID:3060] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:10.358140 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:10.358174 [PID:3059] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:10.358214 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:10.358841 [PID:3058] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:10.358877 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:10.358908 [PID:3058] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:10.358938 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:10.359258 [PID:3063] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:10.359293 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:10.359324 [PID:3063] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:10.359354 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:10.359740 [PID:3064] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:10.359774 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:10.359804 [PID:3064] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:10.359835 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:10.359865 [PID:3064] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:10.359896 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:10.360966 [PID:3068] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:10.361016 [PID:3066] - Producer: t[H]   1->  2. 
+2013/4/5 21:36:10.361059 [PID:3115] - Consumer: t[H]   2->  1. 
+2013/4/5 21:36:10.361101 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:10.362189 [PID:3073] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:10.362228 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:10.362341 [PID:3071] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:10.362367 [PID:3071] - Producer: t[Q]   1->  2. 
+2013/4/5 21:36:10.362387 [PID:3116] - Consumer: t[Q]   2->  1. 
+2013/4/5 21:36:10.362425 [PID:3074] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:10.362456 [PID:3114] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:10.362486 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:10.362596 [PID:3072] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:10.362637 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:10.365601 [PID:3082] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:10.365634 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:10.365666 [PID:3082] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:10.365695 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:10.365727 [PID:3081] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:10.365762 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:10.365790 [PID:3081] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:10.365817 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:10.365896 [PID:3083] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:10.365950 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:10.367509 [PID:3084] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:10.367546 [PID:3087] - Producer: t[P]   1->  2. 
+2013/4/5 21:36:10.367589 [PID:3088] - Producer: t[X]   2->  3. 
+2013/4/5 21:36:10.367622 [PID:3114] - Consumer: t[X]   3->  2. 
+2013/4/5 21:36:10.367653 [PID:3115] - Consumer: t[P]   2->  1. 
+2013/4/5 21:36:10.367685 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:10.367976 [PID:3092] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:10.368016 [PID:3085] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:10.368054 [PID:3115] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:10.368088 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:10.368119 [PID:3085] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:10.368149 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:10.368629 [PID:3093] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:10.368662 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:10.369173 [PID:3095] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:10.369206 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:10.369272 [PID:3096] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:10.369303 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:10.371373 [PID:3099] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:10.371414 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:10.371538 [PID:3100] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:10.371572 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:10.371604 [PID:3091] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:10.371651 [PID:3100] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:10.371692 [PID:3098] - Producer: t[V]   2->  3. 
+2013/4/5 21:36:10.371737 [PID:3116] - Consumer: t[V]   3->  2. 
+2013/4/5 21:36:10.371778 [PID:3091] - Producer: t[X]   2->  3. 
+2013/4/5 21:36:10.371809 [PID:3115] - Consumer: t[X]   3->  2. 
+2013/4/5 21:36:10.371840 [PID:3115] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:10.371871 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:10.371908 [PID:3091] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:10.371942 [PID:3097] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:10.371981 [PID:3100] - Producer: t[C]   2->  3. 
+2013/4/5 21:36:10.372015 [PID:3115] - Consumer: t[C]   3->  2. 
+2013/4/5 21:36:10.372051 [PID:3116] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:10.372081 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:10.372128 [PID:3103] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:10.372174 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:10.373492 [PID:3107] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:10.373533 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:10.373583 [PID:3108] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:10.373621 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:10.373653 [PID:3108] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:10.373685 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:10.374233 [PID:3110] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:10.374272 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:10.374397 [PID:3109] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:10.374435 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:11.343561 [PID:3017] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:11.343630 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:11.344456 [PID:3015] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:11.344501 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:11.344747 [PID:3016] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:11.344785 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:11.344820 [PID:3016] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:11.344852 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:11.347656 [PID:3024] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:11.347696 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:11.347729 [PID:3024] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.347757 [PID:3025] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:11.347794 [PID:3114] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:11.347828 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.347861 [PID:3025] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:11.347897 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:11.348652 [PID:3028] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:11.348687 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:11.348737 [PID:3027] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:11.348773 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:11.348978 [PID:3026] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:11.349017 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:11.349089 [PID:3029] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:11.349128 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:11.350632 [PID:3033] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.350689 [PID:3035] - Producer: t[A]   1->  2. 
+2013/4/5 21:36:11.350733 [PID:3115] - Consumer: t[A]   2->  1. 
+2013/4/5 21:36:11.350769 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.351622 [PID:3040] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:11.351659 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:11.353164 [PID:3038] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:11.353202 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:11.353361 [PID:3045] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:11.353402 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:11.353887 [PID:3046] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:11.353927 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:11.353964 [PID:3046] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:11.353994 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:11.354860 [PID:3049] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:11.354894 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:11.355355 [PID:3050] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:11.355389 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:11.355424 [PID:3050] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:11.355453 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:11.355976 [PID:3053] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:11.356007 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:11.356042 [PID:3053] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:11.356072 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:11.356296 [PID:3052] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:11.356331 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:11.357805 [PID:3054] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:11.357845 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:11.357875 [PID:3054] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:11.357907 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:11.358205 [PID:3060] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:11.358240 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:11.358268 [PID:3060] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.358297 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.358516 [PID:3061] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:11.358551 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:11.358599 [PID:3061] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:11.358629 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:11.359002 [PID:3058] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:11.359035 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:11.359073 [PID:3062] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:11.359109 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:11.359418 [PID:3063] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:11.359451 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:11.359479 [PID:3063] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:11.359508 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:11.359960 [PID:3064] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:11.359995 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:11.360030 [PID:3064] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.360062 [PID:3065] - Producer: t[L]   1->  2. 
+2013/4/5 21:36:11.360097 [PID:3116] - Consumer: t[L]   2->  1. 
+2013/4/5 21:36:11.360132 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.360750 [PID:3067] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:11.360788 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:11.360898 [PID:3069] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:11.360934 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:11.362025 [PID:3070] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:11.362062 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:11.362291 [PID:3073] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:11.362325 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:11.362360 [PID:3073] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.362392 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.362517 [PID:3074] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:11.362551 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:11.362790 [PID:3076] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:11.362823 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:11.362859 [PID:3076] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:11.362889 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:11.364032 [PID:3079] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:11.364067 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:11.364534 [PID:3080] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:11.364567 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:11.364612 [PID:3078] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:11.364651 [PID:3116] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:11.367219 [PID:3086] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:11.367257 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:11.367612 [PID:3084] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:11.367651 [PID:3087] - Producer: t[F]   1->  2. 
+2013/4/5 21:36:11.367695 [PID:3116] - Consumer: t[F]   2->  1. 
+2013/4/5 21:36:11.367734 [PID:3090] - Producer: t[G]   1->  2. 
+2013/4/5 21:36:11.367770 [PID:3114] - Consumer: t[G]   2->  1. 
+2013/4/5 21:36:11.367804 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:11.367834 [PID:3090] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:11.367875 [PID:3089] - Producer: t[V]   1->  2. 
+2013/4/5 21:36:11.367912 [PID:3114] - Consumer: t[V]   2->  1. 
+2013/4/5 21:36:11.367944 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:11.369585 [PID:3094] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:11.369622 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:11.371477 [PID:3099] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:11.371516 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:11.371547 [PID:3099] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:11.371579 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:11.371753 [PID:3102] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:11.371789 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:11.371973 [PID:3101] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:11.372012 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:11.372043 [PID:3101] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:11.372075 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:11.372106 [PID:3101] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:11.372138 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:11.372186 [PID:3104] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:11.372226 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:11.373596 [PID:3107] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:11.373634 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:11.373665 [PID:3107] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:11.373699 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:11.374336 [PID:3110] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.374373 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:11.374498 [PID:3109] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:11.374533 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:11.374564 [PID:3109] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:11.374596 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:11.374625 [PID:3109] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:11.374659 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:11.375022 [PID:3111] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:11.375055 [PID:3112] - Producer: t[B]   1->  2. 
+2013/4/5 21:36:11.375090 [PID:3116] - Consumer: t[B]   2->  1. 
+2013/4/5 21:36:11.375122 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:11.375152 [PID:3112] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:11.375186 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:11.375663 [PID:3113] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:11.375699 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:12.343419 [PID:3014] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:12.343491 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:12.343768 [PID:3017] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:12.343812 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:12.343846 [PID:3017] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:12.343878 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:12.345636 [PID:3021] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:12.345671 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:12.346685 [PID:3019] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:12.346721 [PID:3022] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:12.346760 [PID:3114] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:12.346798 [PID:3023] - Producer: t[V]   1->  2. 
+2013/4/5 21:36:12.346836 [PID:3022] - Producer: t[L]   2->  3. 
+2013/4/5 21:36:12.346868 [PID:3116] - Consumer: t[L]   3->  2. 
+2013/4/5 21:36:12.346891 [PID:3116] - Consumer: t[V]   2->  1. 
+2013/4/5 21:36:12.346921 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:12.346951 [PID:3023] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:12.346977 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:12.348752 [PID:3028] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:12.348783 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:12.348880 [PID:3030] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:12.348917 [PID:3030] - Producer: t[O]   1->  2. 
+2013/4/5 21:36:12.348942 [PID:3116] - Consumer: t[O]   2->  1. 
+2013/4/5 21:36:12.348973 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:12.350018 [PID:3032] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:12.350055 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:12.350459 [PID:3031] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:12.350495 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:12.350644 [PID:3036] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:12.350678 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:12.350749 [PID:3033] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:12.350782 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:12.351596 [PID:3037] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:12.351638 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:12.352309 [PID:3042] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:12.352355 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:12.352791 [PID:3044] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:12.352824 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:12.353265 [PID:3038] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:12.353298 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:12.354312 [PID:3047] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:12.354346 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:12.354986 [PID:3048] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:12.355011 [PID:3048] - Producer: t[F]   1->  2. 
+2013/4/5 21:36:12.355035 [PID:3114] - Consumer: t[F]   2->  1. 
+2013/4/5 21:36:12.355067 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:12.357122 [PID:3056] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:12.357154 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:12.357363 [PID:3055] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:12.357387 [PID:3055] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:12.357406 [PID:3114] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:12.357436 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:12.357972 [PID:3054] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:12.358006 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:12.358277 [PID:3059] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:12.358303 [PID:3059] - Producer: t[G]   1->  2. 
+2013/4/5 21:36:12.358323 [PID:3114] - Consumer: t[G]   2->  1. 
+2013/4/5 21:36:12.358356 [PID:3059] - Producer: t[Z]   1->  2. 
+2013/4/5 21:36:12.358384 [PID:3116] - Consumer: t[Z]   2->  1. 
+2013/4/5 21:36:12.358418 [PID:3060] - Producer: t[Y]   1->  2. 
+2013/4/5 21:36:12.358452 [PID:3115] - Consumer: t[Y]   2->  1. 
+2013/4/5 21:36:12.358481 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:12.358693 [PID:3061] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:12.358723 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:12.360138 [PID:3064] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:12.360176 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:12.361111 [PID:3068] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:12.361148 [PID:3066] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:12.361187 [PID:3116] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:12.361215 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:12.362168 [PID:3070] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:12.362205 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:12.362234 [PID:3070] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:12.362264 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:12.362469 [PID:3071] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:12.362506 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:12.362538 [PID:3071] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:12.362568 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:12.362595 [PID:3071] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:12.362624 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:12.362654 [PID:3071] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:12.362685 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:12.362741 [PID:3072] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:12.362776 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:12.362973 [PID:3076] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:12.363007 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:12.363763 [PID:3077] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:12.363799 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:12.363881 [PID:3075] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:12.363915 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:12.366014 [PID:3083] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:12.366051 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:12.367321 [PID:3086] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:12.367354 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:12.367382 [PID:3086] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:12.367411 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:12.367941 [PID:3090] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:12.367975 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:12.368003 [PID:3090] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:12.368031 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:12.368059 [PID:3090] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:12.368087 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:12.368118 [PID:3090] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:12.368152 [PID:3092] - Producer: t[W]   1->  2. 
+2013/4/5 21:36:12.368190 [PID:3116] - Consumer: t[W]   2->  1. 
+2013/4/5 21:36:12.368220 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:12.369271 [PID:3095] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:12.369304 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:12.369336 [PID:3095] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:12.369367 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:12.369686 [PID:3094] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:12.369720 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:12.371801 [PID:3098] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:12.371834 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:12.371874 [PID:3102] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:12.371911 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:12.371938 [PID:3102] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:12.371966 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:12.371994 [PID:3102] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:12.372022 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:12.372052 [PID:3102] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:12.372082 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:12.372780 [PID:3106] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:12.372812 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:12.372840 [PID:3106] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:12.372868 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:12.372925 [PID:3105] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:12.372960 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:12.373762 [PID:3107] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:12.373795 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:12.375125 [PID:3111] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:12.375160 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:12.375251 [PID:3112] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:12.375286 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:13.343942 [PID:3017] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:13.344004 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:13.344654 [PID:3018] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:13.344725 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:13.344910 [PID:3016] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:13.344950 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:13.345443 [PID:3020] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:13.345485 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:13.345734 [PID:3021] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:13.345767 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:13.347041 [PID:3023] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:13.347080 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:13.347824 [PID:3024] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:13.347856 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:13.347959 [PID:3025] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:13.347992 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:13.348849 [PID:3028] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:13.348885 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:13.349198 [PID:3029] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:13.349239 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:13.350127 [PID:3032] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:13.350162 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:13.350742 [PID:3036] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:13.350778 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:13.350844 [PID:3033] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:13.350875 [PID:3033] - Producer: t[U]   1->  2. 
+2013/4/5 21:36:13.350899 [PID:3114] - Consumer: t[U]   2->  1. 
+2013/4/5 21:36:13.350932 [PID:3034] - Producer: t[Z]   1->  2. 
+2013/4/5 21:36:13.350967 [PID:3115] - Consumer: t[Z]   2->  1. 
+2013/4/5 21:36:13.350996 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:13.351574 [PID:3039] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:13.351620 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:13.351701 [PID:3037] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:13.351732 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:13.351897 [PID:3041] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:13.351934 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:13.352344 [PID:3043] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:13.352386 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:13.352438 [PID:3042] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:13.352476 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:13.353363 [PID:3038] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:13.353398 [PID:3116] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:13.353427 [PID:3038] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:13.353457 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:13.353505 [PID:3045] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:13.353543 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:13.354424 [PID:3047] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:13.354462 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:13.354979 [PID:3049] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:13.355018 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:13.355538 [PID:3050] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:13.355575 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:13.355768 [PID:3051] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:13.355793 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:13.357491 [PID:3055] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:13.357531 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:13.357930 [PID:3057] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:13.357966 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:13.359214 [PID:3062] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:13.359254 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:13.359287 [PID:3062] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:13.359321 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:13.359591 [PID:3063] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:13.359627 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:13.360231 [PID:3065] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:13.360263 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:13.360294 [PID:3065] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:13.360325 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:13.362638 [PID:3074] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:13.362675 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:13.363110 [PID:3076] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:13.363142 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:13.363883 [PID:3077] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:13.363918 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:13.364652 [PID:3080] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:13.364685 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:13.364716 [PID:3078] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:13.364749 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:13.365758 [PID:3082] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:13.365793 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:13.365882 [PID:3081] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:13.365918 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:13.366116 [PID:3083] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:13.366151 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:13.366182 [PID:3083] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:13.366211 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:13.366245 [PID:3083] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:13.366275 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:13.367689 [PID:3088] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:13.367724 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:13.367761 [PID:3087] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:13.367793 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:13.368296 [PID:3085] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:13.368334 [PID:3092] - Producer: t[O]   1->  2. 
+2013/4/5 21:36:13.368370 [PID:3115] - Consumer: t[O]   2->  1. 
+2013/4/5 21:36:13.368404 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:13.368434 [PID:3092] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:13.368465 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:13.368728 [PID:3093] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:13.368765 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:13.369369 [PID:3096] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:13.369405 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:13.369432 [PID:3096] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:13.369461 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:13.369529 [PID:3096] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:13.369562 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:13.372026 [PID:3091] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:13.372080 [PID:3097] - Producer: t[K]   1->  2. 
+2013/4/5 21:36:13.372118 [PID:3100] - Producer: t[W]   2->  3. 
+2013/4/5 21:36:13.372153 [PID:3116] - Consumer: t[W]   3->  2. 
+2013/4/5 21:36:13.372183 [PID:3114] - Consumer: t[K]   2->  1. 
+2013/4/5 21:36:13.372218 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:13.372250 [PID:3103] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:13.372297 [PID:3104] - Producer: t[A]   1->  2. 
+2013/4/5 21:36:13.372331 [PID:3114] - Consumer: t[A]   2->  1. 
+2013/4/5 21:36:13.372366 [PID:3104] - Producer: t[F]   1->  2. 
+2013/4/5 21:36:13.372397 [PID:3100] - Producer: t[W]   2->  3. 
+2013/4/5 21:36:13.372425 [PID:3116] - Consumer: t[W]   3->  2. 
+2013/4/5 21:36:13.372454 [PID:3115] - Consumer: t[F]   2->  1. 
+2013/4/5 21:36:13.372484 [PID:3104] - Producer: t[U]   1->  2. 
+2013/4/5 21:36:13.372514 [PID:3114] - Consumer: t[U]   2->  1. 
+2013/4/5 21:36:13.372549 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:13.372933 [PID:3106] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:13.372965 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:13.372994 [PID:3106] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:13.373025 [PID:3105] - Producer: t[S]   1->  2. 
+2013/4/5 21:36:13.373059 [PID:3114] - Consumer: t[S]   2->  1. 
+2013/4/5 21:36:13.373093 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:13.373749 [PID:3108] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:13.373783 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:13.374438 [PID:3110] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:13.374473 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:13.374508 [PID:3110] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:13.374537 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:13.374722 [PID:3109] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:13.374755 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:13.375225 [PID:3111] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:13.375258 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:13.375293 [PID:3111] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:13.375323 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:13.375845 [PID:3113] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:13.375883 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:13.375909 [PID:3113] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:13.375941 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:13.375968 [PID:3113] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:13.376001 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:13.376031 [PID:3113] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:13.376070 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:14.343554 [PID:3014] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:14.343622 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:14.343687 [PID:3014] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:14.343727 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:14.344561 [PID:3015] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.344597 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.344800 [PID:3018] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.344827 [PID:3018] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:14.344847 [PID:3116] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:14.344878 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.345832 [PID:3021] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:14.345865 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:14.347144 [PID:3023] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:14.347171 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:14.348055 [PID:3025] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:14.348089 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:14.348128 [PID:3025] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:14.348157 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:14.348182 [PID:3025] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.348211 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.348837 [PID:3027] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:14.348868 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:14.348950 [PID:3028] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:14.348987 [PID:3115] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:14.349036 [PID:3030] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:14.349065 [PID:3030] - Producer: t[P]   1->  2. 
+2013/4/5 21:36:14.349095 [PID:3116] - Consumer: t[P]   2->  1. 
+2013/4/5 21:36:14.349131 [PID:3026] - Producer: t[X]   1->  2. 
+2013/4/5 21:36:14.349168 [PID:3030] - Producer: t[X]   2->  3. 
+2013/4/5 21:36:14.349198 [PID:3116] - Consumer: t[X]   3->  2. 
+2013/4/5 21:36:14.349227 [PID:3026] - Producer: t[T]   2->  3. 
+2013/4/5 21:36:14.349258 [PID:3115] - Consumer: t[T]   3->  2. 
+2013/4/5 21:36:14.349284 [PID:3114] - Consumer: t[X]   2->  1. 
+2013/4/5 21:36:14.349302 [PID:3029] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:14.349336 [PID:3026] - Producer: t[X]   2->  3. 
+2013/4/5 21:36:14.349369 [PID:3116] - Consumer: t[X]   3->  2. 
+2013/4/5 21:36:14.349399 [PID:3115] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:14.349420 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:14.350233 [PID:3032] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:14.350274 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:14.350307 [PID:3032] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.350338 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.350366 [PID:3032] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:14.350394 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:14.350801 [PID:3035] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:14.350835 [PID:3116] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:14.350862 [PID:3035] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.350891 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.350921 [PID:3035] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:14.350951 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:14.350983 [PID:3033] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:14.351017 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:14.351052 [PID:3034] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:14.351086 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:14.351694 [PID:3039] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.351724 [PID:3040] - Producer: t[E]   1->  2. 
+2013/4/5 21:36:14.351760 [PID:3114] - Consumer: t[E]   2->  1. 
+2013/4/5 21:36:14.351792 [PID:3037] - Producer: t[L]   1->  2. 
+2013/4/5 21:36:14.351824 [PID:3116] - Consumer: t[L]   2->  1. 
+2013/4/5 21:36:14.351854 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:14.351883 [PID:3037] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:14.351917 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:14.352560 [PID:3042] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:14.352593 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:14.352623 [PID:3042] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.352652 [PID:3115] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.353521 [PID:3038] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.353557 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:14.353587 [PID:3038] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:14.353617 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:14.353646 [PID:3038] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:14.353676 [PID:3045] - Producer: t[W]   1->  2. 
+2013/4/5 21:36:14.353711 [PID:3115] - Consumer: t[W]   2->  1. 
+2013/4/5 21:36:14.353730 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:14.354078 [PID:3046] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.354113 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.355106 [PID:3049] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:14.355142 [PID:3048] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:14.355186 [PID:3115] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:14.355221 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:14.355660 [PID:3050] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.355693 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.356238 [PID:3053] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:14.356273 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:14.356395 [PID:3052] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:14.356428 [PID:3114] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:14.357252 [PID:3056] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:14.357283 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:14.358031 [PID:3057] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:14.358068 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:14.358490 [PID:3059] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:14.358521 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:14.358806 [PID:3061] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:14.358839 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:14.359099 [PID:3058] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.359133 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:14.359161 [PID:3058] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.359188 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.360479 [PID:3065] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:14.360510 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:14.360541 [PID:3065] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.360571 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:14.360855 [PID:3067] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:14.360893 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:14.361019 [PID:3069] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:14.361050 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:14.361263 [PID:3066] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.361297 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.362328 [PID:3070] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.362361 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:14.362455 [PID:3073] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:14.362489 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:14.362760 [PID:3074] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:14.362794 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:14.363266 [PID:3076] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:14.363297 [PID:3114] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:14.364000 [PID:3075] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.364039 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.364069 [PID:3075] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.364102 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.364131 [PID:3079] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:14.364167 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:14.364199 [PID:3079] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:14.364235 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:14.364833 [PID:3078] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:14.364872 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:14.364903 [PID:3078] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.364933 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.365858 [PID:3082] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.365895 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.365924 [PID:3082] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.365953 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.365981 [PID:3081] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:14.366017 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:14.366338 [PID:3083] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:14.366372 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:14.367474 [PID:3086] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:14.367507 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:14.367728 [PID:3084] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:14.367773 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:14.367858 [PID:3087] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:14.367893 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:14.367921 [PID:3087] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:14.367950 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:14.367997 [PID:3089] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:14.368033 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:14.368216 [PID:3090] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:14.368250 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:14.368611 [PID:3092] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:14.368649 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:14.368680 [PID:3092] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:14.368711 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:14.369627 [PID:3096] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:14.369665 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:14.371643 [PID:3099] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:14.371677 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:14.371916 [PID:3098] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:14.371951 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:14.371986 [PID:3098] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:14.372015 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:14.372041 [PID:3098] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:14.372069 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:14.372183 [PID:3091] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:14.372232 [PID:3101] - Producer: t[D]   1->  2. 
+2013/4/5 21:36:14.372268 [PID:3114] - Consumer: t[D]   2->  1. 
+2013/4/5 21:36:14.372304 [PID:3091] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:14.372336 [PID:3116] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:14.372369 [PID:3103] - Producer: t[P]   1->  2. 
+2013/4/5 21:36:14.372424 [PID:3091] - Producer: t[A]   2->  3. 
+2013/4/5 21:36:14.372463 [PID:3115] - Consumer: t[A]   3->  2. 
+2013/4/5 21:36:14.372496 [PID:3114] - Consumer: t[P]   2->  1. 
+2013/4/5 21:36:14.372529 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:14.372559 [PID:3091] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:14.372596 [PID:3104] - Producer: t[N]   1->  2. 
+2013/4/5 21:36:14.372630 [PID:3115] - Consumer: t[N]   2->  1. 
+2013/4/5 21:36:14.372663 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:14.372696 [PID:3104] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:14.372724 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:14.373087 [PID:3106] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:14.373120 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:14.373154 [PID:3106] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:14.373185 [PID:3105] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:14.373221 [PID:3114] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:14.373255 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:14.373285 [PID:3105] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:14.373317 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:14.373848 [PID:3108] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:14.373884 [PID:3107] - Producer: t[Z]   1->  2. 
+2013/4/5 21:36:14.373921 [PID:3114] - Consumer: t[Z]   2->  1. 
+2013/4/5 21:36:14.373956 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:14.399952 [PID:3110] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:14.400002 [PID:3112] - Producer: t[H]   1->  2. 
+2013/4/5 21:36:14.400041 [PID:3115] - Consumer: t[H]   2->  1. 
+2013/4/5 21:36:14.400084 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:15.344913 [PID:3018] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:15.344989 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:15.345054 [PID:3018] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:15.345092 [PID:3018] - Producer: t[Q]   1->  2. 
+2013/4/5 21:36:15.345129 [PID:3018] - Producer: t[V]   2->  3. 
+2013/4/5 21:36:15.345154 [PID:3116] - Consumer: t[V]   3->  2. 
+2013/4/5 21:36:15.345186 [PID:3115] - Consumer: t[Q]   2->  1. 
+2013/4/5 21:36:15.345215 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:15.345914 [PID:3021] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:15.345954 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:15.346802 [PID:3019] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:15.346852 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:15.346935 [PID:3022] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:15.346974 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:15.347922 [PID:3024] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:15.347956 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:15.348275 [PID:3025] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:15.348307 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:15.348934 [PID:3027] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:15.348969 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:15.349052 [PID:3028] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:15.349087 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:15.349435 [PID:3026] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:15.349474 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:15.350561 [PID:3031] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:15.350599 [PID:3031] - Producer: t[M]   1->  2. 
+2013/4/5 21:36:15.350631 [PID:3031] - Producer: t[R]   2->  3. 
+2013/4/5 21:36:15.350670 [PID:3116] - Consumer: t[R]   3->  2. 
+2013/4/5 21:36:15.350704 [PID:3114] - Consumer: t[M]   2->  1. 
+2013/4/5 21:36:15.350738 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:15.351015 [PID:3035] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:15.351049 [PID:3116] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:15.351085 [PID:3033] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:15.351125 [PID:3114] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:15.351157 [PID:3033] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:15.351199 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:15.351795 [PID:3039] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:15.351830 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:15.352451 [PID:3043] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:15.352492 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:15.352524 [PID:3043] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:15.352565 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:15.352719 [PID:3042] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:15.352758 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:15.352890 [PID:3044] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:15.352934 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:15.353745 [PID:3038] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:15.353794 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:15.353837 [PID:3045] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:15.353877 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:15.354178 [PID:3046] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:15.354215 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:15.354547 [PID:3047] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:15.354580 [PID:3115] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:15.355206 [PID:3049] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:15.355240 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:15.355271 [PID:3049] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:15.355302 [PID:3114] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:15.355778 [PID:3050] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:15.355812 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:15.356573 [PID:3052] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:15.356610 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:15.357637 [PID:3055] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:15.357675 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:15.357706 [PID:3055] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:15.357736 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:15.358073 [PID:3054] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:15.358109 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:15.358521 [PID:3060] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:15.358553 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:15.358924 [PID:3061] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:15.358957 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:15.358987 [PID:3061] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:15.359016 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:15.359407 [PID:3062] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:15.359442 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:15.359713 [PID:3063] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:15.359746 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:15.360238 [PID:3064] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:15.360272 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:15.360736 [PID:3065] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:15.360775 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:15.361136 [PID:3069] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:15.361175 [PID:3115] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:15.361215 [PID:3068] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:15.361252 [PID:3116] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:15.362770 [PID:3071] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:15.362809 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:15.362862 [PID:3072] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:15.362901 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:15.367571 [PID:3086] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:15.367610 [PID:3116] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:15.367788 [PID:3088] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:15.367822 [PID:3114] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:15.368796 [PID:3092] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:15.368829 [PID:3093] - Producer: t[R]   1->  2. 
+2013/4/5 21:36:15.368864 [PID:3115] - Consumer: t[R]   2->  1. 
+2013/4/5 21:36:15.368897 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:15.369430 [PID:3095] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:15.369461 [PID:3114] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:15.369499 [PID:3095] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:15.369529 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:15.369558 [PID:3095] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:15.369589 [PID:3116] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:15.369785 [PID:3094] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:15.369817 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:15.372146 [PID:3102] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:15.372179 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:15.372492 [PID:3103] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:15.372526 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:15.372702 [PID:3091] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:15.372737 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:15.374819 [PID:3109] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:15.374854 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:16.344072 [PID:3017] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:16.344134 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:16.344662 [PID:3015] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:16.344700 [PID:3015] - Producer: t[F]   1->  2. 
+2013/4/5 21:36:16.344727 [PID:3114] - Consumer: t[F]   2->  1. 
+2013/4/5 21:36:16.344768 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:16.345010 [PID:3016] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:16.345045 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:16.345074 [PID:3016] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:16.345103 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:16.345208 [PID:3018] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:16.345259 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:16.345551 [PID:3020] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:16.345586 [PID:3116] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:16.345614 [PID:3020] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:16.345643 [PID:3114] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:16.349149 [PID:3028] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:16.349182 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:16.349546 [PID:3026] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:16.349582 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:16.350842 [PID:3036] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:16.350876 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:16.351265 [PID:3033] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:16.351307 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:16.352008 [PID:3041] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:16.352043 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:16.352833 [PID:3042] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:16.352874 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:16.352919 [PID:3042] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:16.352954 [PID:3042] - Producer: t[H]   1->  2. 
+2013/4/5 21:36:16.352985 [PID:3115] - Consumer: t[H]   2->  1. 
+2013/4/5 21:36:16.353021 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:16.353857 [PID:3038] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:16.353894 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:16.353964 [PID:3045] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:16.354000 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:16.354298 [PID:3046] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:16.354333 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:16.354647 [PID:3047] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:16.354682 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:16.355312 [PID:3048] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.355353 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:16.355381 [PID:3048] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:16.355414 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:16.355877 [PID:3051] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:16.355917 [PID:3050] - Producer: t[C]   1->  2. 
+2013/4/5 21:36:16.355950 [PID:3114] - Consumer: t[C]   2->  1. 
+2013/4/5 21:36:16.355986 [PID:3115] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:16.356358 [PID:3053] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:16.356395 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:16.357389 [PID:3056] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:16.357425 [PID:3114] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:16.358135 [PID:3057] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:16.358169 [PID:3054] - Producer: t[N]   1->  2. 
+2013/4/5 21:36:16.358206 [PID:3115] - Consumer: t[N]   2->  1. 
+2013/4/5 21:36:16.358243 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:16.358274 [PID:3054] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:16.358301 [PID:3114] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:16.358329 [PID:3054] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:16.358357 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:16.359293 [PID:3058] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:16.359328 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:16.359359 [PID:3058] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:16.359389 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:16.360921 [PID:3065] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:16.360959 [PID:3115] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:16.362448 [PID:3070] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:16.362484 [PID:3116] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:16.362893 [PID:3071] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:16.362928 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:16.364043 [PID:3077] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.364082 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:16.364770 [PID:3080] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:16.364809 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:16.367838 [PID:3084] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:16.367872 [PID:3114] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:16.368097 [PID:3089] - Producer: t[S]   0->  1. 
+2013/4/5 21:36:16.368131 [PID:3115] - Consumer: t[S]   1->  0. 
+2013/4/5 21:36:16.368315 [PID:3090] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.368359 [PID:3116] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:16.368460 [PID:3085] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:16.368497 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:16.369651 [PID:3095] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:16.369685 [PID:3115] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:16.372185 [PID:3097] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:16.372220 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:16.372259 [PID:3102] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.372292 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:16.372336 [PID:3101] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:16.372369 [PID:3115] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:16.372493 [PID:3100] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:16.372527 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:16.373381 [PID:3105] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.373415 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:16.373951 [PID:3108] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:16.373984 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:16.374919 [PID:3109] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:16.374954 [PID:3116] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:16.375386 [PID:3111] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:16.375417 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:16.375446 [PID:3111] - Producer: t[O]   0->  1. 
+2013/4/5 21:36:16.375474 [PID:3115] - Consumer: t[O]   1->  0. 
+2013/4/5 21:36:16.376194 [PID:3113] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:16.376227 [PID:3116] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:16.400142 [PID:3112] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:16.400194 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:17.343782 [PID:3014] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:17.343847 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:17.344794 [PID:3015] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:17.344839 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:17.346913 [PID:3019] - Producer: t[C]   0->  1. 
+2013/4/5 21:36:17.346961 [PID:3114] - Consumer: t[C]   1->  0. 
+2013/4/5 21:36:17.347038 [PID:3022] - Producer: t[T]   0->  1. 
+2013/4/5 21:36:17.347072 [PID:3115] - Consumer: t[T]   1->  0. 
+2013/4/5 21:36:17.347235 [PID:3023] - Producer: t[A]   0->  1. 
+2013/4/5 21:36:17.347267 [PID:3116] - Consumer: t[A]   1->  0. 
+2013/4/5 21:36:17.348022 [PID:3024] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:17.348054 [PID:3114] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:17.349033 [PID:3027] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:17.349067 [PID:3115] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:17.349262 [PID:3030] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:17.349294 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:17.349325 [PID:3030] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:17.349355 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:17.349401 [PID:3029] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:17.349443 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:17.349646 [PID:3026] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:17.349682 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:17.350461 [PID:3032] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:17.350498 [PID:3114] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:17.350739 [PID:3031] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:17.350774 [PID:3031] - Producer: t[T]   1->  2. 
+2013/4/5 21:36:17.350799 [PID:3116] - Consumer: t[T]   2->  1. 
+2013/4/5 21:36:17.350831 [PID:3115] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:17.351151 [PID:3034] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:17.351186 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:17.351827 [PID:3040] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:17.351862 [PID:3116] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:17.351983 [PID:3037] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:17.352034 [PID:3115] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:17.352108 [PID:3041] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:17.352143 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:17.352624 [PID:3043] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:17.352662 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:17.352693 [PID:3043] - Producer: t[F]   0->  1. 
+2013/4/5 21:36:17.352730 [PID:3115] - Consumer: t[F]   1->  0. 
+2013/4/5 21:36:17.353000 [PID:3044] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:17.353040 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:17.353073 [PID:3042] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:17.353109 [PID:3116] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:17.355984 [PID:3051] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:17.356022 [PID:3115] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:17.356458 [PID:3053] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:17.356494 [PID:3114] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:17.357490 [PID:3056] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:17.357526 [PID:3116] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:17.358236 [PID:3057] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:17.358268 [PID:3115] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:17.358586 [PID:3059] - Producer: t[R]   0->  1. 
+2013/4/5 21:36:17.358619 [PID:3114] - Consumer: t[R]   1->  0. 
+2013/4/5 21:36:17.359080 [PID:3061] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:17.359116 [PID:3116] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:17.359146 [PID:3061] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:17.359177 [PID:3115] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:17.360336 [PID:3064] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:17.360370 [PID:3114] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:17.360957 [PID:3067] - Producer: t[I]   0->  1. 
+2013/4/5 21:36:17.360989 [PID:3116] - Consumer: t[I]   1->  0. 
+2013/4/5 21:36:17.361024 [PID:3065] - Producer: t[Y]   0->  1. 
+2013/4/5 21:36:17.361059 [PID:3115] - Consumer: t[Y]   1->  0. 
+2013/4/5 21:36:17.361239 [PID:3069] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:17.361273 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:17.361317 [PID:3068] - Producer: t[U]   0->  1. 
+2013/4/5 21:36:17.361352 [PID:3116] - Consumer: t[U]   1->  0. 
+2013/4/5 21:36:17.361383 [PID:3066] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:17.361416 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:17.362554 [PID:3073] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:17.362589 [PID:3114] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:17.362859 [PID:3074] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:17.362894 [PID:3116] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:17.363362 [PID:3076] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:17.363397 [PID:3115] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:17.364149 [PID:3077] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:17.364183 [PID:3075] - Producer: t[L]   1->  2. 
+2013/4/5 21:36:17.364217 [PID:3114] - Consumer: t[L]   2->  1. 
+2013/4/5 21:36:17.364247 [PID:3077] - Producer: t[I]   1->  2. 
+2013/4/5 21:36:17.364277 [PID:3116] - Consumer: t[I]   2->  1. 
+2013/4/5 21:36:17.364315 [PID:3079] - Producer: t[N]   1->  2. 
+2013/4/5 21:36:17.364348 [PID:3115] - Consumer: t[N]   2->  1. 
+2013/4/5 21:36:17.364379 [PID:3114] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:17.364998 [PID:3078] - Producer: t[N]   0->  1. 
+2013/4/5 21:36:17.365033 [PID:3116] - Consumer: t[N]   1->  0. 
+2013/4/5 21:36:17.366016 [PID:3082] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:17.366052 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:17.366081 [PID:3081] - Producer: t[J]   0->  1. 
+2013/4/5 21:36:17.366115 [PID:3114] - Consumer: t[J]   1->  0. 
+2013/4/5 21:36:17.366142 [PID:3081] - Producer: t[Z]   0->  1. 
+2013/4/5 21:36:17.366169 [PID:3116] - Consumer: t[Z]   1->  0. 
+2013/4/5 21:36:17.366436 [PID:3083] - Producer: t[L]   0->  1. 
+2013/4/5 21:36:17.366469 [PID:3115] - Consumer: t[L]   1->  0. 
+2013/4/5 21:36:17.367886 [PID:3088] - Producer: t[G]   0->  1. 
+2013/4/5 21:36:17.367921 [PID:3114] - Consumer: t[G]   1->  0. 
+2013/4/5 21:36:17.368013 [PID:3087] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:17.368044 [PID:3116] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:17.368072 [PID:3087] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:17.368101 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:17.368131 [PID:3087] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:17.368160 [PID:3114] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:17.368195 [PID:3089] - Producer: t[K]   0->  1. 
+2013/4/5 21:36:17.368227 [PID:3116] - Consumer: t[K]   1->  0. 
+2013/4/5 21:36:17.368901 [PID:3092] - Producer: t[V]   0->  1. 
+2013/4/5 21:36:17.368934 [PID:3093] - Producer: t[V]   1->  2. 
+2013/4/5 21:36:17.368970 [PID:3115] - Consumer: t[V]   2->  1. 
+2013/4/5 21:36:17.369001 [PID:3114] - Consumer: t[V]   1->  0. 
+2013/4/5 21:36:17.369032 [PID:3093] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:17.369059 [PID:3116] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:17.369731 [PID:3096] - Producer: t[X]   0->  1. 
+2013/4/5 21:36:17.369767 [PID:3115] - Consumer: t[X]   1->  0. 
+2013/4/5 21:36:17.369797 [PID:3096] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:17.369827 [PID:3114] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:17.369881 [PID:3094] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:17.369913 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:17.371740 [PID:3099] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:17.371775 [PID:3115] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:17.372134 [PID:3098] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:17.372168 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:17.372283 [PID:3097] - Producer: t[P]   0->  1. 
+2013/4/5 21:36:17.372313 [PID:3116] - Consumer: t[P]   1->  0. 
+2013/4/5 21:36:17.372341 [PID:3097] - Producer: t[W]   0->  1. 
+2013/4/5 21:36:17.372369 [PID:3115] - Consumer: t[W]   1->  0. 
+2013/4/5 21:36:17.372432 [PID:3101] - Producer: t[M]   0->  1. 
+2013/4/5 21:36:17.372466 [PID:3114] - Consumer: t[M]   1->  0. 
+2013/4/5 21:36:17.372591 [PID:3100] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:17.372622 [PID:3116] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:17.372789 [PID:3104] - Producer: t[D]   0->  1. 
+2013/4/5 21:36:17.372826 [PID:3091] - Producer: t[B]   1->  2. 
+2013/4/5 21:36:17.372870 [PID:3114] - Consumer: t[B]   2->  1. 
+2013/4/5 21:36:17.372902 [PID:3115] - Consumer: t[D]   1->  0. 
+2013/4/5 21:36:17.373250 [PID:3106] - Producer: t[B]   0->  1. 
+2013/4/5 21:36:17.373285 [PID:3116] - Consumer: t[B]   1->  0. 
+2013/4/5 21:36:17.373313 [PID:3106] - Producer: t[Q]   0->  1. 
+2013/4/5 21:36:17.373340 [PID:3114] - Consumer: t[Q]   1->  0. 
+2013/4/5 21:36:17.373989 [PID:3107] - Producer: t[H]   0->  1. 
+2013/4/5 21:36:17.374023 [PID:3115] - Consumer: t[H]   1->  0. 
+2013/4/5 21:36:17.375019 [PID:3109] - Producer: t[E]   0->  1. 
+2013/4/5 21:36:17.375054 [PID:3116] - Consumer: t[E]   1->  0. 
+2013/4/5 21:36:17.376400 [PID:3007] - Process [PID:3017] exitid with status: 0 
+2013/4/5 21:36:17.376569 [PID:3007] - Process [PID:3014] exitid with status: 0 
+2013/4/5 21:36:17.376617 [PID:3007] - Process [PID:3018] exitid with status: 0 
+2013/4/5 21:36:17.376852 [PID:3007] - Process [PID:3023] exitid with status: 0 
+2013/4/5 21:36:17.376898 [PID:3007] - Process [PID:3016] exitid with status: 0 
+2013/4/5 21:36:17.377089 [PID:3007] - Process [PID:3015] exitid with status: 0 
+2013/4/5 21:36:17.377163 [PID:3007] - Process [PID:3019] exitid with status: 0 
+2013/4/5 21:36:17.377488 [PID:3007] - Process [PID:3020] exitid with status: 0 
+2013/4/5 21:36:17.377532 [PID:3007] - Process [PID:3021] exitid with status: 0 
+2013/4/5 21:36:17.377553 [PID:3007] - Process [PID:3029] exitid with status: 0 
+2013/4/5 21:36:17.377612 [PID:3007] - Process [PID:3024] exitid with status: 0 
+2013/4/5 21:36:17.377676 [PID:3007] - Process [PID:3025] exitid with status: 0 
+2013/4/5 21:36:17.377721 [PID:3007] - Process [PID:3022] exitid with status: 0 
+2013/4/5 21:36:17.377749 [PID:3007] - Process [PID:3026] exitid with status: 0 
+2013/4/5 21:36:17.377776 [PID:3007] - Process [PID:3027] exitid with status: 0 
+2013/4/5 21:36:17.377803 [PID:3007] - Process [PID:3028] exitid with status: 0 
+2013/4/5 21:36:17.377829 [PID:3007] - Process [PID:3030] exitid with status: 0 
+2013/4/5 21:36:17.377855 [PID:3007] - Process [PID:3031] exitid with status: 0 
+2013/4/5 21:36:17.378117 [PID:3007] - Process [PID:3032] exitid with status: 0 
+2013/4/5 21:36:17.378147 [PID:3007] - Process [PID:3033] exitid with status: 0 
+2013/4/5 21:36:17.378173 [PID:3007] - Process [PID:3034] exitid with status: 0 
+2013/4/5 21:36:17.378199 [PID:3007] - Process [PID:3035] exitid with status: 0 
+2013/4/5 21:36:17.378226 [PID:3007] - Process [PID:3036] exitid with status: 0 
+2013/4/5 21:36:17.378255 [PID:3007] - Process [PID:3037] exitid with status: 0 
+2013/4/5 21:36:17.378282 [PID:3007] - Process [PID:3039] exitid with status: 0 
+2013/4/5 21:36:17.378311 [PID:3007] - Process [PID:3040] exitid with status: 0 
+2013/4/5 21:36:17.378338 [PID:3007] - Process [PID:3043] exitid with status: 0 
+2013/4/5 21:36:17.378696 [PID:3007] - Process [PID:3041] exitid with status: 0 
+2013/4/5 21:36:17.378733 [PID:3007] - Process [PID:3042] exitid with status: 0 
+2013/4/5 21:36:17.378952 [PID:3007] - Process [PID:3038] exitid with status: 0 
+2013/4/5 21:36:17.378982 [PID:3007] - Process [PID:3044] exitid with status: 0 
+2013/4/5 21:36:17.379022 [PID:3007] - Process [PID:3045] exitid with status: 0 
+2013/4/5 21:36:17.379050 [PID:3007] - Process [PID:3046] exitid with status: 0 
+2013/4/5 21:36:17.379079 [PID:3007] - Process [PID:3047] exitid with status: 0 
+2013/4/5 21:36:17.379108 [PID:3007] - Process [PID:3048] exitid with status: 0 
+2013/4/5 21:36:17.379135 [PID:3007] - Process [PID:3049] exitid with status: 0 
+2013/4/5 21:36:17.403127 [PID:3007] - Process [PID:3050] exitid with status: 0 
+2013/4/5 21:36:17.403175 [PID:3007] - Process [PID:3051] exitid with status: 0 
+2013/4/5 21:36:17.403196 [PID:3007] - Process [PID:3052] exitid with status: 0 
+2013/4/5 21:36:17.403216 [PID:3007] - Process [PID:3053] exitid with status: 0 
+2013/4/5 21:36:17.403237 [PID:3007] - Process [PID:3054] exitid with status: 0 
+2013/4/5 21:36:17.403256 [PID:3007] - Process [PID:3055] exitid with status: 0 
+2013/4/5 21:36:17.403276 [PID:3007] - Process [PID:3056] exitid with status: 0 
+2013/4/5 21:36:17.403295 [PID:3007] - Process [PID:3057] exitid with status: 0 
+2013/4/5 21:36:17.403314 [PID:3007] - Process [PID:3058] exitid with status: 0 
+2013/4/5 21:36:17.403334 [PID:3007] - Process [PID:3059] exitid with status: 0 
+2013/4/5 21:36:17.403354 [PID:3007] - Process [PID:3060] exitid with status: 0 
+2013/4/5 21:36:17.403374 [PID:3007] - Process [PID:3061] exitid with status: 0 
+2013/4/5 21:36:17.403394 [PID:3007] - Process [PID:3062] exitid with status: 0 
+2013/4/5 21:36:17.403414 [PID:3007] - Process [PID:3063] exitid with status: 0 
+2013/4/5 21:36:17.403434 [PID:3007] - Process [PID:3064] exitid with status: 0 
+2013/4/5 21:36:17.403453 [PID:3007] - Process [PID:3065] exitid with status: 0 
+2013/4/5 21:36:17.403472 [PID:3007] - Process [PID:3066] exitid with status: 0 
+2013/4/5 21:36:17.403491 [PID:3007] - Process [PID:3067] exitid with status: 0 
+2013/4/5 21:36:17.403510 [PID:3007] - Process [PID:3068] exitid with status: 0 
+2013/4/5 21:36:17.403530 [PID:3007] - Process [PID:3069] exitid with status: 0 
+2013/4/5 21:36:17.403549 [PID:3007] - Process [PID:3070] exitid with status: 0 
+2013/4/5 21:36:17.403568 [PID:3007] - Process [PID:3071] exitid with status: 0 
+2013/4/5 21:36:17.403588 [PID:3007] - Process [PID:3072] exitid with status: 0 
+2013/4/5 21:36:17.403607 [PID:3007] - Process [PID:3073] exitid with status: 0 
+2013/4/5 21:36:17.403626 [PID:3007] - Process [PID:3074] exitid with status: 0 
+2013/4/5 21:36:17.403646 [PID:3007] - Process [PID:3075] exitid with status: 0 
+2013/4/5 21:36:17.403666 [PID:3007] - Process [PID:3076] exitid with status: 0 
+2013/4/5 21:36:17.403688 [PID:3007] - Process [PID:3077] exitid with status: 0 
+2013/4/5 21:36:17.403707 [PID:3007] - Process [PID:3078] exitid with status: 0 
+2013/4/5 21:36:17.403727 [PID:3007] - Process [PID:3079] exitid with status: 0 
+2013/4/5 21:36:17.403746 [PID:3007] - Process [PID:3080] exitid with status: 0 
+2013/4/5 21:36:17.403765 [PID:3007] - Process [PID:3081] exitid with status: 0 
+2013/4/5 21:36:17.403785 [PID:3007] - Process [PID:3082] exitid with status: 0 
+2013/4/5 21:36:17.403804 [PID:3007] - Process [PID:3083] exitid with status: 0 
+2013/4/5 21:36:17.403824 [PID:3007] - Process [PID:3084] exitid with status: 0 
+2013/4/5 21:36:17.403844 [PID:3007] - Process [PID:3085] exitid with status: 0 
+2013/4/5 21:36:17.403863 [PID:3007] - Process [PID:3086] exitid with status: 0 
+2013/4/5 21:36:17.403882 [PID:3007] - Process [PID:3087] exitid with status: 0 
+2013/4/5 21:36:17.403902 [PID:3007] - Process [PID:3088] exitid with status: 0 
+2013/4/5 21:36:17.403922 [PID:3007] - Process [PID:3089] exitid with status: 0 
+2013/4/5 21:36:17.403941 [PID:3007] - Process [PID:3090] exitid with status: 0 
+2013/4/5 21:36:17.403960 [PID:3007] - Process [PID:3091] exitid with status: 0 
+2013/4/5 21:36:17.403979 [PID:3007] - Process [PID:3092] exitid with status: 0 
+2013/4/5 21:36:17.403999 [PID:3007] - Process [PID:3093] exitid with status: 0 
+2013/4/5 21:36:17.404018 [PID:3007] - Process [PID:3094] exitid with status: 0 
+2013/4/5 21:36:17.404038 [PID:3007] - Process [PID:3095] exitid with status: 0 
+2013/4/5 21:36:17.404070 [PID:3007] - Process [PID:3096] exitid with status: 0 
+2013/4/5 21:36:17.404090 [PID:3007] - Process [PID:3097] exitid with status: 0 
+2013/4/5 21:36:17.425080 [PID:3007] - Process [PID:3098] exitid with status: 0 
+2013/4/5 21:36:17.425106 [PID:3007] - Process [PID:3099] exitid with status: 0 
+2013/4/5 21:36:17.425126 [PID:3007] - Process [PID:3100] exitid with status: 0 
+2013/4/5 21:36:17.425145 [PID:3007] - Process [PID:3101] exitid with status: 0 
+2013/4/5 21:36:17.425165 [PID:3007] - Process [PID:3102] exitid with status: 0 
+2013/4/5 21:36:17.425185 [PID:3007] - Process [PID:3103] exitid with status: 0 
+2013/4/5 21:36:17.425204 [PID:3007] - Process [PID:3104] exitid with status: 0 
+2013/4/5 21:36:17.425224 [PID:3007] - Process [PID:3105] exitid with status: 0 
+2013/4/5 21:36:17.425243 [PID:3007] - Process [PID:3106] exitid with status: 0 
+2013/4/5 21:36:17.425262 [PID:3007] - Process [PID:3107] exitid with status: 0 
+2013/4/5 21:36:17.425282 [PID:3007] - Process [PID:3108] exitid with status: 0 
+2013/4/5 21:36:17.425302 [PID:3007] - Process [PID:3109] exitid with status: 0 
+2013/4/5 21:36:17.425321 [PID:3007] - Process [PID:3110] exitid with status: 0 
+2013/4/5 21:36:17.425341 [PID:3007] - Process [PID:3111] exitid with status: 0 
+2013/4/5 21:36:17.425360 [PID:3007] - Process [PID:3112] exitid with status: 0 
+2013/4/5 21:36:17.425379 [PID:3007] - Process [PID:3113] exitid with status: 0 
+2013/4/5 21:36:17.425400 [PID:3007] - Process [PID:3115] exitid with status: 15 
+2013/4/5 21:36:17.425419 [PID:3007] - Process [PID:3116] exitid with status: 15 

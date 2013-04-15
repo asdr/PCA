@@ -45,7 +45,7 @@ TRANSACTION* create_transaction( ) {
   char* plain_text;
   char* cipher_text;
   char* key;
-  char message[150];
+  char message[20000];
   long random_value;
 
   if ( !transaction )
@@ -54,22 +54,17 @@ TRANSACTION* create_transaction( ) {
       return NULL;
     }
 
-  log_event("0");
   // random cipher algorithm
   random_get_value( &random_value );
 
-  log_event("1");
   type = random_value % 3;
 
-
-  log_event("2");
   // length of random data at least 64K
   // the length has to be an even number in order to divide it by 2
   // first part of data is plain text
   // second part of data is cipher text
   random_get_value( &random_value );
 
-  log_event("3");
   length = MIN_TRANSACTION_LENGTH +
     ( random_value % (MAX_TRANSACTION_LENGTH - MIN_TRANSACTION_LENGTH) );
   if ( length % 2 > 0 )
@@ -80,17 +75,13 @@ TRANSACTION* create_transaction( ) {
         --length;
     }
 
-  log_event("4");
   // generate a random key of KEY_SIZE bits long
-  key = random_generate_key( KEY_SIZE );
+  //key = random_generate_key( KEY_SIZE );
+  key = random_generate_text( KEY_SIZE/8 );
 
-
-  log_event("5");
   // half of the transaction data is plain_text
   plain_text = random_generate_text( length/2 );
 
-
-  log_event("6");
   // half of the transaction data is cipher_text
   switch ( type )
     {
@@ -106,31 +97,18 @@ TRANSACTION* create_transaction( ) {
     }
 
 
-  log_event("7");
-  sprintf(message, "%d",
-          type);
-  log_event( message );
-  sprintf(message, "%d",
-          length);
-  log_event( message );
-  sprintf(message, "%s",
-          plain_text);
-  log_event( message );
-  sprintf(message, "%s",
-          cipher_text);
-  log_event( message );
+  //  sprintf(message, "pt: %s", plain_text);
+  //  log_event(message);
+
+  //  sprintf(message, "ct: %s", cipher_text);
+  //  log_event(message);
+
   transaction->type = type;
   transaction->length = length;
   transaction->plain_text = plain_text;
   transaction->cipher_text = cipher_text;
   transaction->decrypted = 0;
   transaction->key_partition_count = PARTITION_COUNT;
-
-
-  log_event("8");
-
-  //sprintf( message, "Transaction created in %d seconds.", delay );
-  //log_event( message );
 
   return transaction;
 }

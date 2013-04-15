@@ -97,24 +97,25 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
 
       if ( tc >= 0 )
         {
-
           //attack on the cipher text on one partition
+          /*int ks = 0;
+          char nkey[];
+          for (; ks<KEY_SIZE; ++ks)
+            {
 
+            }*/
+          //printf("pt: %s\n", shared_buffer->transactions[tc+1].plain_text);
 
-
-          sprintf( message,
-                   "Consumer: t[%c] %3d->%3d.",
-                   transaction->type,
-                   shared_buffer->transaction_count,
-                   shared_buffer->transaction_count-1 );
 
           shared_buffer->transaction_count -= 1;
           shared_buffer->transactions[ tc+1 ].decrypted = 1;
 
+          sprintf(message, "tC: %d", shared_buffer->transaction_count);
           log_event( message );
         }
       else
         {
+          log_event(".....no more.....");
         }
 
       sem_post( __pca_global_mutex );

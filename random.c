@@ -46,6 +46,7 @@ void random_open( void ) {
 void random_get_value( long* random_value ) {
   if ( __pca_global_random_file == -1)
     {
+
       *random_value = rand();
     }
   else
@@ -74,26 +75,31 @@ char* random_generate_text( int length ) {
       if ( random_value % 2 == 0 )
         {
           random_get_value( &random_value );
+
           if ( random_value % 2 == 0 )
             {
               random_get_value( &random_value );
+
               ch = 'A' + random_value%26;
             }
           else
             {
               random_get_value( &random_value );
+
               ch = 'a' + random_value%26;
             }
         }
       else
         {
           random_get_value( &random_value );
+
           ch = '0' + random_value%10;
         }
 
       buffer[i] = ch;
     }
 
+  buffer[length] = '\n';
   return buffer;
 }
 
@@ -108,9 +114,10 @@ char* random_generate_key( int bit_length ) {
     {
       random_get_value( &random_value );
       ch = random_value%2;
-      buffer[k] &= (ch << i%8);
+      buffer[k] |= (ch << i%8);
     }
 
+  buffer[k+1] = '\n';
   return buffer;
 }
 

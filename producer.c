@@ -58,7 +58,7 @@ void signal_handler( int signo ) {
 
 void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   TRANSACTION* transaction = NULL;
-  char message[100];
+  char message[20000];
   char type=0;
   long random_value;
   int tc;
@@ -110,11 +110,7 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
       shared_buffer->transactions[tc].key_partition_count = transaction->key_partition_count;
       shared_buffer->transaction_count = tc + 1;
 
-      sprintf( message,
-               "Producer: t[%c] %3d->%3d.",
-               transaction->type,
-               shared_buffer->transaction_count-1,
-               shared_buffer->transaction_count );
+      sprintf(message, "tC: %d", shared_buffer->transaction_count);
       log_event( message );
 
       sem_post( __pca_global_mutex );

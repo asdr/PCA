@@ -28,16 +28,68 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <stdlib.h>
+#include <string.h>
+
+int bitXor(int x, int y)
+{
+  int a = x & y;
+  int b = ~x & ~y;
+  int z = ~a & ~b;
+  return z;
+}
+
 char* encrypt_alg1 ( char* plain_text, char* key ) {
-  return plain_text;
+  int i=0, k=0, len1 = strlen(plain_text), len2 = strlen(key);
+  char * ct = (char*) malloc(sizeof(char)*(len1+1));
+  for (; i<len1; ++i)
+    {
+      for (; k<len2; ++k) {
+        if ( k ==0 )
+          ct[i] = bitXor(plain_text[i], key[k]);
+        else
+          ct[i] = bitXor(ct[i], bitXor(plain_text[i], key[k]));
+      }
+    }
+
+  ct[len1] = '\n';
+  return ct;
 }
 
 char* encrypt_alg2 ( char* plain_text, char* key ) {
-  return plain_text;
+
+  int i=0, k=0, len1 = strlen(plain_text), len2 = strlen(key);
+  char * ct = (char*) malloc(sizeof(char)*(len1+1));
+  for (; i<len1; ++i)
+    {
+      for (; k<len2; ++k) {
+        if ( k ==0 )
+          ct[i] = bitXor(plain_text[i], key[k]);
+        else
+          ct[i] = bitXor(ct[i], bitXor(plain_text[i], key[k]));
+      }
+    }
+
+  ct[len1] = '\n';
+  return ct;
 }
 
 char* encrypt_alg3 ( char* plain_text, char* key ) {
-  return plain_text;
+
+  int i=0, k=0, len1 = strlen(plain_text), len2 = strlen(key);
+  char * ct = (char*) malloc(sizeof(char)*(len1+1));
+  for (; i<len1; ++i)
+    {
+      for (; k<len2; ++k) {
+        if ( k ==0 )
+          ct[i] = bitXor(plain_text[i], key[k]);
+        else
+          ct[i] = bitXor(ct[i], bitXor(plain_text[i], key[k]));
+      }
+    }
+
+  ct[len1] = '\n';
+  return ct;
 }
 
 char* decrypt_alg1 ( char* cipher_text, char* key ) {

@@ -32,7 +32,7 @@
 #define __PCA_LOGGER_H_
 
 #define DEFAULT_LOG_FILE_PATH "pca.log"
-#define MAX_LOG_LINE_LENGTH 1000
+#define MAX_LOG_LINE_LENGTH 20000
 
 
 /****

@@ -41,6 +41,7 @@ int main ( int argc, char** argv ) {
   SHAREDBUFFER* shared_buffer;
   struct timeval start_time;
   struct timeval current_time;
+  int i=0;
 
   if ( logfd < 1 )
     {
@@ -72,7 +73,7 @@ int main ( int argc, char** argv ) {
     }
   while ( (current_time.tv_sec - start_time.tv_sec) <= main_process_lifetime  );
 
-  while( shared_buffer->child_process_count > 0 )
+  for ( i=0; i < shared_buffer->child_process_count; ++i )
     {
       kill_all_child_processes( shared_buffer );
       sleep(1);

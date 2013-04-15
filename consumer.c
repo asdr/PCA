@@ -47,6 +47,7 @@ void signal_handler( int signo ) {
   if ( signo == SIGUSR1 )
     {
       int value;
+      log_event( "consumer got signal." );
       // we got the signal
       __pca_global_got_signal = 1;
       sem_getvalue( __pca_global_full_sem, &value );
@@ -66,6 +67,7 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
   int delay = 0; //in seconds
   char message[100];
   long random_value;
+  int tc;
 
   if ( !shared_buffer )
     {
@@ -85,16 +87,35 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
 
       // find the transaction to process
       // choose the last transaction for now
-      transaction = &(shared_buffer->transactions[shared_buffer->transaction_count - 1]);
-      shared_buffer->transaction_count -= 1;
+      //tc = shared_buffer->transaction_count - 1;
+      tc = MAX_TRANSACTION_COUNT;
+      do
+        {
+          transaction = &(shared_buffer->transactions[ tc-- ]);
+        }
+      while( transaction->decrypted == 1 && tc >=0 );
 
-      sprintf( message,
-               "Consumer: t[%c] %3d->%3d.",
-               transaction->type,
-               shared_buffer->transaction_count+1,
-               shared_buffer->transaction_count );
+      if ( tc >= 0 )
+        {
 
-      log_event( message );
+          //attack on the cipher text on one partition
+
+
+
+          sprintf( message,
+                   "Consumer: t[%c] %3d->%3d.",
+                   transaction->type,
+                   shared_buffer->transaction_count,
+                   shared_buffer->transaction_count-1 );
+
+          shared_buffer->transaction_count -= 1;
+          shared_buffer->transactions[ tc+1 ].decrypted = 1;
+
+          log_event( message );
+        }
+      else
+        {
+        }
 
       sem_post( __pca_global_mutex );
       sem_post( __pca_global_empty_sem );

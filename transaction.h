@@ -32,19 +32,26 @@
 #define __PCA_TRANSACTION_H_
 
 //64K
-#define MIN_TRANSACTION_LENGTH (1<<16)
+#define MIN_TRANSACTION_LENGTH 8192 //(1<<16)/2^3
 //128K
-#define MAX_TRANSACTION_LENGTH (1<<17)
-//64BITS
-#define KEY_SIZE (64)
+#define MAX_TRANSACTION_LENGTH 16384 //(1<<17)/2^3
+//32BITS
+#define KEY_SIZE (32)
+//4BITS
+#define PARTITION_COUNT (4)
 
 typedef struct _transaction TRANSACTION;
 
 struct _transaction {
   char type;
   int length;
+
   char* plain_text;
   char* cipher_text;
+
+  int decrypted;
+
+  int key_partition_count;
 };
 
 

@@ -49,8 +49,10 @@ int __pca_global_incs = 0;
 void signal_handler( int signo ) {
   if ( signo == SIGUSR1 )
     {
+      log_event( "producer got signal." );
       // we got the signal
       __pca_global_got_signal = 1;
+      kill ( getpid(), SIGTERM );
     }
 }
 
@@ -59,6 +61,7 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
   char message[100];
   char type=0;
   long random_value;
+  int tc;
 
   if ( !shared_buffer )
     {
@@ -84,15 +87,34 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
 
       ++__pca_global_incs;
 
-      strcpy(shared_buffer->transactions[shared_buffer->transaction_count].data, transaction->data);
-      shared_buffer->transaction_count = shared_buffer->transaction_count + 1;
+      //strcpy( shared_buffer->transactions[shared_buffer->transaction_count].data,
+      //          transaction->data );
+
+      tc = shared_buffer->transaction_count;
+
+      shared_buffer->transactions[tc].type = transaction->type;
+      shared_buffer->transactions[tc].length = transaction->length;
+
+      shared_buffer->transactions[tc].plain_text =
+        (char*) malloc( sizeof(char)*(transaction->length)/2 );
+
+      strcpy( shared_buffer->transactions[tc].plain_text,
+              transaction->plain_text );
+
+      shared_buffer->transactions[tc].cipher_text =
+        (char*) malloc( sizeof(char)*(transaction->length)/2 );
+
+      strcpy( shared_buffer->transactions[tc].cipher_text,
+              transaction->cipher_text );
+
+      shared_buffer->transactions[tc].key_partition_count = transaction->key_partition_count;
+      shared_buffer->transaction_count = tc + 1;
 
       sprintf( message,
                "Producer: t[%c] %3d->%3d.",
                transaction->type,
                shared_buffer->transaction_count-1,
                shared_buffer->transaction_count );
-
       log_event( message );
 
       sem_post( __pca_global_mutex );
@@ -101,7 +123,7 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
       --__pca_global_incs;
     }
 
-  free(transaction);
+  destroy_transaction( transaction );
 }
 
 int main ( int argc, char** argv ) {
@@ -134,7 +156,6 @@ int main ( int argc, char** argv ) {
       log_close_file();
       return EXIT_FAILURE;
     }
-
 
   log_event( "Producer process started." );
   keep_track_of_child_process( shared_buffer );

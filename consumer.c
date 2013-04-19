@@ -46,20 +46,17 @@ int __pca_global_incs = 0;
 void signal_handler( int signo ) {
   if ( signo == SIGUSR1 )
     {
-      int value;
       log_event( "consumer got signal." );
       // we got the signal
       __pca_global_got_signal = 1;
-      sem_getvalue( __pca_global_full_sem, &value );
-      if ( value == 0)
-        kill( getpid(), SIGTERM );
     }
-  else if ( signo == SIGTERM )
+  /*else if ( signo == SIGTERM )
     {
+      log_event( "SIGTERM" );
       random_close();
       log_close_file();
       kill(getpid(), SIGKILL);
-    }
+      }*/
 }
 
 void consume_transaction( SHAREDBUFFER* shared_buffer ) {
@@ -68,6 +65,9 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
   char message[100];
   long random_value;
   int tc;
+  int key_found = 0;
+  int value;
+  char key[(KEY_SIZE/8) + 1];
 
   if ( !shared_buffer )
     {
@@ -75,12 +75,13 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
       return;
     }
 
-
-  if ( __pca_global_got_signal == 0 )
-    {
+  sem_getvalue(&(shared_buffer->full_sem), &value);
+  sprintf(message, "0-->%d", value);
+  log_event(message);
 
       // wait if shared buffer is empty
       sem_wait( __pca_global_full_sem );
+                log_event("0.0");
       sem_wait( __pca_global_mutex );
 
       ++__pca_global_incs;
@@ -93,47 +94,73 @@ void consume_transaction( SHAREDBUFFER* shared_buffer ) {
         {
           transaction = &(shared_buffer->transactions[ tc-- ]);
         }
-      while( transaction->decrypted == 1 && tc >=0 );
+      while( (transaction->ready != 9 || transaction->decrypted == 1) && tc >=0 );
+
+      log_event("1");
 
       if ( tc >= 0 )
         {
-          //attack on the cipher text on one partition
-          /*int ks = 0;
-          char nkey[];
-          for (; ks<KEY_SIZE; ++ks)
-            {
-
-            }*/
-          //printf("pt: %s\n", shared_buffer->transactions[tc+1].plain_text);
-
-
-          shared_buffer->transaction_count -= 1;
-          shared_buffer->transactions[ tc+1 ].decrypted = 1;
-
-          sprintf(message, "tC: %d", shared_buffer->transaction_count);
+          log_event("2");
+          sprintf(message, "attack [%d:%d]", tc+1, transaction->key_partition_count);
           log_event( message );
-        }
-      else
-        {
-          log_event(".....no more.....");
-        }
 
-      sem_post( __pca_global_mutex );
-      sem_post( __pca_global_empty_sem );
+          //get just one partition at a time
+          transaction->key_partition_count -= 1;
+        }
 
       --__pca_global_incs;
-    }
+
+      sem_post( __pca_global_mutex );
+      sem_post( __pca_global_full_sem );
+      //sem_post( __pca_global_empty_sem );
+
+          log_event("3");
+
+      //now attack on the transaction
+      //outside the critical section
+      //because, while a consumer process attacks on one partition
+      //another will attack on another partititon 'till the key
+      //is found
+      attack_on_transaction(transaction, key);
+
+      // wait if shared buffer is empty
+      //sem_wait( __pca_global_full_sem );
+      sem_wait( __pca_global_mutex );
+
+      ++__pca_global_incs;
 
 
-  // process the transaction -- delay
-  //random_get_value( &random_value );
-  //delay = random_value % 4; // 3 seconds at most
-  //sprintf( message,
-  //         "Consumer processes transaction(type[%c]) in %d second(s).",
-  //         transaction->type,
-  //         delay );
-  //log_event( message );
+          log_event("4");
 
+      // got result
+      if ( key[0] != '\0' )
+        {
+
+          log_event("5");
+          transaction->decrypted = 1;
+          shared_buffer->transaction_count -= 1;
+
+          sprintf(message, "Key found: %s", key);
+          log_event(message);
+
+        }
+      else if (key[1] == '\0')
+        {
+
+          log_event("6");
+          transaction->decrypted = 1;
+          shared_buffer->transaction_count -= 1;
+          log_event("key not found");
+
+        }
+
+          log_event("7");
+      sem_post( __pca_global_mutex );
+      //sem_post( __pca_global_empty_sem );
+
+      --__pca_global_incs;
+
+          log_event("8");
 }
 
 int main ( int argc, char** argv ) {
@@ -169,11 +196,9 @@ int main ( int argc, char** argv ) {
 
   signal( SIGUSR1, signal_handler );
 
-  while(1)
+  while( __pca_global_got_signal == 0 || shared_buffer->transaction_count > 0)
     {
       consume_transaction( shared_buffer );
-      if ( __pca_global_got_signal == 1)
-        break;
     }
 
  SAFE_EXIT:

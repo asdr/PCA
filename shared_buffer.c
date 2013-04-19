@@ -48,6 +48,7 @@ sem_t* __pca_global_mutex2;
 
 SHAREDBUFFER* create_shared_buffer( void ) {
   int smfd;
+  int i=0;
   SHAREDBUFFER* shared_buffer;
 
   smfd = shm_open( SHM_NAME, O_RDWR | O_CREAT, 0777 );
@@ -67,6 +68,13 @@ SHAREDBUFFER* create_shared_buffer( void ) {
 
   shared_buffer->smfd = smfd;
   shared_buffer->transaction_count = 0;
+
+  for (i=0; i<MAX_TRANSACTION_COUNT; ++i)
+    {
+      shared_buffer->transactions[i].ready=0;
+      shared_buffer->transactions[i].decrypted=0;
+      shared_buffer->transactions[i].key_partition_count=0;
+    }
 
   sem_init( &(shared_buffer->empty_sem), 1, MAX_TRANSACTION_COUNT );
   sem_init( &(shared_buffer->full_sem), 1, 0 );

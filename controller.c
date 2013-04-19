@@ -73,10 +73,18 @@ int main ( int argc, char** argv ) {
     }
   while ( (current_time.tv_sec - start_time.tv_sec) <= main_process_lifetime  );
 
-  for ( i=0; i < shared_buffer->child_process_count; ++i )
+  /*for ( i=0; i < shared_buffer->child_process_count; ++i )
     {
       kill_all_child_processes( shared_buffer );
       sleep(1);
+      }*/
+
+  kill_all_child_processes( shared_buffer );
+
+  while( shared_buffer->transaction_count > 0)
+    {
+      log_event( "wait" );
+      sleep(5);
     }
 
   close_shared_buffer( shared_buffer );

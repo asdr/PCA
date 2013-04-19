@@ -34,7 +34,7 @@
 //64K
 #define MIN_TRANSACTION_LENGTH 8192 //(1<<16)/2^3
 //128K
-#define MAX_TRANSACTION_LENGTH 8193 //16384 //(1<<17)/2^3
+#define MAX_TRANSACTION_LENGTH 8194 //16384 //(1<<17)/2^3
 //16BITS
 #define KEY_SIZE (16)
 //4BITS
@@ -46,26 +46,14 @@ struct _transaction {
   char type;
   int length;
 
-  char* plain_text;
-  char* cipher_text;
+  char plain_text[(MAX_TRANSACTION_LENGTH/2) + 1];
+  char cipher_text[(MAX_TRANSACTION_LENGTH/2) + 1];
 
   int decrypted;
+  int ready;
 
   int key_partition_count;
 };
-
-static int __pca_global_possible_chars[] = {'A'+0,  'A'+1,  'A'+2,  'A'+3,  'A'+4,  'A'+5,
-                                            'A'+6,  'A'+7,  'A'+8,  'A'+9,  'A'+10, 'A'+10,
-                                            'A'+12, 'A'+13, 'A'+14, 'A'+15, 'A'+16, 'A'+17,
-                                            'A'+18, 'A'+19, 'A'+20, 'A'+21, 'A'+22, 'A'+23,
-                                            'A'+24, 'A'+25, '0'+0,  '0'+1,  '0'+2,  '0'+3,
-                                            '0'+4,  '0'+5,  '0'+6,  '0'+7,  '0'+8,  '0'+9,
-                                            'a'+0,  'a'+1,  'a'+2,  'a'+3,  'a'+4,  'a'+5,
-                                            'a'+6,  'a'+7,  'a'+8,  'a'+9,  'a'+10, 'a'+10,
-                                            'a'+12, 'a'+13, 'a'+14, 'a'+15, 'a'+16, 'a'+17,
-                                            'a'+18, 'a'+19, 'a'+20, 'a'+21, 'a'+22, 'a'+23,
-                                            'a'+24, 'a'+25};
-
 
 /****
  * create_transaction

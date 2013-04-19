@@ -52,7 +52,6 @@ void signal_handler( int signo ) {
       log_event( "producer got signal." );
       // we got the signal
       __pca_global_got_signal = 1;
-      kill ( getpid(), SIGTERM );
     }
 }
 
@@ -95,23 +94,29 @@ void produce_transaction ( SHAREDBUFFER* shared_buffer ) {
       shared_buffer->transactions[tc].type = transaction->type;
       shared_buffer->transactions[tc].length = transaction->length;
 
-      shared_buffer->transactions[tc].plain_text =
-        (char*) malloc( sizeof(char)*(transaction->length)/2 );
+      strcpy( shared_buffer->transactions[tc].plain_text, transaction->plain_text );
+      shared_buffer->transactions[tc].plain_text[strlen(transaction->plain_text)] = '\0';
 
-      strcpy( shared_buffer->transactions[tc].plain_text,
-              transaction->plain_text );
 
-      shared_buffer->transactions[tc].cipher_text =
-        (char*) malloc( sizeof(char)*(transaction->length)/2 );
-
-      strcpy( shared_buffer->transactions[tc].cipher_text,
-              transaction->cipher_text );
+      strcpy( shared_buffer->transactions[tc].cipher_text, transaction->cipher_text );
+      shared_buffer->transactions[tc].cipher_text[strlen(transaction->cipher_text)] = '\0';
 
       shared_buffer->transactions[tc].key_partition_count = transaction->key_partition_count;
+      shared_buffer->transactions[tc].ready = transaction->ready;
+
       shared_buffer->transaction_count = tc + 1;
 
       sprintf(message, "tC: %d", shared_buffer->transaction_count);
       log_event( message );
+
+      //      sprintf(message, "%s", transaction->plain_text);
+      //log_event(message);
+      //sprintf(message, "%s", transaction->cipher_text);
+      //log_event(message);
+
+      //      printf("plen: %d\n", strlen(transaction->plain_text));
+      //      printf("clen: %d\n", strlen(transaction->cipher_text));
+
 
       sem_post( __pca_global_mutex );
       sem_post( __pca_global_full_sem );

@@ -63,7 +63,7 @@ void random_get_value( long* random_value ) {
 char* random_generate_text( int length ) {
   int i=0, ch;
   long int random_value;
-  char* buffer = (char*) malloc(sizeof(char) * length);
+  char* buffer = (char*) malloc(sizeof(char) * (length+1));
   if ( buffer == NULL )
     return NULL;
 
@@ -99,7 +99,7 @@ char* random_generate_text( int length ) {
       buffer[i] = ch;
     }
 
-  buffer[length] = '\n';
+  buffer[length] = '\0';
   return buffer;
 }
 
@@ -117,7 +117,7 @@ char* random_generate_key( int bit_length ) {
       buffer[k] |= (ch << i%8);
     }
 
-  buffer[k+1] = '\n';
+  buffer[k+1] = '\0';
   return buffer;
 }
 

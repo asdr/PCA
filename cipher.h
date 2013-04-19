@@ -31,6 +31,7 @@
 #ifndef __PCA_CIPHER_H_
 #define __PCA_CIPHER_H_
 
+#include "transaction.h"
 
 //1K
 #define ALG1_BLOCK_SIZE (1<<10)
@@ -42,8 +43,6 @@
 char* encrypt_alg1 ( char* plain_text, char* key );
 char* encrypt_alg2 ( char* plain_text, char* key );
 char* encrypt_alg3 ( char* plain_text, char* key );
-char* decrypt_alg1 ( char* cipher_text, char* key );
-char* decrypt_alg2 ( char* cipher_text, char* key );
-char* decrypt_alg3 ( char* cipher_text, char* key );
+void attack_on_transaction (TRANSACTION *transaction, char* output);
 
 #endif

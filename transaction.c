@@ -105,10 +105,16 @@ TRANSACTION* create_transaction( ) {
 
   transaction->type = type;
   transaction->length = length;
-  transaction->plain_text = plain_text;
-  transaction->cipher_text = cipher_text;
+  strcpy(transaction->plain_text, plain_text);
+  strcpy(transaction->cipher_text, cipher_text);
   transaction->decrypted = 0;
   transaction->key_partition_count = PARTITION_COUNT;
+  transaction->ready = 9;
+
+  //release allocated memory
+  free( key );
+  free( plain_text );
+  free( cipher_text );
 
   return transaction;
 }
@@ -117,8 +123,6 @@ void destroy_transaction( TRANSACTION* transaction ) {
 
   if ( transaction )
     {
-      free( transaction->plain_text );
-      free( transaction->cipher_text );
       free( transaction );
     }
 }
